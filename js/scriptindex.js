@@ -150,7 +150,6 @@ let currentSlotIndex = 0;
 let selectedPokemonIndex = 0;
 let pokemonSearch = '';
 let currentDraft = createEmptyTeam();
-const POKEMON_PER_PAGE = 32;
 let pokemonPage = 1;
 let isEditingSet = false;
 let teamGrid;
@@ -181,6 +180,10 @@ async function init() {
   await loadItemsData();
   teams = loadTeams();
   renderTeamGrid();
+}
+
+function getPokemonPerPage() {
+  return isEditingSet ? 16 : 32;
 }
 
 function getDOMElements() {
@@ -446,14 +449,15 @@ function getFilteredPokemon() {
 
 function getPokemonPaginationData() {
   const filteredPokemon = getFilteredPokemon();
-  const totalPages = Math.max(1, Math.ceil(filteredPokemon.length / POKEMON_PER_PAGE));
+  const perPage = getPokemonPerPage();
+  const totalPages = Math.max(1, Math.ceil(filteredPokemon.length / perPage));
 
   if (pokemonPage > totalPages) {
     pokemonPage = totalPages;
   }
 
-  const startIndex = (pokemonPage - 1) * POKEMON_PER_PAGE;
-  const endIndex = startIndex + POKEMON_PER_PAGE;
+  const startIndex = (pokemonPage - 1) * perPage;
+  const endIndex = startIndex + perPage;
   const pagePokemon = filteredPokemon.slice(startIndex, endIndex);
 
   return {

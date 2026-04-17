@@ -53,11 +53,6 @@ const NATURES = [
 const ITEMS = [
   { name: "No item", modifiers: {} },
   { name: "Choice Scarf", modifiers: { spe: 1.5 } },
-  { name: "Choice Band", modifiers: { atk: 1.5 } },
-  { name: "Choice Specs", modifiers: { spa: 1.5 } },
-  { name: "Assault Vest", modifiers: { spd: 1.5 } },
-  { name: "Eviolite", modifiers: { def: 1.5, spd: 1.5 } },
-  { name: "Iron Ball", modifiers: { spe: 0.5 } }
 ];
 
 const ABILITY_EFFECTS = {

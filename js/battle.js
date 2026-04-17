@@ -1,6 +1,7 @@
 const STORAGE_KEY = 'pokemonChampionsTeams';
 const POKEMON_PER_TEAM = 6;
 const POKEMON_PER_PAGE = 32;
+const SPRITES_BASE_PATH = '../assets/images/sprites/';
 
 let teams = [];
 let pokemonDex = [];
@@ -61,9 +62,14 @@ function bindEvents() {
   });
 }
 
+function getPokemonSpritePath(pokemon) {
+  if (!pokemon?.sprite) return '';
+  return `${SPRITES_BASE_PATH}${pokemon.sprite}`;
+}
+
 async function loadPokemonData() {
   try {
-    const response = await fetch('assets/data/pokemon.json');
+    const response = await fetch('../assets/data/pokemon.json');
     if (!response.ok) throw new Error('No se pudo cargar pokemon.json');
 
     const data = await response.json();
@@ -141,7 +147,7 @@ function renderMyTeam() {
 
   myTeamPreview.innerHTML = team.pokemon.map((pokemon) => {
     const dexPokemon = getPokemonData(pokemon.name);
-    const sprite = dexPokemon?.sprite || '';
+    const sprite = getPokemonSpritePath(dexPokemon);
 
     return `
       <article class="my-pokemon-card">
@@ -193,7 +199,7 @@ function renderSelectedBattle() {
     }
 
     const dexPokemon = getPokemonData(pokemon.name);
-    const sprite = dexPokemon?.sprite || '';
+    const sprite = getPokemonSpritePath(dexPokemon);
     const moves = dexPokemon?.moves || [];
 
     return `
@@ -295,7 +301,7 @@ function renderPicker() {
 
   pickerGrid.innerHTML = pageItems.map((pokemon) => `
     <button class="picker-card" type="button" data-picker-name="${escapeAttribute(pokemon.name)}">
-      <img src="${escapeAttribute(pokemon.sprite || '')}" alt="${escapeAttribute(pokemon.name)}">
+      <img src="${escapeAttribute(getPokemonSpritePath(pokemon))}" alt="${escapeAttribute(pokemon.name)}">
       <span>${escapeHtml(pokemon.name)}</span>
     </button>
   `).join('');
@@ -381,7 +387,7 @@ function rebuildEnemyGridWithSelection() {
     return `
       <div class="enemy-slot filled">
         <button class="enemy-slot filled" type="button" data-enemy-slot="${index}">
-          <img src="${escapeAttribute(dexPokemon.sprite || '')}" alt="${escapeAttribute(pokemon.name)}">
+          <img src="${escapeAttribute(getPokemonSpritePath(dexPokemon))}" alt="${escapeAttribute(pokemon.name)}">
           <div class="enemy-slot-name">${escapeHtml(pokemon.name)}</div>
         </button>
         <label class="selected-checkbox-wrap" style="margin-top:8px; color:white;">
