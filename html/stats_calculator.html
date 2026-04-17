@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champions Hub - Stats Calculator</title>
+  <link rel="stylesheet" href="../css/stats_calculator.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="navbar-logo-link" aria-label="Go to home">
+        <img src="../assets/images/icons/logo.png" alt="Site logo" class="navbar-logo" />
+      </a>
+
+      <div class="navbar-links">
+        <a href="../index.html" class="navbar-link">Home</a>
+        <a href="../html/battle.html" class="navbar-link">Battle</a>
+        <a href="../html/stats_calculator.html" class="navbar-link active">Stats Calculator</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="mode-switch">
+      <button type="button" id="singleModeBtn" class="mode-btn active">Single Mode</button>
+      <button type="button" id="compareModeBtn" class="mode-btn">Compare Mode</button>
+    </div>
+
+    <div id="singleModeView" class="mode-view">
+      <div class="single-layout">
+        <section class="panel">
+          <h2>Configuration</h2>
+
+          <div class="field">
+            <label for="pokemonSelectA">Pokemon</label>
+            <select id="pokemonSelectA">
+              <option value="">Loading...</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="natureSelectA">Nature</label>
+            <select id="natureSelectA"></select>
+          </div>
+
+          <div class="field">
+            <label for="itemSelectA">Item</label>
+            <select id="itemSelectA"></select>
+          </div>
+
+          <div class="field">
+            <label for="abilitySelectA">Ability</label>
+            <select id="abilitySelectA">
+              <option value="">No ability selected</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="weatherSelectA">Weather</label>
+            <select id="weatherSelectA">
+              <option value="none">No weather</option>
+              <option value="rain">Rain</option>
+              <option value="sun">Sun</option>
+              <option value="sand">Sandstorm</option>
+              <option value="snow">Snow</option>
+              <option value="tailwind">Tailwind</option>
+            </select>
+          </div>
+
+          <div class="toggle-row">
+            <span>Use Mega Stats</span>
+            <input type="checkbox" id="megaToggleA" />
+          </div>
+
+          <div class="toggle-row">
+            <span>Ability active</span>
+            <input type="checkbox" id="abilityActiveToggleA" checked />
+          </div>
+
+          <h2>SP</h2>
+
+          <div class="ev-grid">
+            <div class="field">
+              <label for="evHpA">HP SP (0-32)</label>
+              <input type="number" id="evHpA" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evAtkA">ATK SP (0-32)</label>
+              <input type="number" id="evAtkA" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evDefA">DEF SP (0-32)</label>
+              <input type="number" id="evDefA" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpaA">SPA SP (0-32)</label>
+              <input type="number" id="evSpaA" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpdA">SPD SP (0-32)</label>
+              <input type="number" id="evSpdA" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpeA">SPE SP (0-32)</label>
+              <input type="number" id="evSpeA" min="0" max="32" step="1" value="0" />
+            </div>
+          </div>
+
+          <div class="warning" id="evWarningA"></div>
+        </section>
+
+        <section class="panel">
+          <div class="pokemon-card">
+            <img id="pokemonSpriteA" class="pokemon-sprite" src="" alt="Pokemon sprite" />
+            <div class="pokemon-info">
+              <h3 id="pokemonNameA">Select a Pokemon</h3>
+              <div class="type-icons" id="typeIconsA"></div>
+              <div class="small-text" id="pokemonBaseInfoA">Level 50 stat calculation</div>
+            </div>
+          </div>
+
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Stat</th>
+                <th>Base</th>
+                <th>SP</th>
+                <th>Nature</th>
+                <th>Final</th>
+              </tr>
+            </thead>
+            <tbody id="statsTableBodyA"></tbody>
+          </table>
+          <button type="button" id="savePokemonBtn" class="save-pokemon-btn">Save Pokemon</button>
+        </section>
+      </div>
+    </div>
+
+    <div id="compareModeView" class="mode-view hidden">
+      <div class="compare-layout">
+        <section class="panel">
+          <h2>Pokemon 1</h2>
+
+          <div class="field">
+            <label for="savedBuildSelectACompare">Saved Pokemon</label>
+            <select id="savedBuildSelectACompare">
+              <option value="">Select saved build</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="pokemonSelectACompare">Pokemon</label>
+            <select id="pokemonSelectACompare">
+              <option value="">Loading...</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="natureSelectACompare">Nature</label>
+            <select id="natureSelectACompare"></select>
+          </div>
+
+          <div class="field">
+            <label for="itemSelectACompare">Item</label>
+            <select id="itemSelectACompare"></select>
+          </div>
+
+          <div class="field">
+            <label for="abilitySelectACompare">Ability</label>
+            <select id="abilitySelectACompare">
+              <option value="">No ability selected</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="weatherSelectACompare">Weather</label>
+            <select id="weatherSelectACompare">
+              <option value="none">No weather</option>
+              <option value="rain">Rain</option>
+              <option value="sun">Sun</option>
+              <option value="sand">Sandstorm</option>
+              <option value="snow">Snow</option>
+              <option value="tailwind">Tailwind</option>
+            </select>
+          </div>
+
+          <div class="toggle-row">
+            <span>Use Mega Stats</span>
+            <input type="checkbox" id="megaToggleACompare" />
+          </div>
+
+          <div class="toggle-row">
+            <span>Ability active</span>
+            <input type="checkbox" id="abilityActiveToggleACompare" checked />
+          </div>
+
+          <h2>SP</h2>
+
+          <div class="ev-grid">
+            <div class="field">
+              <label for="evHpACompare">HP SP (0-32)</label>
+              <input type="number" id="evHpACompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evAtkACompare">ATK SP (0-32)</label>
+              <input type="number" id="evAtkACompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evDefACompare">DEF SP (0-32)</label>
+              <input type="number" id="evDefACompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpaACompare">SPA SP (0-32)</label>
+              <input type="number" id="evSpaACompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpdACompare">SPD SP (0-32)</label>
+              <input type="number" id="evSpdACompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpeACompare">SPE SP (0-32)</label>
+              <input type="number" id="evSpeACompare" min="0" max="32" step="1" value="0" />
+            </div>
+          </div>
+
+          <div class="warning" id="evWarningACompare"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Pokemon 2</h2>
+
+          <div class="field">
+            <label for="savedBuildSelectBCompare">Saved Pokemon</label>
+            <select id="savedBuildSelectBCompare">
+              <option value="">Select saved build</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="pokemonSelectBCompare">Pokemon</label>
+            <select id="pokemonSelectBCompare">
+              <option value="">Loading...</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="natureSelectBCompare">Nature</label>
+            <select id="natureSelectBCompare"></select>
+          </div>
+
+          <div class="field">
+            <label for="itemSelectBCompare">Item</label>
+            <select id="itemSelectBCompare"></select>
+          </div>
+
+          <div class="field">
+            <label for="abilitySelectBCompare">Ability</label>
+            <select id="abilitySelectBCompare">
+              <option value="">No ability selected</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="weatherSelectBCompare">Weather</label>
+            <select id="weatherSelectBCompare">
+              <option value="none">No weather</option>
+              <option value="rain">Rain</option>
+              <option value="sun">Sun</option>
+              <option value="sand">Sandstorm</option>
+              <option value="snow">Snow</option>
+              <option value="tailwind">Tailwind</option>
+            </select>
+          </div>
+
+          <div class="toggle-row">
+            <span>Use Mega Stats</span>
+            <input type="checkbox" id="megaToggleBCompare" />
+          </div>
+
+          <div class="toggle-row">
+            <span>Ability active</span>
+            <input type="checkbox" id="abilityActiveToggleBCompare" checked />
+          </div>
+
+          <h2>SP</h2>
+
+          <div class="ev-grid">
+            <div class="field">
+              <label for="evHpBCompare">HP SP (0-32)</label>
+              <input type="number" id="evHpBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evAtkBCompare">ATK SP (0-32)</label>
+              <input type="number" id="evAtkBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evDefBCompare">DEF SP (0-32)</label>
+              <input type="number" id="evDefBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpaBCompare">SPA SP (0-32)</label>
+              <input type="number" id="evSpaBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpdBCompare">SPD SP (0-32)</label>
+              <input type="number" id="evSpdBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+
+            <div class="field">
+              <label for="evSpeBCompare">SPE SP (0-32)</label>
+              <input type="number" id="evSpeBCompare" min="0" max="32" step="1" value="0" />
+            </div>
+          </div>
+
+          <div class="warning" id="evWarningBCompare"></div>
+        </section>
+
+        <section class="panel" id="comparePanel">
+          <div class="summary-box">
+            Select two Pokémon to compare.
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/compare_stats.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Champions Tracker - Battle</title>
+  <link rel="stylesheet" href="../css/battle.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo-link" aria-label="Go to home">
+        <img src="../assets/images/icons/logo.png" alt="Site logo" class="navbar-logo" />
+        <span class="navbar-brand">Pokemon Champions Tracker</span>
+      </a>
+
+      <div class="navbar-links">
+        <a href="../index.html" class="navbar-link">Home</a>
+        <a href="../html/battle.html" class="navbar-link">Battle</a>
+        <a href="../html/stats_calculator.html" class="navbar-link">Stats Calculator</a>
+      </div>
+    </nav>
+  </header>
+  <main class="battle-page">
+    <section class="battle-section">
+      <h1 class="battle-title">MY TEAM</h1>
+
+      <div class="team-selector-wrap">
+        <select id="myTeamSelect" class="team-selector"></select>
+      </div>
+
+      <div id="myTeamPreview" class="my-team-preview"></div>
+    </section>
+
+    <section class="battle-section">
+      <h2 class="battle-title">OPPOSITE TEAM</h2>
+
+      <div class="enemy-team-grid" id="enemyTeamGrid"></div>
+    </section>
+
+    <section class="battle-section">
+      <h2 class="battle-title">POKEMONS SELECTED</h2>
+
+      <div class="selected-grid" id="selectedBattleGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="pokemonPickerModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h3>Select Opponent Pokémon</h3>
+        <button id="closePickerModalBtn" class="close-btn" type="button">×</button>
+      </div>
+
+      <div class="search-wrap">
+        <input id="pokemonSearchInput" type="text" placeholder="Buscar Pokémon..." />
+      </div>
+
+      <div class="picker-grid" id="pickerGrid"></div>
+
+      <div class="picker-pagination" id="pickerPagination"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../js/battle.js"></script>
+</body>
+</html>

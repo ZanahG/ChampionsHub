@@ -1,0 +1,435 @@
+:root {
+  --bg: #5f6093;
+  --panel: #f4f4f7;
+  --panel-soft: #ececf6;
+  --ink: #525587;
+  --ink-dark: #3d4069;
+  --border: #cfd3f0;
+  --shadow: 0 18px 40px rgba(24, 26, 58, 0.22);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --yellow: #dfe63f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: white;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+.battle-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 48px 28px 90px;
+}
+
+.battle-section {
+  margin-bottom: 54px;
+}
+
+.battle-title {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-selector-wrap {
+  width: min(520px, 100%);
+  margin-bottom: 22px;
+}
+
+.team-selector {
+  width: 100%;
+  height: 76px;
+  border: 0;
+  border-radius: 22px;
+  background: white;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 900;
+  text-align: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.my-team-preview {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  gap: 16px;
+}
+
+.my-pokemon-card {
+  background: rgba(255,255,255,0.95);
+  color: var(--ink);
+  border-radius: 20px;
+  padding: 14px 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  min-height: 170px;
+}
+
+.my-pokemon-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin-bottom: 8px;
+}
+
+.my-pokemon-name {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.my-pokemon-meta {
+  font-size: 0.78rem;
+  font-weight: 700;
+  opacity: 0.95;
+  line-height: 1.3;
+}
+
+.enemy-team-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
+  gap: 16px;
+}
+
+.enemy-slot {
+  aspect-ratio: 1 / 1;
+  border: 0;
+  border-radius: 18px;
+  background: white;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: transform 0.18s ease;
+}
+
+.enemy-slot:hover {
+  transform: translateY(-3px);
+}
+
+.enemy-slot.empty span {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.enemy-slot.filled {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.enemy-slot.filled img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.enemy-slot-name {
+  font-size: 0.84rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.05;
+}
+
+.selected-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.selected-card,
+.selected-empty {
+  min-height: 260px;
+  background: white;
+  border-radius: 24px;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.selected-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  opacity: 0.85;
+}
+
+.selected-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.selected-head img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.selected-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.selected-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.selected-checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.moves-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.move-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.move-field label {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--ink-dark);
+}
+
+.move-field select {
+  height: 48px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 0 12px;
+  font-weight: 700;
+  color: #2f335a;
+  background: white;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 24, 46, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1000;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-panel {
+  width: min(980px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  background: linear-gradient(180deg, #f8f8ff 0%, #eef0ff 100%);
+  color: #232538;
+  border-radius: 28px;
+  box-shadow: 0 28px 70px rgba(10, 11, 26, 0.32);
+  padding: 22px;
+  border: 2px solid #d8daf3;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: var(--ink-dark);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  border: 0;
+  background: var(--ink);
+  color: white;
+  border-radius: 14px;
+  width: 46px;
+  height: 46px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.search-wrap {
+  margin-bottom: 14px;
+}
+
+.search-wrap input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 0 14px;
+  font-weight: 700;
+}
+
+.picker-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+.picker-card {
+  border: 2px solid #d6d9f2;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.95);
+  min-height: 126px;
+  padding: 10px 8px;
+  cursor: pointer;
+  transition: 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.picker-card:hover {
+  transform: translateY(-2px);
+  border-color: #9fa5e8;
+}
+
+.picker-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.picker-card span {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--ink);
+  text-align: center;
+  line-height: 1.05;
+}
+
+.picker-pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.page-btn {
+  border: 2px solid var(--border);
+  background: white;
+  color: var(--ink);
+  border-radius: 12px;
+  min-width: 110px;
+  height: 42px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: 900;
+  color: var(--ink-dark);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(20px);
+  background: #1f223f;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 1100;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 1100px) {
+  .my-team-preview,
+  .enemy-team-grid {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+
+  .selected-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .picker-grid {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .battle-page {
+    padding: 28px 16px 72px;
+  }
+
+  .my-team-preview,
+  .enemy-team-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  .picker-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  .moves-grid {
+    grid-template-columns: 1fr;
+  }
+}

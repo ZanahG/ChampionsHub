@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champions HUB</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo-link" aria-label="Go to home">
+        <img src="./assets/images/icons/logo.png" alt="Site logo" class="navbar-logo" />
+      </a>
+
+      <div class="navbar-links">
+        <a href="../index.html" class="navbar-link">Home</a>
+        <a href="../html/battle.html" class="navbar-link">Battle</a>
+        <a href="../html/stats_calculator.html" class="navbar-link">Stats Calculator</a>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h1 class="section-title">My Teams</h1>
+      <div class="team-grid" id="teamGrid"></div>
+      <p class="hint">Cada cuadro guarda un equipo completo de 6 Pokémon en el navegador.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Register New Battle</h2>
+      <div class="battle-actions">
+        <button class="big-action" id="battleBtn" type="button">Battle</button>
+        <button class="big-action" id="historyBtn" type="button">History</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="teamModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <button class="close-btn" id="closeModalBtn" type="button" aria-label="Cerrar">×</button>
+      </div>
+
+      <div class="team-meta">
+        <div class="field">
+          <label for="teamName">TEAM NAME</label>
+          <input id="teamName" type="text" placeholder="EX: RAIN TEAM" maxlength="40" />
+        </div>
+      </div>
+
+      <div class="team-builder" id="teamBuilder"></div>
+      <div class="modal-actions">
+        <div class="action-group">
+          <button class="btn btn-secondary" id="cancelBtn" type="button">Cancelar</button>
+          <button class="btn btn-primary" id="saveTeamBtn" type="button">Guardar equipo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="./js/scriptindex.js"></script>
+</body>
+</html>

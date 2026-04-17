@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Black Belt",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "name": "Black Glasses",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "name": "Bright Powder",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": ""
+  },
+  {
+    "id": 4,
+    "name": "Charcoal",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": "Boosts Speed, but the holder can only use the first move it selects."
+  },
+  {
+    "id": 5,
+    "name": "Choice Scarf",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": ""
+  },
+  {
+    "id": 6,
+    "name": "Dragon Fang",
+    "sprite": "assets/images/items/black-belt.png",
+    "effect": ""
+  },
+  {
+    "id": 1,
+    "name": "Focus Sash",
+    "sprite": "assets/images/items/focus-sash.png",
+    "effect": "If the holder has full HP and would be knocked out by one hit, it survives with 1 HP."
+  },
+  {
+    "id": 2,
+    "name": "Sitrus Berry",
+    "sprite": "assets/images/items/sitrus-berry.png",
+    "effect": "Restores HP when the holder drops below half HP."
+  }
+]

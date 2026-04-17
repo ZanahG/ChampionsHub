@@ -1,0 +1,2104 @@
+[
+  {
+    "id": 1,
+    "name": "Venusaur",
+    "sprite": "venusaur.png",
+    "types": ["Grass", "Poison"],
+    "typeIcons": ["grass.png", "poison.png"],
+    "abilities": ["Overgrow", "Chlorophyll"],
+    "baseStats": { "hp": 80, "atk": 82, "def": 83, "spa": 100, "spd": 100, "spe": 80 },
+    "megaStats": { "hp": 80, "atk": 100, "def": 123, "spa": 122, "spd": 120, "spe": 80 },
+    "moves": ["Protect", "Sleep Powder", "Sludge Bomb", "Giga Drain", "Leaf Storm", "Earth Power", "Leech Seed"]
+  },
+  {
+    "id": 2,
+    "name": "Charizard",
+    "sprite": "charizard.png",
+    "types": ["Fire", "Flying"],
+    "typeIcons": ["fire.png", "flying.png"],
+    "abilities": ["Blaze", "Solar Power"],
+    "baseStats": { "hp": 78, "atk": 84, "def": 78, "spa": 109, "spd": 85, "spe": 100 },
+    "moves": ["Protect", "Heat Wave", "Overheat", "Flamethrower", "Air Slash", "Tailwind", "Solar Beam", "Dragon Pulse"]
+  },
+  {
+    "id": 3,
+    "name": "Blastoise",
+    "sprite": "blastoise.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": ["Torrent", "Rain Dish"],
+    "baseStats": { "hp": 79, "atk": 83, "def": 100, "spa": 85, "spd": 105, "spe": 78 },
+    "moves": ["Protect", "Water Spout", "Hydro Pump", "Ice Beam", "Fake Out", "Aura Sphere", "Flash Cannon", "Shell Smash"]
+  },
+  {
+    "id": 4,
+    "name": "Beedrill",
+    "sprite": "beedrill.png",
+    "types": ["Bug", "Poison"],
+    "typeIcons": ["bug.png", "poison.png"],
+    "abilities": ["Swarm", "Sniper"],
+    "baseStats": { "hp": 65, "atk": 90, "def": 40, "spa": 45, "spd": 80, "spe": 75 },
+    "moves": ["Protect", "Poison Jab", "U-turn", "Drill Run", "Knock Off", "Fell Stinger", "X-Scissor", "Endeavor"]
+  },
+  {
+    "id": 5,
+    "name": "Pidgeot",
+    "sprite": "pidgeot.png",
+    "types": ["Normal", "Flying"],
+    "typeIcons": ["normal.png", "flying.png"],
+    "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"],
+    "baseStats": { "hp": 83, "atk": 80, "def": 75, "spa": 70, "spd": 70, "spe": 101 },
+    "moves": ["Protect", "Hurricane", "Air Slash", "Tailwind", "Heat Wave", "U-turn", "Feather Dance", "Roost"]
+  },
+  {
+    "id": 6,
+    "name": "Arbok",
+    "sprite": "arbok.png",
+    "types": ["Poison"],
+    "typeIcons": ["poison.png"],
+    "abilities": ["Intimidate", "Shed Skin", "Unnerve"],
+    "baseStats": { "hp": 60, "atk": 95, "def": 69, "spa": 65, "spd": 79, "spe": 80 },
+    "moves": ["Protect", "Gunk Shot", "Crunch", "Coil", "Glare", "Earthquake", "Poison Jab", "Sucker Punch"]
+  },
+  {
+    "id": 7,
+    "name": "Pikachu",
+    "sprite": "pikachu.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": ["Static", "Lightning Rod"],
+    "baseStats": { "hp": 35, "atk": 55, "def": 40, "spa": 50, "spd": 50, "spe": 90 },
+    "moves": ["Protect", "Fake Out", "Volt Tackle", "Thunderbolt", "Nuzzle", "Feint", "Encore", "Light Screen"]
+  },
+  {
+    "id": 8,
+    "name": "Raichu",
+    "sprite": "raichu.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": ["Static", "Lightning Rod"],
+    "baseStats": { "hp": 60, "atk": 90, "def": 55, "spa": 90, "spd": 80, "spe": 110 },
+    "moves": ["Protect", "Fake Out", "Thunderbolt", "Volt Switch", "Nuzzle", "Encore", "Feint", "Light Screen"]
+  },
+  {
+    "id": 9,
+    "name": "Alolan Raichu",
+    "sprite": "alolan-raichu.png",
+    "types": ["Electric", "Psychic"],
+    "typeIcons": ["electric.png", "psychic.png"],
+    "abilities": ["Surge Surfer"],
+    "baseStats": { "hp": 60, "atk": 85, "def": 50, "spa": 95, "spd": 85, "spe": 110 },
+    "moves": ["Protect", "Thunderbolt", "Psychic", "Nuzzle", "Encore", "Fake Out", "Volt Switch", "Grass Knot"]
+  },
+  {
+    "id": 10,
+    "name": "Clefable",
+    "sprite": "clefable.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": ["Cute Charm", "Magic Guard", "Unaware"],
+    "baseStats": { "hp": 95, "atk": 70, "def": 73, "spa": 95, "spd": 90, "spe": 60 },
+    "moves": ["Protect", "Moonblast", "Follow Me", "Helping Hand", "Thunder Wave", "Icy Wind", "Life Dew", "Calm Mind"]
+  },
+  {
+    "id": 11,
+    "name": "Ninetales",
+    "sprite": "ninetales.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": ["Flash Fire", "Drought"],
+    "baseStats": { "hp": 73, "atk": 76, "def": 75, "spa": 81, "spd": 100, "spe": 100 },
+    "moves": ["Protect", "Heat Wave", "Overheat", "Will-O-Wisp", "Hypnosis", "Solar Beam", "Nasty Plot", "Scorching Sands"]
+  },
+  {
+    "id": 12,
+    "name": "Alolan Ninetales",
+    "sprite": "alolan-ninetales.png",
+    "types": ["Ice", "Fairy"],
+    "typeIcons": ["ice.png", "fairy.png"],
+    "abilities": ["Snow Cloak", "Snow Warning"],
+    "baseStats": { "hp": 73, "atk": 67, "def": 75, "spa": 81, "spd": 100, "spe": 109 },
+    "moves": ["Protect", "Blizzard", "Moonblast", "Aurora Veil", "Freeze-Dry", "Icy Wind", "Encore", "Hypnosis"]
+  },
+  {
+    "id": 13,
+    "name": "Arcanine",
+    "sprite": "arcanine.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": ["Intimidate", "Flash Fire", "Justified"],
+    "baseStats": { "hp": 90, "atk": 110, "def": 80, "spa": 100, "spd": 80, "spe": 95 },
+    "moves": ["Protect", "Flare Blitz", "Extreme Speed", "Will-O-Wisp", "Snarl", "Morning Sun", "Close Combat", "Helping Hand"]
+  },
+  {
+    "id": 14,
+    "name": "Hisuian Arcanine",
+    "sprite": "hisuian-arcanine.png",
+    "types": ["Fire", "Rock"],
+    "typeIcons": ["fire.png", "rock.png"],
+    "abilities": ["Intimidate", "Flash Fire", "Rock Head"],
+    "baseStats": { "hp": 95, "atk": 115, "def": 80, "spa": 95, "spd": 80, "spe": 90 },
+    "moves": ["Protect", "Flare Blitz", "Rock Slide", "Extreme Speed", "Head Smash", "Will-O-Wisp", "Snarl", "Morning Sun"]
+  },
+  {
+    "id": 15,
+    "name": "Alakazam",
+    "sprite": "alakazam.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": ["Synchronize", "Inner Focus", "Magic Guard"],
+    "baseStats": { "hp": 55, "atk": 50, "def": 45, "spa": 135, "spd": 95, "spe": 120 },
+    "moves": ["Protect", "Psychic", "Dazzling Gleam", "Encore", "Disable", "Shadow Ball", "Focus Blast", "Trick Room"]
+  },
+  {
+    "id": 16,
+    "name": "Machamp",
+    "sprite": "machamp.png",
+    "types": ["Fighting"],
+    "typeIcons": ["fighting.png"],
+    "abilities": ["Guts", "No Guard", "Steadfast"],
+    "baseStats": { "hp": 90, "atk": 130, "def": 80, "spa": 65, "spd": 85, "spe": 55 },
+    "moves": ["Protect", "Dynamic Punch", "Close Combat", "Bullet Punch", "Ice Punch", "Rock Slide", "Knock Off", "Wide Guard"]
+  },
+  {
+    "id": 17,
+    "name": "Victreebel",
+    "sprite": "victreebel.png",
+    "types": ["Grass", "Poison"],
+    "typeIcons": ["grass.png", "poison.png"],
+    "abilities": ["Chlorophyll", "Gluttony"],
+    "baseStats": { "hp": 80, "atk": 105, "def": 65, "spa": 100, "spd": 70, "spe": 70 },
+    "moves": ["Protect", "Leaf Storm", "Sludge Bomb", "Sleep Powder", "Weather Ball", "Knock Off", "Sucker Punch", "Solar Beam"]
+  },
+  {
+    "id": 18,
+    "name": "Slowbro",
+    "sprite": "slowbro.png",
+    "types": ["Water", "Psychic"],
+    "typeIcons": ["water.png", "psychic.png"],
+    "abilities": ["Oblivious", "Own Tempo", "Regenerator"],
+    "baseStats": { "hp": 95, "atk": 75, "def": 110, "spa": 100, "spd": 80, "spe": 30 },
+    "moves": ["Protect", "Scald", "Psychic", "Trick Room", "Slack Off", "Yawn", "Ice Beam", "Body Press"]
+  },
+  {
+    "id": 19,
+    "name": "Galarian Slowbro",
+    "sprite": "galarian-slowbro.png",
+    "types": ["Poison", "Psychic"],
+    "typeIcons": ["poison.png", "psychic.png"],
+    "abilities": ["Quick Draw", "Own Tempo", "Regenerator"],
+    "baseStats": { "hp": 95, "atk": 100, "def": 95, "spa": 100, "spd": 70, "spe": 30 },
+    "moves": ["Protect", "Sludge Bomb", "Psychic", "Trick Room", "Flamethrower", "Ice Beam", "Nasty Plot", "Slack Off"]
+  },
+  {
+    "id": 20,
+    "name": "Gengar",
+    "sprite": "gengar.png",
+    "types": ["Ghost", "Poison"],
+    "typeIcons": ["ghost.png", "poison.png"],
+    "abilities": ["Cursed Body"],
+    "baseStats": { "hp": 60, "atk": 65, "def": 60, "spa": 130, "spd": 75, "spe": 110 },
+    "moves": ["Protect", "Shadow Ball", "Sludge Bomb", "Icy Wind", "Will-O-Wisp", "Taunt", "Thunderbolt", "Destiny Bond"]
+  },
+  {
+    "id": 21,
+    "name": "Kangaskhan",
+    "sprite": "kangaskhan.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": ["Early Bird", "Scrappy", "Inner Focus"],
+    "baseStats": { "hp": 105, "atk": 95, "def": 80, "spa": 40, "spd": 80, "spe": 90 },
+    "moves": ["Protect", "Fake Out", "Double-Edge", "Stomping Tantrum", "Sucker Punch", "Crunch", "Drain Punch", "Ice Punch"]
+  },
+  {
+    "id": 22,
+    "name": "Starmie",
+    "sprite": "starmie.png",
+    "types": ["Water", "Psychic"],
+    "typeIcons": ["water.png", "psychic.png"],
+    "abilities": ["Illuminate", "Natural Cure", "Analytic"],
+    "baseStats": { "hp": 60, "atk": 75, "def": 85, "spa": 100, "spd": 85, "spe": 115 },
+    "moves": ["Protect", "Hydro Pump", "Psychic", "Ice Beam", "Thunderbolt", "Recover", "Trick Room", "Ally Switch"]
+  },
+  {
+    "id": 23,
+    "name": "Pinsir",
+    "sprite": "pinsir.png",
+    "types": ["Bug"],
+    "typeIcons": ["bug.png"],
+    "abilities": ["Hyper Cutter", "Mold Breaker", "Moxie"],
+    "baseStats": { "hp": 65, "atk": 125, "def": 100, "spa": 55, "spd": 70, "spe": 85 },
+    "moves": ["Protect", "X-Scissor", "Close Combat", "Quick Attack", "Rock Slide", "Earthquake", "Swords Dance", "Feint"]
+  },
+  {
+    "id": 24,
+    "name": "Tauros",
+    "sprite": "tauros.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": ["Intimidate", "Anger Point", "Sheer Force"],
+    "baseStats": { "hp": 75, "atk": 100, "def": 95, "spa": 40, "spd": 70, "spe": 110 },
+    "moves": ["Protect", "Double-Edge", "Close Combat", "Rock Slide", "Earthquake", "Bulldoze", "Raging Bull", "Iron Head"]
+  },
+  {
+    "id": 25,
+    "name": "Paldean Tauros (Combat Breed)",
+    "sprite": "paldean-tauros-combat-breed.png",
+    "types": ["Fighting"],
+    "typeIcons": ["fighting.png"],
+    "abilities": ["Intimidate", "Anger Point", "Cud Chew"],
+    "baseStats": { "hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100 },
+    "moves": ["Protect", "Close Combat", "Raging Bull", "Rock Slide", "Earthquake", "Iron Head", "Bulk Up", "Taunt"]
+  },
+  {
+    "id": 26,
+    "name": "Paldean Tauros (Blaze Breed)",
+    "sprite": "paldean-tauros-blaze-breed.png",
+    "types": ["Fighting", "Fire"],
+    "typeIcons": ["fighting.png", "fire.png"],
+    "abilities": ["Intimidate", "Anger Point", "Cud Chew"],
+    "baseStats": { "hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100 },
+    "moves": ["Protect", "Flare Blitz", "Close Combat", "Raging Bull", "Rock Slide", "Earthquake", "Will-O-Wisp", "Taunt"]
+  },
+  {
+    "id": 27,
+    "name": "Paldean Tauros (Aqua Breed)",
+    "sprite": "paldean-tauros-aqua-breed.png",
+    "types": ["Fighting", "Water"],
+    "typeIcons": ["fighting.png", "water.png"],
+    "abilities": ["Intimidate", "Anger Point", "Cud Chew"],
+    "baseStats": { "hp": 75, "atk": 110, "def": 105, "spa": 30, "spd": 70, "spe": 100 },
+    "moves": ["Protect", "Wave Crash", "Close Combat", "Raging Bull", "Rock Slide", "Earthquake", "Aqua Jet", "Taunt"]
+  },
+  {
+    "id": 28,
+    "name": "Gyarados",
+    "sprite": "gyarados.png",
+    "types": ["Water", "Flying"],
+    "typeIcons": ["water.png", "flying.png"],
+    "abilities": ["Intimidate", "Moxie"],
+    "baseStats": { "hp": 95, "atk": 125, "def": 79, "spa": 60, "spd": 100, "spe": 81 },
+    "moves": ["Protect", "Waterfall", "Taunt", "Thunder Wave", "Ice Fang", "Dragon Dance", "Crunch", "Bounce"]
+  },
+  {
+    "id": 29,
+    "name": "Ditto",
+    "sprite": "ditto.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": ["Limber", "Imposter"],
+    "baseStats": { "hp": 48, "atk": 48, "def": 48, "spa": 48, "spd": 48, "spe": 48 },
+    "moves": ["Transform"]
+  },
+  {
+    "id": 30,
+    "name": "Vaporeon",
+    "sprite": "vaporeon.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": ["Water Absorb", "Hydration"],
+    "baseStats": { "hp": 130, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 65 },
+    "moves": ["Protect", "Muddy Water", "Ice Beam", "Yawn", "Helping Hand", "Wish", "Hydro Pump", "Shadow Ball"]
+  },
+  {
+    "id": 31,
+    "name": "Jolteon",
+    "sprite": "jolteon.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": ["Volt Absorb", "Quick Feet"],
+    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 110, "spd": 95, "spe": 130 },
+    "moves": ["Protect", "Thunderbolt", "Volt Switch", "Shadow Ball", "Yawn", "Helping Hand", "Thunder Wave", "Tera Blast"]
+  },
+  {
+    "id": 32,
+    "name": "Flareon",
+    "sprite": "flareon.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": ["Flash Fire", "Guts"],
+    "baseStats": { "hp": 65, "atk": 130, "def": 60, "spa": 95, "spd": 110, "spe": 65 },
+    "moves": ["Protect", "Flare Blitz", "Quick Attack", "Superpower", "Will-O-Wisp", "Yawn", "Double-Edge", "Tera Blast"]
+  },
+  {
+    "id": 33,
+    "name": "Aerodactyl",
+    "sprite": "aerodactyl.png",
+    "types": ["Rock", "Flying"],
+    "typeIcons": ["rock.png", "flying.png"],
+    "abilities": ["Rock Head", "Pressure", "Unnerve"],
+    "baseStats": { "hp": 80, "atk": 105, "def": 65, "spa": 60, "spd": 75, "spe": 130 },
+    "moves": ["Protect", "Rock Slide", "Tailwind", "Taunt", "Wide Guard", "Dual Wingbeat", "Earthquake", "Sky Drop"]
+  },
+  {
+    "id": 34,
+    "name": "Snorlax",
+    "sprite": "snorlax.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": ["Immunity", "Thick Fat", "Gluttony"],
+    "baseStats": { "hp": 160, "atk": 110, "def": 65, "spa": 65, "spd": 110, "spe": 30 },
+    "moves": ["Protect", "Body Slam", "High Horsepower", "Curse", "Belly Drum", "Recycle", "Yawn", "Darkest Lariat"]
+  },
+  {
+    "id": 35,
+    "name": "Dragonite",
+    "sprite": "dragonite.png",
+    "types": ["Dragon", "Flying"],
+    "typeIcons": ["dragon.png", "flying.png"],
+    "abilities": ["Inner Focus", "Multiscale"],
+    "baseStats": { "hp": 91, "atk": 134, "def": 95, "spa": 100, "spd": 100, "spe": 80 },
+    "moves": ["Protect", "Extreme Speed", "Tailwind", "Ice Spinner", "Stomping Tantrum", "Dragon Claw", "Low Kick", "Thunder Punch"]
+  },
+  {
+    "id": 36,
+    "name": "Meganium",
+    "sprite": "meganium.png",
+    "types": ["Grass"],
+    "typeIcons": ["grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 37,
+    "name": "Typhlosion",
+    "sprite": "typhlosion.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 38,
+    "name": "Hisuian Typhlosion",
+    "sprite": "hisuian-typhlosion.png",
+    "types": ["Fire", "Ghost"],
+    "typeIcons": ["fire.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 39,
+    "name": "Feraligatr",
+    "sprite": "feraligatr.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 40,
+    "name": "Ariados",
+    "sprite": "ariados.png",
+    "types": ["Bug", "Poison"],
+    "typeIcons": ["bug.png", "poison.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 41,
+    "name": "Ampharos",
+    "sprite": "ampharos.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 42,
+    "name": "Azumarill",
+    "sprite": "azumarill.png",
+    "types": ["Water", "Fairy"],
+    "typeIcons": ["water.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 43,
+    "name": "Politoed",
+    "sprite": "politoed.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 44,
+    "name": "Espeon",
+    "sprite": "espeon.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 45,
+    "name": "Umbreon",
+    "sprite": "umbreon.png",
+    "types": ["Dark"],
+    "typeIcons": ["dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 46,
+    "name": "Slowking",
+    "sprite": "slowking.png",
+    "types": ["Water", "Psychic"],
+    "typeIcons": ["water.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 47,
+    "name": "Galarian Slowking",
+    "sprite": "galarian-slowking.png",
+    "types": ["Poison", "Psychic"],
+    "typeIcons": ["poison.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 48,
+    "name": "Forretress",
+    "sprite": "forretress.png",
+    "types": ["Bug", "Steel"],
+    "typeIcons": ["bug.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 49,
+    "name": "Steelix",
+    "sprite": "steelix.png",
+    "types": ["Steel", "Ground"],
+    "typeIcons": ["steel.png", "ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 50,
+    "name": "Scizor",
+    "sprite": "scizor.png",
+    "types": ["Bug", "Steel"],
+    "typeIcons": ["bug.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 51,
+    "name": "Heracross",
+    "sprite": "heracross.png",
+    "types": ["Bug", "Fighting"],
+    "typeIcons": ["bug.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 52,
+    "name": "Skarmory",
+    "sprite": "skarmory.png",
+    "types": ["Steel", "Flying"],
+    "typeIcons": ["steel.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 53,
+    "name": "Houndoom",
+    "sprite": "houndoom.png",
+    "types": ["Dark", "Fire"],
+    "typeIcons": ["dark.png", "fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 54,
+    "name": "Tyranitar",
+    "sprite": "tyranitar.png",
+    "types": ["Rock", "Dark"],
+    "typeIcons": ["rock.png", "dark.png"],
+    "abilities": ["Sand Stream", "Unnerve"],
+    "baseStats": { "hp": 100, "atk": 134, "def": 110, "spa": 95, "spd": 100, "spe": 61 },
+    "moves": ["Protect", "Rock Slide", "Crunch", "Low Kick", "Ice Punch", "Thunder Punch", "Dragon Dance", "Taunt"]
+  },
+  {
+    "id": 55,
+    "name": "Pelipper",
+    "sprite": "pelipper.png",
+    "types": ["Water", "Flying"],
+    "typeIcons": ["water.png", "flying.png"],
+    "abilities": ["Keen Eye", "Drizzle", "Rain Dish"],
+    "baseStats": { "hp": 60, "atk": 50, "def": 100, "spa": 95, "spd": 70, "spe": 65 },
+    "moves": ["Protect", "Hurricane", "Weather Ball", "Tailwind", "Wide Guard", "Helping Hand", "Hydro Pump", "U-turn"]
+  },
+  {
+    "id": 56,
+    "name": "Gardevoir",
+    "sprite": "gardevoir.png",
+    "types": ["Psychic", "Fairy"],
+    "typeIcons": ["psychic.png", "fairy.png"],
+    "abilities": ["Synchronize", "Trace", "Telepathy"],
+    "baseStats": { "hp": 68, "atk": 65, "def": 65, "spa": 125, "spd": 115, "spe": 80 },
+    "moves": ["Protect", "Moonblast", "Psychic", "Dazzling Gleam", "Trick Room", "Helping Hand", "Mystical Fire", "Encore"]
+  },
+  {
+    "id": 57,
+    "name": "Sableye",
+    "sprite": "sableye.png",
+    "types": ["Dark", "Ghost"],
+    "typeIcons": ["dark.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 58,
+    "name": "Aggron",
+    "sprite": "aggron.png",
+    "types": ["Steel", "Rock"],
+    "typeIcons": ["steel.png", "rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 59,
+    "name": "Medicham",
+    "sprite": "medicham.png",
+    "types": ["Fighting", "Psychic"],
+    "typeIcons": ["fighting.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 60,
+    "name": "Manectric",
+    "sprite": "manectric.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 61,
+    "name": "Sharpedo",
+    "sprite": "sharpedo.png",
+    "types": ["Water", "Dark"],
+    "typeIcons": ["water.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 62,
+    "name": "Camerupt",
+    "sprite": "camerupt.png",
+    "types": ["Fire", "Ground"],
+    "typeIcons": ["fire.png", "ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 63,
+    "name": "Torkoal",
+    "sprite": "torkoal.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": ["White Smoke", "Drought", "Shell Armor"],
+    "baseStats": { "hp": 70, "atk": 85, "def": 140, "spa": 85, "spd": 70, "spe": 20 },
+    "moves": ["Protect", "Eruption", "Heat Wave", "Earth Power", "Yawn", "Body Press", "Will-O-Wisp", "Solar Beam"]
+  },
+  {
+    "id": 64,
+    "name": "Altaria",
+    "sprite": "altaria.png",
+    "types": ["Dragon", "Flying"],
+    "typeIcons": ["dragon.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 65,
+    "name": "Milotic",
+    "sprite": "milotic.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 66,
+    "name": "Castform",
+    "sprite": "castform.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 67,
+    "name": "Banette",
+    "sprite": "banette.png",
+    "types": ["Ghost"],
+    "typeIcons": ["ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 68,
+    "name": "Chimecho",
+    "sprite": "chimecho.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 69,
+    "name": "Absol",
+    "sprite": "absol.png",
+    "types": ["Dark"],
+    "typeIcons": ["dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 70,
+    "name": "Glalie",
+    "sprite": "glalie.png",
+    "types": ["Ice"],
+    "typeIcons": ["ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 71,
+    "name": "Torterra",
+    "sprite": "torterra.png",
+    "types": ["Grass", "Ground"],
+    "typeIcons": ["grass.png", "ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 72,
+    "name": "Infernape",
+    "sprite": "infernape.png",
+    "types": ["Fire", "Fighting"],
+    "typeIcons": ["fire.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 73,
+    "name": "Empoleon",
+    "sprite": "empoleon.png",
+    "types": ["Water", "Steel"],
+    "typeIcons": ["water.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 74,
+    "name": "Luxray",
+    "sprite": "luxray.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 75,
+    "name": "Roserade",
+    "sprite": "roserade.png",
+    "types": ["Grass", "Poison"],
+    "typeIcons": ["grass.png", "poison.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 76,
+    "name": "Rampardos",
+    "sprite": "rampardos.png",
+    "types": ["Rock"],
+    "typeIcons": ["rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 77,
+    "name": "Bastiodon",
+    "sprite": "bastiodon.png",
+    "types": ["Rock", "Steel"],
+    "typeIcons": ["rock.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 78,
+    "name": "Lopunny",
+    "sprite": "lopunny.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 79,
+    "name": "Spiritomb",
+    "sprite": "spiritomb.png",
+    "types": ["Ghost", "Dark"],
+    "typeIcons": ["ghost.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 80,
+    "name": "Garchomp",
+    "sprite": "garchomp.png",
+    "types": ["Dragon", "Ground"],
+    "typeIcons": ["dragon.png", "ground.png"],
+    "abilities": ["Sand Veil", "Rough Skin"],
+    "baseStats": { "hp": 108, "atk": 130, "def": 95, "spa": 80, "spd": 85, "spe": 102 },
+    "moves": ["Protect", "Earthquake", "Stomping Tantrum", "Dragon Claw", "Rock Slide", "Swords Dance", "Poison Jab", "Scale Shot"]
+  },
+  {
+    "id": 81,
+    "name": "Lucario",
+    "sprite": "lucario.png",
+    "types": ["Fighting", "Steel"],
+    "typeIcons": ["fighting.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 82,
+    "name": "Hippowdon",
+    "sprite": "hippowdon.png",
+    "types": ["Ground"],
+    "typeIcons": ["ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 83,
+    "name": "Toxicroak",
+    "sprite": "toxicroak.png",
+    "types": ["Poison", "Fighting"],
+    "typeIcons": ["poison.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 84,
+    "name": "Abomasnow",
+    "sprite": "abomasnow.png",
+    "types": ["Grass", "Ice"],
+    "typeIcons": ["grass.png", "ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 85,
+    "name": "Weavile",
+    "sprite": "weavile.png",
+    "types": ["Dark", "Ice"],
+    "typeIcons": ["dark.png", "ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 86,
+    "name": "Rhyperior",
+    "sprite": "rhyperior.png",
+    "types": ["Ground", "Rock"],
+    "typeIcons": ["ground.png", "rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 87,
+    "name": "Leafeon",
+    "sprite": "leafeon.png",
+    "types": ["Grass"],
+    "typeIcons": ["grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 88,
+    "name": "Glaceon",
+    "sprite": "glaceon.png",
+    "types": ["Ice"],
+    "typeIcons": ["ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 89,
+    "name": "Gliscor",
+    "sprite": "gliscor.png",
+    "types": ["Ground", "Flying"],
+    "typeIcons": ["ground.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 90,
+    "name": "Mamoswine",
+    "sprite": "mamoswine.png",
+    "types": ["Ice", "Ground"],
+    "typeIcons": ["ice.png", "ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 91,
+    "name": "Gallade",
+    "sprite": "gallade.png",
+    "types": ["Psychic", "Fighting"],
+    "typeIcons": ["psychic.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 92,
+    "name": "Froslass",
+    "sprite": "froslass.png",
+    "types": ["Ice", "Ghost"],
+    "typeIcons": ["ice.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 93,
+    "name": "Rotom",
+    "sprite": "rotom.png",
+    "types": ["Electric", "Ghost"],
+    "typeIcons": ["electric.png", "ghost.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 50, "def": 77, "spa": 95, "spd": 77, "spe": 91 },
+    "moves": ["Protect", "Thunderbolt", "Shadow Ball", "Will-O-Wisp", "Nasty Plot", "Thunder Wave", "Hex", "Electroweb"]
+  },
+  {
+    "id": 94,
+    "name": "Rotom Heat",
+    "sprite": "rotom-heat.png",
+    "types": ["Electric", "Fire"],
+    "typeIcons": ["electric.png", "fire.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 65, "def": 107, "spa": 105, "spd": 107, "spe": 86 },
+    "moves": ["Protect", "Overheat", "Thunderbolt", "Will-O-Wisp", "Nasty Plot", "Thunder Wave", "Volt Switch", "Dark Pulse"]
+  },
+  {
+    "id": 95,
+    "name": "Rotom Wash",
+    "sprite": "rotom-wash.png",
+    "types": ["Electric", "Water"],
+    "typeIcons": ["electric.png", "water.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 65, "def": 107, "spa": 105, "spd": 107, "spe": 86 },
+    "moves": ["Protect", "Hydro Pump", "Thunderbolt", "Will-O-Wisp", "Thunder Wave", "Nasty Plot", "Volt Switch", "Dark Pulse"]
+  },
+  {
+    "id": 96,
+    "name": "Rotom Frost",
+    "sprite": "rotom-frost.png",
+    "types": ["Electric", "Ice"],
+    "typeIcons": ["electric.png", "ice.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 65, "def": 107, "spa": 105, "spd": 107, "spe": 86 },
+    "moves": ["Protect", "Blizzard", "Thunderbolt", "Nasty Plot", "Thunder Wave", "Volt Switch", "Will-O-Wisp", "Hex"]
+  },
+  {
+    "id": 97,
+    "name": "Rotom Fan",
+    "sprite": "rotom-fan.png",
+    "types": ["Electric", "Flying"],
+    "typeIcons": ["electric.png", "flying.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 65, "def": 107, "spa": 105, "spd": 107, "spe": 86 },
+    "moves": ["Protect", "Air Slash", "Thunderbolt", "Tailwind", "Thunder Wave", "Nasty Plot", "Volt Switch", "Will-O-Wisp"]
+  },
+  {
+    "id": 98,
+    "name": "Rotom Mow",
+    "sprite": "rotom-mow.png",
+    "types": ["Electric", "Grass"],
+    "typeIcons": ["electric.png", "grass.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 50, "atk": 65, "def": 107, "spa": 105, "spd": 107, "spe": 86 },
+    "moves": ["Protect", "Leaf Storm", "Thunderbolt", "Will-O-Wisp", "Thunder Wave", "Nasty Plot", "Volt Switch", "Hex"]
+  },
+  {
+    "id": 99,
+    "name": "Serperior",
+    "sprite": "serperior.png",
+    "types": ["Grass"],
+    "typeIcons": ["grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 100,
+    "name": "Emboar",
+    "sprite": "emboar.png",
+    "types": ["Fire", "Fighting"],
+    "typeIcons": ["fire.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 101,
+    "name": "Samurott",
+    "sprite": "samurott.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 102,
+    "name": "Hisuian Samurott",
+    "sprite": "hisuian-samurott.png",
+    "types": ["Water", "Dark"],
+    "typeIcons": ["water.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 103,
+    "name": "Watchog",
+    "sprite": "watchog.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 104,
+    "name": "Liepard",
+    "sprite": "liepard.png",
+    "types": ["Dark"],
+    "typeIcons": ["dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 105,
+    "name": "Simisage",
+    "sprite": "simisage.png",
+    "types": ["Grass"],
+    "typeIcons": ["grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 106,
+    "name": "Simisear",
+    "sprite": "simisear.png",
+    "types": ["Fire"],
+    "typeIcons": ["fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 107,
+    "name": "Simipour",
+    "sprite": "simipour.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 108,
+    "name": "Excadrill",
+    "sprite": "excadrill.png",
+    "types": ["Ground", "Steel"],
+    "typeIcons": ["ground.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 109,
+    "name": "Audino",
+    "sprite": "audino.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 110,
+    "name": "Conkeldurr",
+    "sprite": "conkeldurr.png",
+    "types": ["Fighting"],
+    "typeIcons": ["fighting.png"],
+    "abilities": ["Guts", "Sheer Force", "Iron Fist"],
+    "baseStats": { "hp": 105, "atk": 140, "def": 95, "spa": 55, "spd": 65, "spe": 45 },
+    "moves": ["Protect", "Drain Punch", "Mach Punch", "Knock Off", "Facade", "Ice Punch", "Thunder Punch", "Detect"]
+  },
+  {
+    "id": 111,
+    "name": "Whimsicott",
+    "sprite": "whimsicott.png",
+    "types": ["Grass", "Fairy"],
+    "typeIcons": ["grass.png", "fairy.png"],
+    "abilities": ["Prankster", "Infiltrator", "Chlorophyll"],
+    "baseStats": { "hp": 60, "atk": 67, "def": 85, "spa": 77, "spd": 75, "spe": 116 },
+    "moves": ["Protect", "Moonblast", "Tailwind", "Encore", "Taunt", "Sunny Day", "Fake Tears", "Helping Hand"]
+  },
+  {
+    "id": 112,
+    "name": "Krookodile",
+    "sprite": "krookodile.png",
+    "types": ["Ground", "Dark"],
+    "typeIcons": ["ground.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 113,
+    "name": "Garbodor",
+    "sprite": "garbodor.png",
+    "types": ["Poison"],
+    "typeIcons": ["poison.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 114,
+    "name": "Cofagrigus",
+    "sprite": "cofagrigus.png",
+    "types": ["Ghost"],
+    "typeIcons": ["ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 115,
+    "name": "Zoroark",
+    "sprite": "zoroark.png",
+    "types": ["Dark"],
+    "typeIcons": ["dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 116,
+    "name": "Hisuian Zoroark",
+    "sprite": "hisuian-zoroark.png",
+    "types": ["Normal", "Ghost"],
+    "typeIcons": ["normal.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 117,
+    "name": "Reuniclus",
+    "sprite": "reuniclus.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 118,
+    "name": "Vanilluxe",
+    "sprite": "vanilluxe.png",
+    "types": ["Ice"],
+    "typeIcons": ["ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 119,
+    "name": "Emolga",
+    "sprite": "emolga.png",
+    "types": ["Electric", "Flying"],
+    "typeIcons": ["electric.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 120,
+    "name": "Chandelure",
+    "sprite": "chandelure.png",
+    "types": ["Ghost", "Fire"],
+    "typeIcons": ["ghost.png", "fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 121,
+    "name": "Beartic",
+    "sprite": "beartic.png",
+    "types": ["Ice"],
+    "typeIcons": ["ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 122,
+    "name": "Stunfisk",
+    "sprite": "stunfisk.png",
+    "types": ["Ground", "Electric"],
+    "typeIcons": ["ground.png", "electric.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 123,
+    "name": "Galarian Stunfisk",
+    "sprite": "galarian-stunfisk.png",
+    "types": ["Ground", "Steel"],
+    "typeIcons": ["ground.png", "steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 124,
+    "name": "Golurk",
+    "sprite": "golurk.png",
+    "types": ["Ground", "Ghost"],
+    "typeIcons": ["ground.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 125,
+    "name": "Hydreigon",
+    "sprite": "hydreigon.png",
+    "types": ["Dark", "Dragon"],
+    "typeIcons": ["dark.png", "dragon.png"],
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 92, "atk": 105, "def": 90, "spa": 125, "spd": 90, "spe": 98 },
+    "moves": ["Protect", "Draco Meteor", "Dark Pulse", "Tailwind", "Heat Wave", "Earth Power", "Flash Cannon", "Snarl"]
+  },
+  {
+    "id": 126,
+    "name": "Volcarona",
+    "sprite": "volcarona.png",
+    "types": ["Bug", "Fire"],
+    "typeIcons": ["bug.png", "fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 127,
+    "name": "Chesnaught",
+    "sprite": "chesnaught.png",
+    "types": ["Grass", "Fighting"],
+    "typeIcons": ["grass.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 128,
+    "name": "Delphox",
+    "sprite": "delphox.png",
+    "types": ["Fire", "Psychic"],
+    "typeIcons": ["fire.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 129,
+    "name": "Greninja",
+    "sprite": "greninja.png",
+    "types": ["Water", "Dark"],
+    "typeIcons": ["water.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 130,
+    "name": "Diggersby",
+    "sprite": "diggersby.png",
+    "types": ["Normal", "Ground"],
+    "typeIcons": ["normal.png", "ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 131,
+    "name": "Talonflame",
+    "sprite": "talonflame.png",
+    "types": ["Fire", "Flying"],
+    "typeIcons": ["fire.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 132,
+    "name": "Vivillon",
+    "sprite": "vivillon.png",
+    "types": ["Bug", "Flying"],
+    "typeIcons": ["bug.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 133,
+    "name": "Floette Eternal Flower",
+    "sprite": "floette-eternal-flower.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 74, "atk": 65, "def": 67, "spa": 125, "spd": 128, "spe": 92 },
+    "megaStats": { "hp": 74, "atk": 85, "def": 87, "spa": 155, "spd": 148, "spe": 102 },
+    "moves": []
+  },
+  {
+    "id": 134,
+    "name": "Florges",
+    "sprite": "florges.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 135,
+    "name": "Pangoro",
+    "sprite": "pangoro.png",
+    "types": ["Fighting", "Dark"],
+    "typeIcons": ["fighting.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 136,
+    "name": "Furfrou",
+    "sprite": "furfrou.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 137,
+    "name": "Meowstic Male",
+    "sprite": "meowstic-male.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 138,
+    "name": "Meowstic Female",
+    "sprite": "meowstic-female.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 139,
+    "name": "Aegislash",
+    "sprite": "aegislash.png",
+    "types": ["Steel", "Ghost"],
+    "typeIcons": ["steel.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 140,
+    "name": "Aromatisse",
+    "sprite": "aromatisse.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 141,
+    "name": "Slurpuff",
+    "sprite": "slurpuff.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 142,
+    "name": "Clawitzer",
+    "sprite": "clawitzer.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 143,
+    "name": "Heliolisk",
+    "sprite": "heliolisk.png",
+    "types": ["Electric", "Normal"],
+    "typeIcons": ["electric.png", "normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 144,
+    "name": "Tyrantrum",
+    "sprite": "tyrantrum.png",
+    "types": ["Rock", "Dragon"],
+    "typeIcons": ["rock.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 145,
+    "name": "Aurorus",
+    "sprite": "aurorus.png",
+    "types": ["Rock", "Ice"],
+    "typeIcons": ["rock.png", "ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 146,
+    "name": "Sylveon",
+    "sprite": "sylveon.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 147,
+    "name": "Hawlucha",
+    "sprite": "hawlucha.png",
+    "types": ["Fighting", "Flying"],
+    "typeIcons": ["fighting.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 148,
+    "name": "Dedenne",
+    "sprite": "dedenne.png",
+    "types": ["Electric", "Fairy"],
+    "typeIcons": ["electric.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 149,
+    "name": "Goodra",
+    "sprite": "goodra.png",
+    "types": ["Dragon"],
+    "typeIcons": ["dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 150,
+    "name": "Hisuian Goodra",
+    "sprite": "hisuian-goodra.png",
+    "types": ["Steel", "Dragon"],
+    "typeIcons": ["steel.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 151,
+    "name": "Klefki",
+    "sprite": "klefki.png",
+    "types": ["Steel", "Fairy"],
+    "typeIcons": ["steel.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 152,
+    "name": "Trevenant",
+    "sprite": "trevenant.png",
+    "types": ["Ghost", "Grass"],
+    "typeIcons": ["ghost.png", "grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 153,
+    "name": "Gourgeist",
+    "sprite": "gourgeist.png",
+    "types": ["Ghost", "Grass"],
+    "typeIcons": ["ghost.png", "grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 154,
+    "name": "Avalugg",
+    "sprite": "avalugg.png",
+    "types": ["Ice"],
+    "typeIcons": ["ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 155,
+    "name": "Hisuian Avalugg",
+    "sprite": "hisuian-avalugg.png",
+    "types": ["Ice", "Rock"],
+    "typeIcons": ["ice.png", "rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 156,
+    "name": "Noivern",
+    "sprite": "noivern.png",
+    "types": ["Flying", "Dragon"],
+    "typeIcons": ["flying.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 157,
+    "name": "Decidueye",
+    "sprite": "decidueye.png",
+    "types": ["Grass", "Ghost"],
+    "typeIcons": ["grass.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 158,
+    "name": "Hisuian Decidueye",
+    "sprite": "hisuian-decidueye.png",
+    "types": ["Grass", "Fighting"],
+    "typeIcons": ["grass.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 159,
+    "name": "Incineroar",
+    "sprite": "incineroar.png",
+    "types": ["Fire", "Dark"],
+    "typeIcons": ["fire.png", "dark.png"],
+    "abilities": ["Blaze", "Intimidate"],
+    "baseStats": { "hp": 95, "atk": 115, "def": 90, "spa": 80, "spd": 90, "spe": 60 },
+    "moves": ["Protect", "Fake Out", "Parting Shot", "Knock Off", "Flare Blitz", "Will-O-Wisp", "Taunt", "Snarl"]
+  },
+  {
+    "id": 160,
+    "name": "Primarina",
+    "sprite": "primarina.png",
+    "types": ["Water", "Fairy"],
+    "typeIcons": ["water.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 161,
+    "name": "Toucannon",
+    "sprite": "toucannon.png",
+    "types": ["Normal", "Flying"],
+    "typeIcons": ["normal.png", "flying.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 162,
+    "name": "Crabominable",
+    "sprite": "crabominable.png",
+    "types": ["Fighting", "Ice"],
+    "typeIcons": ["fighting.png", "ice.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 163,
+    "name": "Lycanroc Midday",
+    "sprite": "lycanroc-midday.png",
+    "types": ["Rock"],
+    "typeIcons": ["rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 164,
+    "name": "Lycanroc Midnight",
+    "sprite": "lycanroc-midnight.png",
+    "types": ["Rock"],
+    "typeIcons": ["rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 165,
+    "name": "Lycanroc Dusk",
+    "sprite": "lycanroc-dusk.png",
+    "types": ["Rock"],
+    "typeIcons": ["rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 166,
+    "name": "Toxapex",
+    "sprite": "toxapex.png",
+    "types": ["Poison", "Water"],
+    "typeIcons": ["poison.png", "water.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 167,
+    "name": "Mudsdale",
+    "sprite": "mudsdale.png",
+    "types": ["Ground"],
+    "typeIcons": ["ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 168,
+    "name": "Araquanid",
+    "sprite": "araquanid.png",
+    "types": ["Water", "Bug"],
+    "typeIcons": ["water.png", "bug.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 169,
+    "name": "Salazzle",
+    "sprite": "salazzle.png",
+    "types": ["Poison", "Fire"],
+    "typeIcons": ["poison.png", "fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 170,
+    "name": "Tsareena",
+    "sprite": "tsareena.png",
+    "types": ["Grass"],
+    "typeIcons": ["grass.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 171,
+    "name": "Oranguru",
+    "sprite": "oranguru.png",
+    "types": ["Normal", "Psychic"],
+    "typeIcons": ["normal.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 172,
+    "name": "Passimian",
+    "sprite": "passimian.png",
+    "types": ["Fighting"],
+    "typeIcons": ["fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 173,
+    "name": "Mimikyu",
+    "sprite": "mimikyu.png",
+    "types": ["Ghost", "Fairy"],
+    "typeIcons": ["ghost.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 174,
+    "name": "Drampa",
+    "sprite": "drampa.png",
+    "types": ["Normal", "Dragon"],
+    "typeIcons": ["normal.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 175,
+    "name": "Kommo-o",
+    "sprite": "kommo-o.png",
+    "types": ["Dragon", "Fighting"],
+    "typeIcons": ["dragon.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 176,
+    "name": "Corviknight",
+    "sprite": "corviknight.png",
+    "types": ["Flying", "Steel"],
+    "typeIcons": ["flying.png", "steel.png"],
+    "abilities": ["Pressure", "Unnerve", "Mirror Armor"],
+    "baseStats": { "hp": 98, "atk": 87, "def": 105, "spa": 53, "spd": 85, "spe": 67 },
+    "moves": ["Protect", "Brave Bird", "Iron Head", "Tailwind", "Roost", "Body Press", "Taunt", "U-turn"]
+  },
+  {
+    "id": 177,
+    "name": "Flapple",
+    "sprite": "flapple.png",
+    "types": ["Grass", "Dragon"],
+    "typeIcons": ["grass.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 178,
+    "name": "Appletun",
+    "sprite": "appletun.png",
+    "types": ["Grass", "Dragon"],
+    "typeIcons": ["grass.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 179,
+    "name": "Sandaconda",
+    "sprite": "sandaconda.png",
+    "types": ["Ground"],
+    "typeIcons": ["ground.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 180,
+    "name": "Polteageist",
+    "sprite": "polteageist.png",
+    "types": ["Ghost"],
+    "typeIcons": ["ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 181,
+    "name": "Hatterene",
+    "sprite": "hatterene.png",
+    "types": ["Psychic", "Fairy"],
+    "typeIcons": ["psychic.png", "fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 182,
+    "name": "Mr. Rime",
+    "sprite": "mr-rime.png",
+    "types": ["Ice", "Psychic"],
+    "typeIcons": ["ice.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 183,
+    "name": "Runerigus",
+    "sprite": "runerigus.png",
+    "types": ["Ground", "Ghost"],
+    "typeIcons": ["ground.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 184,
+    "name": "Alcremie",
+    "sprite": "alcremie.png",
+    "types": ["Fairy"],
+    "typeIcons": ["fairy.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 185,
+    "name": "Morpeko",
+    "sprite": "morpeko.png",
+    "types": ["Electric", "Dark"],
+    "typeIcons": ["electric.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 186,
+    "name": "Dragapult",
+    "sprite": "dragapult.png",
+    "types": ["Dragon", "Ghost"],
+    "typeIcons": ["dragon.png", "ghost.png"],
+    "abilities": ["Clear Body", "Infiltrator", "Cursed Body"],
+    "baseStats": { "hp": 88, "atk": 120, "def": 75, "spa": 100, "spd": 75, "spe": 142 },
+    "moves": ["Protect", "Dragon Darts", "Phantom Force", "Will-O-Wisp", "Thunder Wave", "U-turn", "Surf", "Breaking Swipe"]
+  },
+  {
+    "id": 187,
+    "name": "Wyrdeer",
+    "sprite": "wyrdeer.png",
+    "types": ["Normal", "Psychic"],
+    "typeIcons": ["normal.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 188,
+    "name": "Kleavor",
+    "sprite": "kleavor.png",
+    "types": ["Bug", "Rock"],
+    "typeIcons": ["bug.png", "rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 189,
+    "name": "Basculegion Male",
+    "sprite": "basculegion-male.png",
+    "types": ["Water", "Ghost"],
+    "typeIcons": ["water.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 190,
+    "name": "Basculegion Female",
+    "sprite": "basculegion-female.png",
+    "types": ["Water", "Ghost"],
+    "typeIcons": ["water.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 191,
+    "name": "Sneasler",
+    "sprite": "sneasler.png",
+    "types": ["Fighting", "Poison"],
+    "typeIcons": ["fighting.png", "poison.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 192,
+    "name": "Meowscarada",
+    "sprite": "meowscarada.png",
+    "types": ["Grass", "Dark"],
+    "typeIcons": ["grass.png", "dark.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 193,
+    "name": "Skeledirge",
+    "sprite": "skeledirge.png",
+    "types": ["Fire", "Ghost"],
+    "typeIcons": ["fire.png", "ghost.png"],
+    "abilities": ["Blaze", "Unaware"],
+    "baseStats": { "hp": 104, "atk": 75, "def": 100, "spa": 110, "spd": 75, "spe": 66 },
+    "moves": ["Protect", "Torch Song", "Shadow Ball", "Will-O-Wisp", "Slack Off", "Earth Power", "Snarl", "Tera Blast"]
+  },
+  {
+    "id": 194,
+    "name": "Quaquaval",
+    "sprite": "quaquaval.png",
+    "types": ["Water", "Fighting"],
+    "typeIcons": ["water.png", "fighting.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 195,
+    "name": "Maushold",
+    "sprite": "maushold.png",
+    "types": ["Normal"],
+    "typeIcons": ["normal.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 196,
+    "name": "Garganacl",
+    "sprite": "garganacl.png",
+    "types": ["Rock"],
+    "typeIcons": ["rock.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 197,
+    "name": "Armarouge",
+    "sprite": "armarouge.png",
+    "types": ["Fire", "Psychic"],
+    "typeIcons": ["fire.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 198,
+    "name": "Ceruledge",
+    "sprite": "ceruledge.png",
+    "types": ["Fire", "Ghost"],
+    "typeIcons": ["fire.png", "ghost.png"],
+    "abilities": ["Flash Fire", "Weak Armor"],
+    "baseStats": { "hp": 75, "atk": 125, "def": 80, "spa": 60, "spd": 100, "spe": 85 },
+    "moves": ["Protect", "Bitter Blade", "Shadow Sneak", "Shadow Claw", "Close Combat", "Swords Dance", "Will-O-Wisp", "Taunt"]
+  },
+  {
+    "id": 199,
+    "name": "Bellibolt",
+    "sprite": "bellibolt.png",
+    "types": ["Electric"],
+    "typeIcons": ["electric.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 200,
+    "name": "Scovillain",
+    "sprite": "scovillain.png",
+    "types": ["Grass", "Fire"],
+    "typeIcons": ["grass.png", "fire.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 201,
+    "name": "Espathra",
+    "sprite": "espathra.png",
+    "types": ["Psychic"],
+    "typeIcons": ["psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 202,
+    "name": "Tinkaton",
+    "sprite": "tinkaton.png",
+    "types": ["Fairy", "Steel"],
+    "typeIcons": ["fairy.png", "steel.png"],
+    "abilities": ["Mold Breaker", "Own Tempo", "Pickpocket"],
+    "baseStats": { "hp": 85, "atk": 75, "def": 77, "spa": 70, "spd": 105, "spe": 94 },
+    "moves": ["Protect", "Gigaton Hammer", "Fake Out", "Feint", "Thunder Wave", "Play Rough", "Encore", "Knock Off"]
+  },
+  {
+    "id": 203,
+    "name": "Palafin",
+    "sprite": "palafin.png",
+    "types": ["Water"],
+    "typeIcons": ["water.png"],
+    "abilities": ["Zero to Hero"],
+    "baseStats": { "hp": 100, "atk": 70, "def": 72, "spa": 53, "spd": 62, "spe": 100 },
+    "moves": ["Protect", "Jet Punch", "Wave Crash", "Haze", "Taunt", "Close Combat", "Flip Turn", "Ice Punch"]
+  },
+  {
+    "id": 204,
+    "name": "Orthworm",
+    "sprite": "orthworm.png",
+    "types": ["Steel"],
+    "typeIcons": ["steel.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 205,
+    "name": "Glimmora",
+    "sprite": "glimmora.png",
+    "types": ["Rock", "Poison"],
+    "typeIcons": ["rock.png", "poison.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 206,
+    "name": "Farigiraf",
+    "sprite": "farigiraf.png",
+    "types": ["Normal", "Psychic"],
+    "typeIcons": ["normal.png", "psychic.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 207,
+    "name": "Kingambit",
+    "sprite": "kingambit.png",
+    "types": ["Dark", "Steel"],
+    "typeIcons": ["dark.png", "steel.png"],
+    "abilities": ["Defiant", "Supreme Overlord", "Pressure"],
+    "baseStats": { "hp": 100, "atk": 135, "def": 120, "spa": 60, "spd": 85, "spe": 50 },
+    "moves": ["Protect", "Kowtow Cleave", "Iron Head", "Sucker Punch", "Low Kick", "Swords Dance", "Taunt", "Tera Blast"]
+  },
+  {
+    "id": 208,
+    "name": "Sinistcha",
+    "sprite": "sinistcha.png",
+    "types": ["Grass", "Ghost"],
+    "typeIcons": ["grass.png", "ghost.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  },
+  {
+    "id": 209,
+    "name": "Archaludon",
+    "sprite": "archaludon.png",
+    "types": ["Steel", "Dragon"],
+    "typeIcons": ["steel.png", "dragon.png"],
+    "abilities": ["Stamina", "Sturdy", "Heavy Metal"],
+    "baseStats": { "hp": 90, "atk": 105, "def": 130, "spa": 125, "spd": 65, "spe": 85 },
+    "moves": ["Protect", "Electro Shot", "Flash Cannon", "Draco Meteor", "Body Press", "Dragon Pulse", "Snarl", "Thunderbolt"]
+  },
+  {
+    "id": 210,
+    "name": "Hydrapple",
+    "sprite": "hydrapple.png",
+    "types": ["Grass", "Dragon"],
+    "typeIcons": ["grass.png", "dragon.png"],
+    "abilities": [],
+    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "moves": []
+  }
+]
