@@ -5,6 +5,7 @@ const SP_STAT_MAX = 32;
 
 const SPRITES_BASE_PATH = "../assets/images/sprites/";
 const ICONS_BASE_PATH = "../assets/images/icons/";
+const DEFAULT_SPRITE_PATH = "../assets/images/sprites/default.png";
 const SAVED_POKEMON_KEY = "championsHubSavedPokemonBuilds";
 
 const STAT_KEYS = ["hp", "atk", "def", "spa", "spd", "spe"];
@@ -66,9 +67,6 @@ const ABILITY_EFFECTS = {
   "Chlorophyll": ({ stats, weather, active }) => {
     if (active && weather === "sun") stats.spe = Math.floor(stats.spe * 2);
   },
-  "Tail Wind": ({ stats, weather, active }) => {
-    if (active && weather === "tailwind") stats.spe = Math.floor(stats.spe * 2);
-  },
   "Sand Rush": ({ stats, weather, active }) => {
     if (active && weather === "sand") stats.spe = Math.floor(stats.spe * 2);
   },
@@ -86,14 +84,41 @@ const ABILITY_EFFECTS = {
   }
 };
 
+const STAGE_MULTIPLIERS = {
+  "-6": 2 / 8,
+  "-5": 2 / 7,
+  "-4": 2 / 6,
+  "-3": 2 / 5,
+  "-2": 2 / 4,
+  "-1": 2 / 3,
+  "0": 1,
+  "1": 3 / 2,
+  "2": 4 / 2,
+  "3": 5 / 2,
+  "4": 6 / 2,
+  "5": 7 / 2,
+  "6": 8 / 2
+};
+
 let pokemonData = [];
 let currentMode = "single";
 
-const singleModeBtn = document.getElementById("singleModeBtn");
-const compareModeBtn = document.getElementById("compareModeBtn");
-const singleModeView = document.getElementById("singleModeView");
-const compareModeView = document.getElementById("compareModeView");
-const DEFAULT_SPRITE_PATH = "../assets/images/sprites/default.png";
+function getEl(id) {
+  return document.getElementById(id);
+}
+
+const singleModeBtn = getEl("singleModeBtn");
+const compareModeBtn = getEl("compareModeBtn");
+const singleModeView = getEl("singleModeView");
+const compareModeView = getEl("compareModeView");
+
+const manageSavedPokemonBtn = getEl("manageSavedPokemonBtn");
+const savedPokemonModal = getEl("savedPokemonModal");
+const closeSavedPokemonModalBtn = getEl("closeSavedPokemonModalBtn");
+
+const savePokemonBtn = getEl("savePokemonBtn");
+const savedBuildSelectACompare = getEl("savedBuildSelectACompare");
+const savedBuildSelectBCompare = getEl("savedBuildSelectBCompare");
 
 function buildSpritePath(fileName = "") {
   return fileName ? `${SPRITES_BASE_PATH}${fileName}` : "";
@@ -103,13 +128,14 @@ function buildIconPath(fileName = "") {
   return fileName ? `${ICONS_BASE_PATH}${fileName}` : "";
 }
 
-function getEl(id) {
-  return document.getElementById(id);
-}
-
 function clampSp(value) {
   const num = Number(value) || 0;
   return Math.max(0, Math.min(SP_STAT_MAX, num));
+}
+
+function clampStage(value) {
+  const num = Number(value) || 0;
+  return Math.max(-6, Math.min(6, num));
 }
 
 function spToEv(sp) {
@@ -118,123 +144,6 @@ function spToEv(sp) {
 
 function getNatureByName(name) {
   return NATURES.find(n => n.name === name) || NATURES[0];
-}
-
-function loadSavedPokemonBuilds() {
-  try {
-    const raw = localStorage.getItem(SAVED_POKEMON_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch (error) {
-    console.error("Error loading saved pokemon builds:", error);
-    return [];
-  }
-}
-
-function saveSavedPokemonBuilds(builds) {
-  localStorage.setItem(SAVED_POKEMON_KEY, JSON.stringify(builds));
-}
-
-function buildSavedPokemonFromSingleMode() {
-  const result = calculatePokemonResult("A");
-  if (!result) return null;
-
-  return {
-    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
-    label: `${result.pokemon.name} - ${result.nature.name}`,
-    pokemonIndex: result.selectedIndex,
-    pokemonName: result.pokemon.name,
-    nature: result.nature.name,
-    item: result.item.name,
-    ability: result.ability,
-    weather: result.weather,
-    mega: result.mega,
-    abilityActive: result.abilityActive,
-    sps: { ...result.sps }
-  };
-}
-
-function refreshSavedPokemonSelectors() {
-  const builds = loadSavedPokemonBuilds();
-
-  const selectors = [
-    getEl("savedBuildSelectACompare"),
-    getEl("savedBuildSelectBCompare")
-  ];
-
-  selectors.forEach(select => {
-    if (!select) return;
-
-    const currentValue = select.value;
-
-    select.innerHTML = `
-      <option value="">Select saved build</option>
-      ${builds.map(build => `
-        <option value="${build.id}">${build.label}</option>
-      `).join("")}
-    `;
-
-    select.value = builds.some(build => build.id === currentValue) ? currentValue : "";
-  });
-}
-
-function applySavedBuildToPanel(prefix, buildId) {
-  const builds = loadSavedPokemonBuilds();
-  const build = builds.find(item => item.id === buildId);
-  if (!build) return;
-
-  const refs = getConfigRefs(prefix);
-
-  if (refs.pokemonSelect) refs.pokemonSelect.value = build.pokemonIndex;
-  populateAbilities(refs.abilitySelect, pokemonData[build.pokemonIndex]);
-
-  if (refs.natureSelect) refs.natureSelect.value = build.nature;
-  if (refs.itemSelect) refs.itemSelect.value = build.item;
-  if (refs.abilitySelect) refs.abilitySelect.value = build.ability;
-  if (refs.weatherSelect) refs.weatherSelect.value = build.weather;
-  if (refs.megaToggle) refs.megaToggle.checked = !!build.mega;
-  if (refs.abilityActiveToggle) refs.abilityActiveToggle.checked = !!build.abilityActive;
-
-  if (refs.evInputs.hp) refs.evInputs.hp.value = build.sps.hp;
-  if (refs.evInputs.atk) refs.evInputs.atk.value = build.sps.atk;
-  if (refs.evInputs.def) refs.evInputs.def.value = build.sps.def;
-  if (refs.evInputs.spa) refs.evInputs.spa.value = build.sps.spa;
-  if (refs.evInputs.spd) refs.evInputs.spd.value = build.sps.spd;
-  if (refs.evInputs.spe) refs.evInputs.spe.value = build.sps.spe;
-
-  updateCalculator();
-}
-
-function saveCurrentSinglePokemon() {
-  const build = buildSavedPokemonFromSingleMode();
-
-  if (!build) {
-    alert("Select a Pokemon before saving.");
-    return;
-  }
-
-  const builds = loadSavedPokemonBuilds();
-
-  const duplicateIndex = builds.findIndex(saved =>
-    saved.pokemonName === build.pokemonName &&
-    saved.nature === build.nature &&
-    saved.item === build.item &&
-    saved.ability === build.ability &&
-    saved.weather === build.weather &&
-    saved.mega === build.mega &&
-    saved.abilityActive === build.abilityActive &&
-    JSON.stringify(saved.sps) === JSON.stringify(build.sps)
-  );
-
-  if (duplicateIndex !== -1) {
-    alert("This Pokémon build is already saved.");
-    return;
-  }
-
-  builds.push(build);
-  saveSavedPokemonBuilds(builds);
-  refreshSavedPokemonSelectors();
 }
 
 function getItemByName(name) {
@@ -259,10 +168,18 @@ function calcOtherStat(base, sp, natureMultiplier) {
   return Math.floor(raw * natureMultiplier);
 }
 
+function applyStatStage(statValue, stage) {
+  const safeStage = clampStage(stage);
+  const multiplier = STAGE_MULTIPLIERS[String(safeStage)] || 1;
+  return Math.floor(statValue * multiplier);
+}
+
 function applyItemModifiers(stats, item) {
   const modifiers = item.modifiers || {};
   Object.entries(modifiers).forEach(([statKey, multiplier]) => {
-    stats[statKey] = Math.floor(stats[statKey] * multiplier);
+    if (typeof stats[statKey] === "number") {
+      stats[statKey] = Math.floor(stats[statKey] * multiplier);
+    }
   });
 }
 
@@ -273,37 +190,18 @@ function applyAbilityModifiers(stats, ability, weather, abilityActive) {
   }
 }
 
-function populateNatures(selectEl) {
-  if (!selectEl) return;
-  selectEl.innerHTML = NATURES.map(nature => {
-    let label = nature.name;
-    if (nature.up && nature.down) {
-      label += ` (+${STAT_LABELS[nature.up]}, -${STAT_LABELS[nature.down]})`;
-    }
-    return `<option value="${nature.name}">${label}</option>`;
-  }).join("");
-  selectEl.value = "Serious";
-}
+function applySideEffects(stats, config) {
+  if (config.sideEffect === "tailwind") {
+    stats.spe = Math.floor(stats.spe * 2);
+  }
 
-function populateItems(selectEl) {
-  if (!selectEl) return;
-  selectEl.innerHTML = ITEMS.map(item => `<option value="${item.name}">${item.name}</option>`).join("");
-  selectEl.value = "No item";
-}
+  if (config.sideEffect === "sticky_web") {
+    stats.spe = applyStatStage(stats.spe, -1);
+  }
 
-function populatePokemonSelect(selectEl) {
-  if (!selectEl) return;
-  selectEl.innerHTML =
-    `<option value="">Select a Pokemon</option>` +
-    pokemonData.map((pokemon, index) => `<option value="${index}">${pokemon.name}</option>`).join("");
-}
-
-function populateAbilities(selectEl, pokemon) {
-  if (!selectEl) return;
-  const abilities = pokemon?.abilities || [];
-  selectEl.innerHTML =
-    `<option value="">No ability selected</option>` +
-    abilities.map(ability => `<option value="${ability}">${ability}</option>`).join("");
+  if (typeof config.speedStage === "number" && config.speedStage !== 0) {
+    stats.spe = applyStatStage(stats.spe, config.speedStage);
+  }
 }
 
 function getConfigRefs(prefix) {
@@ -313,6 +211,8 @@ function getConfigRefs(prefix) {
     itemSelect: getEl(`itemSelect${prefix}`),
     abilitySelect: getEl(`abilitySelect${prefix}`),
     weatherSelect: getEl(`weatherSelect${prefix}`),
+    sideEffectSelect: getEl(`sideEffectSelect${prefix}`),
+    speedStageSelect: getEl(`speedStageSelect${prefix}`),
     megaToggle: getEl(`megaToggle${prefix}`),
     abilityActiveToggle: getEl(`abilityActiveToggle${prefix}`),
     evInputs: {
@@ -338,40 +238,55 @@ function getDisplayRefs(prefix) {
   };
 }
 
-function readConfig(prefix) {
-  const refs = getConfigRefs(prefix);
+function populateNatures(selectEl) {
+  if (!selectEl) return;
 
-  const selectedIndex = refs.pokemonSelect?.value ?? "";
-  const pokemon = pokemonData[selectedIndex];
+  selectEl.innerHTML = NATURES.map(nature => {
+    let label = nature.name;
+    if (nature.up && nature.down) {
+      label += ` (+${STAT_LABELS[nature.up]}, -${STAT_LABELS[nature.down]})`;
+    }
+    return `<option value="${nature.name}">${label}</option>`;
+  }).join("");
 
-  const sps = {
-    hp: clampSp(refs.evInputs.hp?.value),
-    atk: clampSp(refs.evInputs.atk?.value),
-    def: clampSp(refs.evInputs.def?.value),
-    spa: clampSp(refs.evInputs.spa?.value),
-    spd: clampSp(refs.evInputs.spd?.value),
-    spe: clampSp(refs.evInputs.spe?.value)
-  };
+  selectEl.value = "Serious";
+}
 
-  return {
-    selectedIndex,
-    pokemon,
-    nature: getNatureByName(refs.natureSelect?.value || "Serious"),
-    item: getItemByName(refs.itemSelect?.value || "No item"),
-    ability: refs.abilitySelect?.value || "",
-    weather: refs.weatherSelect?.value || "none",
-    mega: refs.megaToggle?.checked || false,
-    abilityActive: refs.abilityActiveToggle?.checked || false,
-    sps
-  };
+function populateItems(selectEl) {
+  if (!selectEl) return;
+
+  selectEl.innerHTML = ITEMS.map(item => `<option value="${item.name}">${item.name}</option>`).join("");
+  selectEl.value = "No item";
+}
+
+function populatePokemonSelect(selectEl) {
+  if (!selectEl) return;
+
+  selectEl.innerHTML =
+    `<option value="">Select a Pokemon</option>` +
+    pokemonData.map((pokemon, index) => `<option value="${index}">${pokemon.name}</option>`).join("");
+}
+
+function populateAbilities(selectEl, pokemon) {
+  if (!selectEl) return;
+
+  const abilities = pokemon?.abilities || [];
+  selectEl.innerHTML =
+    `<option value="">No ability selected</option>` +
+    abilities.map(ability => `<option value="${ability}">${ability}</option>`).join("");
 }
 
 function normalizeInputs(prefix) {
   const refs = getConfigRefs(prefix);
+
   Object.values(refs.evInputs).forEach(input => {
     if (!input) return;
     input.value = clampSp(input.value);
   });
+
+  if (refs.speedStageSelect) {
+    refs.speedStageSelect.value = String(clampStage(refs.speedStageSelect.value));
+  }
 }
 
 function enforceTotalSpLimit(prefix, changedStatKey) {
@@ -395,6 +310,36 @@ function enforceTotalSpLimit(prefix, changedStatKey) {
   }
 }
 
+function readConfig(prefix) {
+  const refs = getConfigRefs(prefix);
+
+  const selectedIndex = refs.pokemonSelect?.value ?? "";
+  const pokemon = pokemonData[selectedIndex];
+
+  const sps = {
+    hp: clampSp(refs.evInputs.hp?.value),
+    atk: clampSp(refs.evInputs.atk?.value),
+    def: clampSp(refs.evInputs.def?.value),
+    spa: clampSp(refs.evInputs.spa?.value),
+    spd: clampSp(refs.evInputs.spd?.value),
+    spe: clampSp(refs.evInputs.spe?.value)
+  };
+
+  return {
+    selectedIndex,
+    pokemon,
+    nature: getNatureByName(refs.natureSelect?.value || "Serious"),
+    item: getItemByName(refs.itemSelect?.value || "No item"),
+    ability: refs.abilitySelect?.value || "",
+    weather: refs.weatherSelect?.value || "none",
+    sideEffect: refs.sideEffectSelect?.value || "none",
+    speedStage: clampStage(refs.speedStageSelect?.value || 0),
+    mega: refs.megaToggle?.checked || false,
+    abilityActive: refs.abilityActiveToggle?.checked || false,
+    sps
+  };
+}
+
 function getCurrentBaseStats(pokemon, megaEnabled) {
   const usingMega = megaEnabled && pokemon?.megaStats;
   return usingMega ? pokemon.megaStats : pokemon.baseStats;
@@ -410,6 +355,7 @@ function calculatePokemonResult(prefix) {
   const baseStats = getCurrentBaseStats(config.pokemon, config.mega);
 
   const calculatedStats = {};
+
   STAT_KEYS.forEach(statKey => {
     const base = baseStats[statKey];
     const natureMultiplier = getNatureMultiplier(statKey, config.nature);
@@ -423,6 +369,7 @@ function calculatePokemonResult(prefix) {
 
   applyItemModifiers(calculatedStats, config.item);
   applyAbilityModifiers(calculatedStats, config.ability, config.weather, config.abilityActive);
+  applySideEffects(calculatedStats, config);
 
   return {
     ...config,
@@ -441,7 +388,7 @@ function renderPokemonCard(prefix, result) {
     refs.pokemonSprite.alt = "Default Pokemon sprite";
     refs.pokemonName.textContent = "Select a Pokemon";
     refs.typeIcons.innerHTML = "";
-    refs.pokemonBaseInfo.textContent = "Level 50 stat calculation";
+    refs.pokemonBaseInfo.textContent = `Level ${LEVEL} stat calculation`;
     return;
   }
 
@@ -505,19 +452,27 @@ function renderStatsTable(prefix, result) {
 
 function renderSummary(prefix, result) {
   const refs = getDisplayRefs(prefix);
-  if (!refs.summaryBox || !refs.evWarning) return;
 
   if (!result) {
-    refs.summaryBox.textContent = "Select a Pokemon to see calculated stats.";
-    refs.evWarning.textContent = "";
+    if (refs.summaryBox) {
+      refs.summaryBox.textContent = "Select a Pokemon to see calculated stats.";
+    }
+    if (refs.evWarning) {
+      refs.evWarning.textContent = "";
+    }
     return;
   }
 
   const totalSp = Object.values(result.sps).reduce((sum, value) => sum + value, 0);
-  refs.evWarning.textContent =
-    totalSp > SP_TOTAL_MAX
-      ? `Total SP used: ${totalSp}/${SP_TOTAL_MAX} - Over budget`
-      : `Total SP used: ${totalSp}/${SP_TOTAL_MAX}`;
+
+  if (refs.evWarning) {
+    refs.evWarning.textContent =
+      totalSp > SP_TOTAL_MAX
+        ? `Total SP used: ${totalSp}/${SP_TOTAL_MAX} - Over budget`
+        : `Total SP used: ${totalSp}/${SP_TOTAL_MAX}`;
+  }
+
+  if (!refs.summaryBox) return;
 
   const abilityText = result.ability
     ? `${result.ability}${result.abilityActive ? " (active)" : " (inactive)"}`
@@ -525,6 +480,16 @@ function renderSummary(prefix, result) {
 
   const weatherText = result.weather === "none" ? "No weather" : result.weather;
   const megaText = result.usingMega ? "Yes" : "No";
+  const sideEffectText =
+    result.sideEffect === "none"
+      ? "None"
+      : result.sideEffect === "tailwind"
+      ? "Tailwind"
+      : result.sideEffect === "sticky_web"
+      ? "Sticky Web"
+      : result.sideEffect;
+
+  const speedStageText = result.speedStage > 0 ? `+${result.speedStage}` : `${result.speedStage}`;
 
   refs.summaryBox.innerHTML = `
     <strong>Summary</strong><br><br>
@@ -533,7 +498,9 @@ function renderSummary(prefix, result) {
     Nature: ${result.nature.name}<br>
     Item: ${result.item.name}<br>
     Ability: ${abilityText}<br>
-    Weather: ${weatherText}<br><br>
+    Weather: ${weatherText}<br>
+    Side Effect: ${sideEffectText}<br>
+    Speed Stage: ${speedStageText}<br><br>
 
     <strong>Final Stats</strong><br>
     HP: ${result.calculatedStats.hp}<br>
@@ -588,12 +555,12 @@ function renderCompareResults(resultA, resultB) {
 
   comparePanel.innerHTML = `
     <div class="compare-card-head">
-      <img src="${buildSpritePath(resultA.pokemon.sprite || "")}" alt="${resultA.pokemon.name}">
+      <img src="${buildSpritePath(resultA.pokemon.sprite || "")}" alt="${resultA.pokemon.name}" onerror="this.onerror=null;this.src='${DEFAULT_SPRITE_PATH}'">
       <h3>${resultA.pokemon.name}</h3>
     </div>
 
     <div class="compare-card-head">
-      <img src="${buildSpritePath(resultB.pokemon.sprite || "")}" alt="${resultB.pokemon.name}">
+      <img src="${buildSpritePath(resultB.pokemon.sprite || "")}" alt="${resultB.pokemon.name}" onerror="this.onerror=null;this.src='${DEFAULT_SPRITE_PATH}'">
       <h3>${resultB.pokemon.name}</h3>
     </div>
 
@@ -676,25 +643,300 @@ function bindModeEvents() {
   }
 }
 
-const savePokemonBtn = getEl("savePokemonBtn");
-if (savePokemonBtn) {
-  savePokemonBtn.addEventListener("click", saveCurrentSinglePokemon);
+function showStatsToast(message) {
+  let toast = getEl("statsToast");
+
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "statsToast";
+    toast.className = "stats-toast";
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(showStatsToast.timeoutId);
+  showStatsToast.timeoutId = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2200);
 }
 
-const savedBuildSelectACompare = getEl("savedBuildSelectACompare");
-if (savedBuildSelectACompare) {
-  savedBuildSelectACompare.addEventListener("change", (event) => {
-    if (!event.target.value) return;
-    applySavedBuildToPanel("ACompare", event.target.value);
+function loadSavedPokemonBuilds() {
+  try {
+    const raw = localStorage.getItem(SAVED_POKEMON_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.error("Error loading saved pokemon builds:", error);
+    return [];
+  }
+}
+
+function saveSavedPokemonBuilds(builds) {
+  localStorage.setItem(SAVED_POKEMON_KEY, JSON.stringify(builds));
+}
+
+function buildSavedPokemonFromSingleMode(customName) {
+  const result = calculatePokemonResult("A");
+  if (!result) return null;
+
+  return {
+    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+    label: (customName || "").trim() || `${result.pokemon.name} - ${result.nature.name}`,
+    pokemonIndex: result.selectedIndex,
+    pokemonName: result.pokemon.name,
+    nature: result.nature.name,
+    item: result.item.name,
+    ability: result.ability,
+    weather: result.weather,
+    sideEffect: result.sideEffect,
+    speedStage: result.speedStage,
+    mega: result.mega,
+    abilityActive: result.abilityActive,
+    sps: { ...result.sps }
+  };
+}
+
+function refreshSavedPokemonSelectors() {
+  const builds = loadSavedPokemonBuilds();
+  const selectors = [savedBuildSelectACompare, savedBuildSelectBCompare];
+
+  selectors.forEach(select => {
+    if (!select) return;
+
+    const currentValue = select.value;
+    select.innerHTML = `
+      <option value="">Select saved build</option>
+      ${builds.map(build => `<option value="${build.id}">${build.label}</option>`).join("")}
+    `;
+
+    select.value = builds.some(build => build.id === currentValue) ? currentValue : "";
   });
 }
 
-const savedBuildSelectBCompare = getEl("savedBuildSelectBCompare");
-if (savedBuildSelectBCompare) {
-  savedBuildSelectBCompare.addEventListener("change", (event) => {
-    if (!event.target.value) return;
-    applySavedBuildToPanel("BCompare", event.target.value);
+function applySavedBuildToPanel(prefix, buildId) {
+  const builds = loadSavedPokemonBuilds();
+  const build = builds.find(item => item.id === buildId);
+  if (!build) return;
+
+  const refs = getConfigRefs(prefix);
+
+  if (refs.pokemonSelect) refs.pokemonSelect.value = build.pokemonIndex;
+  populateAbilities(refs.abilitySelect, pokemonData[build.pokemonIndex]);
+
+  if (refs.natureSelect) refs.natureSelect.value = build.nature;
+  if (refs.itemSelect) refs.itemSelect.value = build.item;
+  if (refs.abilitySelect) refs.abilitySelect.value = build.ability;
+  if (refs.weatherSelect) refs.weatherSelect.value = build.weather;
+  if (refs.sideEffectSelect) refs.sideEffectSelect.value = build.sideEffect || "none";
+  if (refs.speedStageSelect) refs.speedStageSelect.value = String(build.speedStage ?? 0);
+  if (refs.megaToggle) refs.megaToggle.checked = !!build.mega;
+  if (refs.abilityActiveToggle) refs.abilityActiveToggle.checked = !!build.abilityActive;
+
+  if (refs.evInputs.hp) refs.evInputs.hp.value = build.sps.hp;
+  if (refs.evInputs.atk) refs.evInputs.atk.value = build.sps.atk;
+  if (refs.evInputs.def) refs.evInputs.def.value = build.sps.def;
+  if (refs.evInputs.spa) refs.evInputs.spa.value = build.sps.spa;
+  if (refs.evInputs.spd) refs.evInputs.spd.value = build.sps.spd;
+  if (refs.evInputs.spe) refs.evInputs.spe.value = build.sps.spe;
+
+  updateCalculator();
+}
+
+function saveCurrentSinglePokemon() {
+  const result = calculatePokemonResult("A");
+  if (!result) {
+    showStatsToast("Select a Pokémon before saving.");
+    return;
+  }
+
+  const suggestedName = `${result.pokemon.name} - ${result.nature.name}`;
+  const customName = prompt("Choose a name for this saved Pokémon:", suggestedName);
+
+  if (customName === null) return;
+
+  const finalName = customName.trim();
+  if (!finalName) {
+    showStatsToast("The saved Pokémon needs a name.");
+    return;
+  }
+
+  const build = buildSavedPokemonFromSingleMode(finalName);
+  const builds = loadSavedPokemonBuilds();
+  const existingIndex = builds.findIndex(saved => saved.label.toLowerCase() === finalName.toLowerCase());
+
+  if (existingIndex !== -1) {
+    const shouldOverwrite = confirm(`A saved Pokémon named "${finalName}" already exists. Do you want to overwrite it?`);
+    if (!shouldOverwrite) return;
+
+    build.id = builds[existingIndex].id;
+    builds[existingIndex] = build;
+    saveSavedPokemonBuilds(builds);
+    refreshSavedPokemonSelectors();
+    renderSavedPokemonManager();
+    showStatsToast(`"${finalName}" was updated.`);
+    return;
+  }
+
+  builds.push(build);
+  saveSavedPokemonBuilds(builds);
+  refreshSavedPokemonSelectors();
+  renderSavedPokemonManager();
+  showStatsToast(`"${finalName}" was saved.`);
+}
+
+function deleteSavedPokemon(buildId) {
+  const builds = loadSavedPokemonBuilds();
+  const build = builds.find(item => item.id === buildId);
+  if (!build) return;
+
+  const confirmed = confirm(`Delete "${build.label}"?`);
+  if (!confirmed) return;
+
+  const nextBuilds = builds.filter(item => item.id !== buildId);
+  saveSavedPokemonBuilds(nextBuilds);
+  refreshSavedPokemonSelectors();
+  renderSavedPokemonManager();
+  showStatsToast(`"${build.label}" was deleted.`);
+}
+
+function renameSavedPokemon(buildId) {
+  const builds = loadSavedPokemonBuilds();
+  const buildIndex = builds.findIndex(item => item.id === buildId);
+  if (buildIndex === -1) return;
+
+  const currentBuild = builds[buildIndex];
+  const nextName = prompt("Edit the saved Pokémon name:", currentBuild.label);
+
+  if (nextName === null) return;
+
+  const trimmedName = nextName.trim();
+  if (!trimmedName) {
+    showStatsToast("Name cannot be empty.");
+    return;
+  }
+
+  const duplicate = builds.find(item => item.id !== buildId && item.label.toLowerCase() === trimmedName.toLowerCase());
+  if (duplicate) {
+    showStatsToast("Another saved Pokémon already uses that name.");
+    return;
+  }
+
+  builds[buildIndex].label = trimmedName;
+  saveSavedPokemonBuilds(builds);
+  refreshSavedPokemonSelectors();
+  renderSavedPokemonManager();
+  showStatsToast(`Name updated to "${trimmedName}".`);
+}
+
+function loadSavedPokemonIntoSingleMode(buildId) {
+  const builds = loadSavedPokemonBuilds();
+  const build = builds.find(item => item.id === buildId);
+  if (!build) return;
+
+  applySavedBuildToPanel("A", buildId);
+  closeSavedPokemonModal();
+  showStatsToast(`"${build.label}" loaded into Single Mode.`);
+}
+
+function renderSavedPokemonManager() {
+  const container = getEl("savedPokemonManagerList");
+  if (!container) return;
+
+  const builds = loadSavedPokemonBuilds();
+
+  if (!builds.length) {
+    container.innerHTML = `<div class="saved-pokemon-empty">No saved Pokémon yet.</div>`;
+    return;
+  }
+
+  container.innerHTML = builds.map(build => `
+    <div class="saved-pokemon-card">
+      <div class="saved-pokemon-card-main">
+        <strong>${build.label}</strong>
+        <span>${build.pokemonName} · ${build.nature}</span>
+      </div>
+
+      <div class="saved-pokemon-card-actions">
+        <button type="button" class="saved-pokemon-action" data-saved-load="${build.id}">Load</button>
+        <button type="button" class="saved-pokemon-action" data-saved-rename="${build.id}">Edit</button>
+        <button type="button" class="saved-pokemon-action danger" data-saved-delete="${build.id}">Delete</button>
+      </div>
+    </div>
+  `).join("");
+
+  container.querySelectorAll("[data-saved-load]").forEach(button => {
+    button.addEventListener("click", () => loadSavedPokemonIntoSingleMode(button.dataset.savedLoad));
   });
+
+  container.querySelectorAll("[data-saved-rename]").forEach(button => {
+    button.addEventListener("click", () => renameSavedPokemon(button.dataset.savedRename));
+  });
+
+  container.querySelectorAll("[data-saved-delete]").forEach(button => {
+    button.addEventListener("click", () => deleteSavedPokemon(button.dataset.savedDelete));
+  });
+}
+
+function openSavedPokemonModal() {
+  if (!savedPokemonModal) return;
+  renderSavedPokemonManager();
+  savedPokemonModal.classList.add("open");
+  savedPokemonModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSavedPokemonModal() {
+  if (!savedPokemonModal) return;
+  savedPokemonModal.classList.remove("open");
+  savedPokemonModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function bindSavedPokemonModalEvents() {
+  if (manageSavedPokemonBtn) {
+    manageSavedPokemonBtn.addEventListener("click", openSavedPokemonModal);
+  }
+
+  if (closeSavedPokemonModalBtn) {
+    closeSavedPokemonModalBtn.addEventListener("click", closeSavedPokemonModal);
+  }
+
+  if (savedPokemonModal) {
+    savedPokemonModal.addEventListener("click", event => {
+      if (event.target === savedPokemonModal) {
+        closeSavedPokemonModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && savedPokemonModal?.classList.contains("open")) {
+      closeSavedPokemonModal();
+    }
+  });
+}
+
+function bindSavedPokemonEvents() {
+  if (savePokemonBtn) {
+    savePokemonBtn.addEventListener("click", saveCurrentSinglePokemon);
+  }
+
+  if (savedBuildSelectACompare) {
+    savedBuildSelectACompare.addEventListener("change", event => {
+      if (!event.target.value) return;
+      applySavedBuildToPanel("ACompare", event.target.value);
+    });
+  }
+
+  if (savedBuildSelectBCompare) {
+    savedBuildSelectBCompare.addEventListener("change", event => {
+      if (!event.target.value) return;
+      applySavedBuildToPanel("BCompare", event.target.value);
+    });
+  }
 }
 
 function bindCalculatorEvents(prefix) {
@@ -718,6 +960,8 @@ function bindCalculatorEvents(prefix) {
     refs.itemSelect,
     refs.abilitySelect,
     refs.weatherSelect,
+    refs.sideEffectSelect,
+    refs.speedStageSelect,
     refs.megaToggle,
     refs.abilityActiveToggle
   ].forEach(element => {
@@ -751,6 +995,10 @@ function initializePanel(prefix) {
   populateNatures(refs.natureSelect);
   populateItems(refs.itemSelect);
   populateAbilities(refs.abilitySelect, null);
+
+  if (refs.speedStageSelect) {
+    refs.speedStageSelect.value = "0";
+  }
 }
 
 async function loadPokemonData() {
@@ -779,7 +1027,9 @@ async function loadPokemonData() {
     ];
 
     fallbacks.forEach(box => {
-      if (box) box.textContent = "Error loading pokemon.json. Check the path: ../assets/data/pokemon.json";
+      if (box) {
+        box.textContent = "Error loading pokemon.json. Check the path: ../assets/data/pokemon.json";
+      }
     });
 
     const selects = [
@@ -789,13 +1039,19 @@ async function loadPokemonData() {
     ];
 
     selects.forEach(select => {
-      if (select) select.innerHTML = `<option value="">Failed to load Pokemon data</option>`;
+      if (select) {
+        select.innerHTML = `<option value="">Failed to load Pokemon data</option>`;
+      }
     });
 
     console.error(error);
   }
+
   refreshSavedPokemonSelectors();
+  renderSavedPokemonManager();
 }
 
 bindModeEvents();
+bindSavedPokemonEvents();
+bindSavedPokemonModalEvents();
 loadPokemonData();

@@ -65,7 +65,34 @@
               <option value="sun">Sun</option>
               <option value="sand">Sandstorm</option>
               <option value="snow">Snow</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="sideEffectSelectA">Side Effect</label>
+            <select id="sideEffectSelectA">
+              <option value="none">None</option>
               <option value="tailwind">Tailwind</option>
+              <option value="sticky_web">Sticky Web</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="speedStageSelectA">Speed Stage</label>
+            <select id="speedStageSelectA">
+              <option value="-6">-6</option>
+              <option value="-5">-5</option>
+              <option value="-4">-4</option>
+              <option value="-3">-3</option>
+              <option value="-2">-2</option>
+              <option value="-1">-1</option>
+              <option value="0" selected>0</option>
+              <option value="1">+1</option>
+              <option value="2">+2</option>
+              <option value="3">+3</option>
+              <option value="4">+4</option>
+              <option value="5">+5</option>
+              <option value="6">+6</option>
             </select>
           </div>
 
@@ -139,6 +166,18 @@
             <tbody id="statsTableBodyA"></tbody>
           </table>
           <button type="button" id="savePokemonBtn" class="save-pokemon-btn">Save Pokemon</button>
+          <button type="button" id="manageSavedPokemonBtn" class="save-pokemon-btn">
+            Manage Saved Pokemon
+          </button>
+          <div id="savedPokemonModal" class="saved-pokemon-modal" aria-hidden="true">
+            <div class="saved-pokemon-modal-panel">
+              <div class="saved-pokemon-modal-header">
+                <h2>Manage Saved Pokémon</h2>
+                <button type="button" id="closeSavedPokemonModalBtn" class="saved-pokemon-close-btn">X</button>
+              </div>
+              <div id="savedPokemonManagerList" class="saved-pokemon-list"></div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -149,16 +188,16 @@
           <h2>Pokemon 1</h2>
 
           <div class="field">
-            <label for="savedBuildSelectACompare">Saved Pokemon</label>
-            <select id="savedBuildSelectACompare">
-              <option value="">Select saved build</option>
+            <label for="pokemonSelectACompare">Pokemon</label>
+            <select id="pokemonSelectACompare">
+              <option value="">Loading...</option>
             </select>
           </div>
 
           <div class="field">
-            <label for="pokemonSelectACompare">Pokemon</label>
-            <select id="pokemonSelectACompare">
-              <option value="">Loading...</option>
+            <label for="savedBuildSelectACompare">Saved Pokemon</label>
+            <select id="savedBuildSelectACompare">
+              <option value="">Select saved build</option>
             </select>
           </div>
 
@@ -187,7 +226,34 @@
               <option value="sun">Sun</option>
               <option value="sand">Sandstorm</option>
               <option value="snow">Snow</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="sideEffectSelectACompare">Side Effect</label>
+            <select id="sideEffectSelectACompare">
+              <option value="none">None</option>
               <option value="tailwind">Tailwind</option>
+              <option value="sticky_web">Sticky Web</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="speedStageSelectACompare">Speed Stage</label>
+            <select id="speedStageSelectACompare">
+              <option value="-6">-6</option>
+              <option value="-5">-5</option>
+              <option value="-4">-4</option>
+              <option value="-3">-3</option>
+              <option value="-2">-2</option>
+              <option value="-1">-1</option>
+              <option value="0" selected>0</option>
+              <option value="1">+1</option>
+              <option value="2">+2</option>
+              <option value="3">+3</option>
+              <option value="4">+4</option>
+              <option value="5">+5</option>
+              <option value="6">+6</option>
             </select>
           </div>
 
@@ -242,16 +308,16 @@
           <h2>Pokemon 2</h2>
 
           <div class="field">
-            <label for="savedBuildSelectBCompare">Saved Pokemon</label>
-            <select id="savedBuildSelectBCompare">
-              <option value="">Select saved build</option>
+            <label for="pokemonSelectBCompare">Pokemon</label>
+            <select id="pokemonSelectBCompare">
+              <option value="">Loading...</option>
             </select>
           </div>
 
           <div class="field">
-            <label for="pokemonSelectBCompare">Pokemon</label>
-            <select id="pokemonSelectBCompare">
-              <option value="">Loading...</option>
+            <label for="savedBuildSelectBCompare">Saved Pokemon</label>
+            <select id="savedBuildSelectBCompare">
+              <option value="">Select saved build</option>
             </select>
           </div>
 
@@ -280,7 +346,34 @@
               <option value="sun">Sun</option>
               <option value="sand">Sandstorm</option>
               <option value="snow">Snow</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="sideEffectSelectBCompare">Side Effect</label>
+            <select id="sideEffectSelectBCompare">
+              <option value="none">None</option>
               <option value="tailwind">Tailwind</option>
+              <option value="sticky_web">Sticky Web</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="speedStageSelectBCompare">Speed Stage</label>
+            <select id="speedStageSelectBCompare">
+              <option value="-6">-6</option>
+              <option value="-5">-5</option>
+              <option value="-4">-4</option>
+              <option value="-3">-3</option>
+              <option value="-2">-2</option>
+              <option value="-1">-1</option>
+              <option value="0" selected>0</option>
+              <option value="1">+1</option>
+              <option value="2">+2</option>
+              <option value="3">+3</option>
+              <option value="4">+4</option>
+              <option value="5">+5</option>
+              <option value="6">+6</option>
             </select>
           </div>
 

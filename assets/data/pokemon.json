@@ -1908,7 +1908,7 @@
     "types": ["Fighting", "Poison"],
     "typeIcons": ["fighting.png", "poison.png"],
     "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
+    "baseStats": { "hp": 80, "atk": 130, "def": 60, "spa": 40, "spd": 80, "spe": 120 },
     "moves": []
   },
   {
