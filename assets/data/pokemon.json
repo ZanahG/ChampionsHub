@@ -28,6 +28,7 @@
     "typeIcons": ["water.png"],
     "abilities": ["Torrent", "Rain Dish"],
     "baseStats": { "hp": 79, "atk": 83, "def": 100, "spa": 85, "spd": 105, "spe": 78 },
+    "megaStats": { "hp": 79, "atk": 103, "def": 120, "spa": 135, "spd": 115, "spe": 78 },
     "moves": ["Protect", "Water Spout", "Hydro Pump", "Ice Beam", "Fake Out", "Aura Sphere", "Flash Cannon", "Shell Smash"]
   },
   {
@@ -38,6 +39,7 @@
     "typeIcons": ["bug.png", "poison.png"],
     "abilities": ["Swarm", "Sniper"],
     "baseStats": { "hp": 65, "atk": 90, "def": 40, "spa": 45, "spd": 80, "spe": 75 },
+    "megaStats": { "hp": 65, "atk": 150, "def": 40, "spa": 15, "spd": 80, "spe": 145 },
     "moves": ["Protect", "Poison Jab", "U-turn", "Drill Run", "Knock Off", "Fell Stinger", "X-Scissor", "Endeavor"]
   },
   {
@@ -48,6 +50,7 @@
     "typeIcons": ["normal.png", "flying.png"],
     "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"],
     "baseStats": { "hp": 83, "atk": 80, "def": 75, "spa": 70, "spd": 70, "spe": 101 },
+    "megaStats": { "hp": 83, "atk": 80, "def": 80, "spa": 135, "spd": 80, "spe": 121 },
     "moves": ["Protect", "Hurricane", "Air Slash", "Tailwind", "Heat Wave", "U-turn", "Feather Dance", "Roost"]
   },
   {
@@ -98,6 +101,7 @@
     "typeIcons": ["fairy.png"],
     "abilities": ["Cute Charm", "Magic Guard", "Unaware"],
     "baseStats": { "hp": 95, "atk": 70, "def": 73, "spa": 95, "spd": 90, "spe": 60 },
+    "megaStats": { "hp": 95, "atk": 80, "def": 93, "spa": 135, "spd": 110, "spe": 70 },
     "moves": ["Protect", "Moonblast", "Follow Me", "Helping Hand", "Thunder Wave", "Icy Wind", "Life Dew", "Calm Mind"]
   },
   {
@@ -148,6 +152,7 @@
     "typeIcons": ["psychic.png"],
     "abilities": ["Synchronize", "Inner Focus", "Magic Guard"],
     "baseStats": { "hp": 55, "atk": 50, "def": 45, "spa": 135, "spd": 95, "spe": 120 },
+    "megaStats": { "hp": 55, "atk": 50, "def": 65, "spa": 175, "spd": 105, "spe": 150 },
     "moves": ["Protect", "Psychic", "Dazzling Gleam", "Encore", "Disable", "Shadow Ball", "Focus Blast", "Trick Room"]
   },
   {
@@ -168,6 +173,7 @@
     "typeIcons": ["grass.png", "poison.png"],
     "abilities": ["Chlorophyll", "Gluttony"],
     "baseStats": { "hp": 80, "atk": 105, "def": 65, "spa": 100, "spd": 70, "spe": 70 },
+    "megaStats": { "hp": 80, "atk": 125, "def": 85, "spa": 135, "spd": 95, "spe": 70 },
     "moves": ["Protect", "Leaf Storm", "Sludge Bomb", "Sleep Powder", "Weather Ball", "Knock Off", "Sucker Punch", "Solar Beam"]
   },
   {
@@ -178,6 +184,7 @@
     "typeIcons": ["water.png", "psychic.png"],
     "abilities": ["Oblivious", "Own Tempo", "Regenerator"],
     "baseStats": { "hp": 95, "atk": 75, "def": 110, "spa": 100, "spd": 80, "spe": 30 },
+    "megaStats": { "hp": 95, "atk": 75, "def": 180, "spa": 130, "spd": 80, "spe": 30 },
     "moves": ["Protect", "Scald", "Psychic", "Trick Room", "Slack Off", "Yawn", "Ice Beam", "Body Press"]
   },
   {
@@ -198,6 +205,7 @@
     "typeIcons": ["ghost.png", "poison.png"],
     "abilities": ["Cursed Body"],
     "baseStats": { "hp": 60, "atk": 65, "def": 60, "spa": 130, "spd": 75, "spe": 110 },
+    "megaStats": { "hp": 60, "atk": 65, "def": 80, "spa": 170, "spd": 95, "spe": 130 },
     "moves": ["Protect", "Shadow Ball", "Sludge Bomb", "Icy Wind", "Will-O-Wisp", "Taunt", "Thunderbolt", "Destiny Bond"]
   },
   {
@@ -208,6 +216,7 @@
     "typeIcons": ["normal.png"],
     "abilities": ["Early Bird", "Scrappy", "Inner Focus"],
     "baseStats": { "hp": 105, "atk": 95, "def": 80, "spa": 40, "spd": 80, "spe": 90 },
+    "megaStats": { "hp": 105, "atk": 125, "def": 100, "spa": 60, "spd": 100, "spe": 100 },
     "moves": ["Protect", "Fake Out", "Double-Edge", "Stomping Tantrum", "Sucker Punch", "Crunch", "Drain Punch", "Ice Punch"]
   },
   {
@@ -218,6 +227,7 @@
     "typeIcons": ["water.png", "psychic.png"],
     "abilities": ["Illuminate", "Natural Cure", "Analytic"],
     "baseStats": { "hp": 60, "atk": 75, "def": 85, "spa": 100, "spd": 85, "spe": 115 },
+    "megaStats": { "hp": 60, "atk": 100, "def": 105, "spa": 130, "spd": 105, "spe": 120 },
     "moves": ["Protect", "Hydro Pump", "Psychic", "Ice Beam", "Thunderbolt", "Recover", "Trick Room", "Ally Switch"]
   },
   {
@@ -228,6 +238,7 @@
     "typeIcons": ["bug.png"],
     "abilities": ["Hyper Cutter", "Mold Breaker", "Moxie"],
     "baseStats": { "hp": 65, "atk": 125, "def": 100, "spa": 55, "spd": 70, "spe": 85 },
+    "megaStats": { "hp": 65, "atk": 155, "def": 120, "spa": 65, "spd": 90, "spe": 105 },
     "moves": ["Protect", "X-Scissor", "Close Combat", "Quick Attack", "Rock Slide", "Earthquake", "Swords Dance", "Feint"]
   },
   {
@@ -278,6 +289,7 @@
     "typeIcons": ["water.png", "flying.png"],
     "abilities": ["Intimidate", "Moxie"],
     "baseStats": { "hp": 95, "atk": 125, "def": 79, "spa": 60, "spd": 100, "spe": 81 },
+    "megaStats": { "hp": 95, "atk": 155, "def": 109, "spa": 70, "spd": 130, "spe": 81 },
     "moves": ["Protect", "Waterfall", "Taunt", "Thunder Wave", "Ice Fang", "Dragon Dance", "Crunch", "Bounce"]
   },
   {
@@ -328,6 +340,7 @@
     "typeIcons": ["rock.png", "flying.png"],
     "abilities": ["Rock Head", "Pressure", "Unnerve"],
     "baseStats": { "hp": 80, "atk": 105, "def": 65, "spa": 60, "spd": 75, "spe": 130 },
+    "megaStats": { "hp": 80, "atk": 135, "def": 85, "spa": 70, "spd": 95, "spe": 150 },
     "moves": ["Protect", "Rock Slide", "Tailwind", "Taunt", "Wide Guard", "Dual Wingbeat", "Earthquake", "Sky Drop"]
   },
   {
@@ -348,6 +361,7 @@
     "typeIcons": ["dragon.png", "flying.png"],
     "abilities": ["Inner Focus", "Multiscale"],
     "baseStats": { "hp": 91, "atk": 134, "def": 95, "spa": 100, "spd": 100, "spe": 80 },
+    "megaStats": { "hp": 91, "atk": 124, "def": 115, "spa": 145, "spd": 125, "spe": 100 },
     "moves": ["Protect", "Extreme Speed", "Tailwind", "Ice Spinner", "Stomping Tantrum", "Dragon Claw", "Low Kick", "Thunder Punch"]
   },
   {
@@ -356,9 +370,10 @@
     "sprite": "meganium.png",
     "types": ["Grass"],
     "typeIcons": ["grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Leaf Guard"],
+    "baseStats": { "hp": 80, "atk": 82, "def": 100, "spa": 83, "spd": 100, "spe": 80 },
+    "megaStats": { "hp": 80, "atk": 92, "def": 115, "spa": 143, "spd": 115, "spe": 80 },
+    "moves": ["Protect", "Giga Drain", "Energy Ball", "Leaf Storm", "Pollen Puff", "Light Screen", "Reflect", "Helping Hand"]
   },
   {
     "id": 37,
@@ -366,9 +381,9 @@
     "sprite": "typhlosion.png",
     "types": ["Fire"],
     "typeIcons": ["fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Blaze", "Flash Fire"],
+    "baseStats": { "hp": 78, "atk": 84, "def": 78, "spa": 109, "spd": 85, "spe": 100 },
+    "moves": ["Protect", "Eruption", "Heat Wave", "Flamethrower", "Focus Blast", "Solar Beam", "Will-O-Wisp", "Extrasensory"]
   },
   {
     "id": 38,
@@ -376,9 +391,9 @@
     "sprite": "hisuian-typhlosion.png",
     "types": ["Fire", "Ghost"],
     "typeIcons": ["fire.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Blaze", "Frisk"],
+    "baseStats": { "hp": 73, "atk": 84, "def": 78, "spa": 119, "spd": 85, "spe": 95 },
+    "moves": ["Protect", "Infernal Parade", "Heat Wave", "Shadow Ball", "Eruption", "Will-O-Wisp", "Solar Beam", "Extrasensory"]
   },
   {
     "id": 39,
@@ -386,9 +401,10 @@
     "sprite": "feraligatr.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Sheer Force"],
+    "baseStats": { "hp": 85, "atk": 105, "def": 100, "spa": 79, "spd": 83, "spe": 78 },
+    "megaStats": { "hp": 85, "atk": 160, "def": 125, "spa": 89, "spd": 93, "spe": 78 },
+    "moves": ["Protect", "Liquidation", "Waterfall", "Ice Punch", "Crunch", "Dragon Dance", "Aqua Jet", "Superpower"]
   },
   {
     "id": 40,
@@ -396,9 +412,9 @@
     "sprite": "ariados.png",
     "types": ["Bug", "Poison"],
     "typeIcons": ["bug.png", "poison.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Swarm", "Insomnia", "Sniper"],
+    "baseStats": { "hp": 70, "atk": 90, "def": 70, "spa": 60, "spd": 70, "spe": 40 },
+    "moves": ["Protect", "Leech Life", "Poison Jab", "Lunge", "Sucker Punch", "Sticky Web", "Toxic Spikes", "Megahorn"]
   },
   {
     "id": 41,
@@ -406,9 +422,10 @@
     "sprite": "ampharos.png",
     "types": ["Electric"],
     "typeIcons": ["electric.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Static", "Plus"],
+    "baseStats": { "hp": 90, "atk": 75, "def": 85, "spa": 115, "spd": 90, "spe": 55 },
+    "megaStats": { "hp": 90, "atk": 95, "def": 105, "spa": 165, "spd": 110, "spe": 45 },
+    "moves": ["Protect", "Thunderbolt", "Volt Switch", "Discharge", "Dragon Pulse", "Power Gem", "Cotton Guard", "Thunder Wave"]
   },
   {
     "id": 42,
@@ -416,9 +433,9 @@
     "sprite": "azumarill.png",
     "types": ["Water", "Fairy"],
     "typeIcons": ["water.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Thick Fat", "Huge Power", "Sap Sipper"],
+    "baseStats": { "hp": 100, "atk": 50, "def": 80, "spa": 60, "spd": 80, "spe": 50 },
+    "moves": ["Protect", "Aqua Jet", "Liquidation", "Play Rough", "Belly Drum", "Helping Hand", "Ice Spinner", "Superpower"]
   },
   {
     "id": 43,
@@ -426,9 +443,9 @@
     "sprite": "politoed.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Water Absorb", "Damp", "Drizzle"],
+    "baseStats": { "hp": 90, "atk": 75, "def": 75, "spa": 90, "spd": 100, "spe": 70 },
+    "moves": ["Protect", "Scald", "Weather Ball", "Helping Hand", "Encore", "Icy Wind", "Perish Song", "Ice Beam"]
   },
   {
     "id": 44,
@@ -436,9 +453,9 @@
     "sprite": "espeon.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Synchronize", "Magic Bounce"],
+    "baseStats": { "hp": 65, "atk": 65, "def": 60, "spa": 130, "spd": 95, "spe": 110 },
+    "moves": ["Protect", "Psychic", "Dazzling Gleam", "Shadow Ball", "Helping Hand", "Yawn", "Calm Mind", "Morning Sun"]
   },
   {
     "id": 45,
@@ -446,9 +463,9 @@
     "sprite": "umbreon.png",
     "types": ["Dark"],
     "typeIcons": ["dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Synchronize", "Inner Focus"],
+    "baseStats": { "hp": 95, "atk": 65, "def": 110, "spa": 60, "spd": 130, "spe": 65 },
+    "moves": ["Protect", "Foul Play", "Snarl", "Helping Hand", "Yawn", "Moonlight", "Taunt", "Wish"]
   },
   {
     "id": 46,
@@ -456,9 +473,9 @@
     "sprite": "slowking.png",
     "types": ["Water", "Psychic"],
     "typeIcons": ["water.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Oblivious", "Own Tempo", "Regenerator"],
+    "baseStats": { "hp": 95, "atk": 75, "def": 80, "spa": 100, "spd": 110, "spe": 30 },
+    "moves": ["Protect", "Scald", "Psychic", "Trick Room", "Slack Off", "Yawn", "Ice Beam", "Helping Hand"]
   },
   {
     "id": 47,
@@ -466,9 +483,9 @@
     "sprite": "galarian-slowking.png",
     "types": ["Poison", "Psychic"],
     "typeIcons": ["poison.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Curious Medicine", "Own Tempo", "Regenerator"],
+    "baseStats": { "hp": 95, "atk": 65, "def": 80, "spa": 110, "spd": 110, "spe": 30 },
+    "moves": ["Protect", "Sludge Bomb", "Psychic", "Trick Room", "Chilly Reception", "Flamethrower", "Nasty Plot", "Helping Hand"]
   },
   {
     "id": 48,
@@ -476,9 +493,9 @@
     "sprite": "forretress.png",
     "types": ["Bug", "Steel"],
     "typeIcons": ["bug.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sturdy", "Overcoat"],
+    "baseStats": { "hp": 75, "atk": 90, "def": 140, "spa": 60, "spd": 60, "spe": 40 },
+    "moves": ["Protect", "Gyro Ball", "Body Press", "Volt Switch", "Rapid Spin", "Spikes", "Stealth Rock", "Explosion"]
   },
   {
     "id": 49,
@@ -486,9 +503,10 @@
     "sprite": "steelix.png",
     "types": ["Steel", "Ground"],
     "typeIcons": ["steel.png", "ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Rock Head", "Sturdy", "Sheer Force"],
+    "baseStats": { "hp": 75, "atk": 85, "def": 200, "spa": 55, "spd": 65, "spe": 30 },
+    "megaStats": { "hp": 75, "atk": 125, "def": 230, "spa": 55, "spd": 95, "spe": 30 },
+    "moves": ["Protect", "Heavy Slam", "Earthquake", "Body Press", "Rock Slide", "Stealth Rock", "Dragon Tail", "Wide Guard"]
   },
   {
     "id": 50,
@@ -496,9 +514,10 @@
     "sprite": "scizor.png",
     "types": ["Bug", "Steel"],
     "typeIcons": ["bug.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Swarm", "Technician", "Light Metal"],
+    "baseStats": { "hp": 70, "atk": 130, "def": 100, "spa": 55, "spd": 80, "spe": 65 },
+    "megaStats": { "hp": 70, "atk": 150, "def": 140, "spa": 65, "spd": 100, "spe": 75 },
+    "moves": ["Protect", "Bullet Punch", "U-turn", "Dual Wingbeat", "Close Combat", "Swords Dance", "Pounce", "Bug Bite"]
   },
   {
     "id": 51,
@@ -506,9 +525,10 @@
     "sprite": "heracross.png",
     "types": ["Bug", "Fighting"],
     "typeIcons": ["bug.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Swarm", "Guts", "Moxie"],
+    "baseStats": { "hp": 80, "atk": 125, "def": 75, "spa": 40, "spd": 95, "spe": 85 },
+    "megaStats": { "hp": 80, "atk": 185, "def": 115, "spa": 40, "spd": 105, "spe": 75 },
+    "moves": ["Protect", "Close Combat", "Megahorn", "Rock Slide", "Pin Missile", "Swords Dance", "Facade", "Knock Off"]
   },
   {
     "id": 52,
@@ -516,9 +536,10 @@
     "sprite": "skarmory.png",
     "types": ["Steel", "Flying"],
     "typeIcons": ["steel.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Sturdy", "Weak Armor"],
+    "baseStats": { "hp": 65, "atk": 80, "def": 140, "spa": 40, "spd": 70, "spe": 70 },
+    "megaStats": { "hp": 65, "atk": 140, "def": 110, "spa": 40, "spd": 100, "spe": 110 },
+    "moves": ["Protect", "Brave Bird", "Iron Head", "Tailwind", "Body Press", "Roost", "Spikes", "Whirlwind"]
   },
   {
     "id": 53,
@@ -526,9 +547,10 @@
     "sprite": "houndoom.png",
     "types": ["Dark", "Fire"],
     "typeIcons": ["dark.png", "fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Early Bird", "Flash Fire", "Unnerve"],
+    "baseStats": { "hp": 75, "atk": 90, "def": 50, "spa": 110, "spd": 80, "spe": 95 },
+    "megaStats": { "hp": 75, "atk": 90, "def": 90, "spa": 140, "spd": 90, "spe": 115 },
+    "moves": ["Protect", "Heat Wave", "Dark Pulse", "Snarl", "Will-O-Wisp", "Nasty Plot", "Sludge Bomb", "Flamethrower"]
   },
   {
     "id": 54,
@@ -538,6 +560,7 @@
     "typeIcons": ["rock.png", "dark.png"],
     "abilities": ["Sand Stream", "Unnerve"],
     "baseStats": { "hp": 100, "atk": 134, "def": 110, "spa": 95, "spd": 100, "spe": 61 },
+    "megaStats": { "hp": 100, "atk": 164, "def": 150, "spa": 95, "spd": 120, "spe": 71 },
     "moves": ["Protect", "Rock Slide", "Crunch", "Low Kick", "Ice Punch", "Thunder Punch", "Dragon Dance", "Taunt"]
   },
   {
@@ -558,6 +581,7 @@
     "typeIcons": ["psychic.png", "fairy.png"],
     "abilities": ["Synchronize", "Trace", "Telepathy"],
     "baseStats": { "hp": 68, "atk": 65, "def": 65, "spa": 125, "spd": 115, "spe": 80 },
+    "megaStats": { "hp": 68, "atk": 85, "def": 65, "spa": 165, "spd": 135, "spe": 100 },
     "moves": ["Protect", "Moonblast", "Psychic", "Dazzling Gleam", "Trick Room", "Helping Hand", "Mystical Fire", "Encore"]
   },
   {
@@ -566,9 +590,10 @@
     "sprite": "sableye.png",
     "types": ["Dark", "Ghost"],
     "typeIcons": ["dark.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Stall", "Prankster"],
+    "baseStats": { "hp": 50, "atk": 75, "def": 75, "spa": 65, "spd": 65, "spe": 50 },
+    "megaStats": { "hp": 50, "atk": 85, "def": 125, "spa": 85, "spd": 115, "spe": 20 },
+    "moves": ["Protect", "Fake Out", "Will-O-Wisp", "Taunt", "Quash", "Foul Play", "Knock Off", "Recover"]
   },
   {
     "id": 58,
@@ -576,9 +601,10 @@
     "sprite": "aggron.png",
     "types": ["Steel", "Rock"],
     "typeIcons": ["steel.png", "rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sturdy", "Rock Head", "Heavy Metal"],
+    "baseStats": { "hp": 70, "atk": 110, "def": 180, "spa": 60, "spd": 60, "spe": 50 },
+    "megaStats": { "hp": 70, "atk": 140, "def": 230, "spa": 60, "spd": 80, "spe": 50 },
+    "moves": ["Protect", "Heavy Slam", "Rock Slide", "Body Press", "Earthquake", "Iron Head", "Stealth Rock", "Thunder Wave"]
   },
   {
     "id": 59,
@@ -586,9 +612,10 @@
     "sprite": "medicham.png",
     "types": ["Fighting", "Psychic"],
     "typeIcons": ["fighting.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pure Power", "Telepathy"],
+    "baseStats": { "hp": 60, "atk": 60, "def": 75, "spa": 60, "spd": 75, "spe": 80 },
+    "megaStats": { "hp": 60, "atk": 140, "def": 85, "spa": 80, "spd": 85, "spe": 100 },
+    "moves": ["Protect", "Drain Punch", "Zen Headbutt", "Fake Out", "Ice Punch", "Bullet Punch", "High Jump Kick", "Detect"]
   },
   {
     "id": 60,
@@ -596,9 +623,10 @@
     "sprite": "manectric.png",
     "types": ["Electric"],
     "typeIcons": ["electric.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Static", "Lightning Rod", "Minus"],
+    "baseStats": { "hp": 70, "atk": 75, "def": 60, "spa": 105, "spd": 60, "spe": 105 },
+    "megaStats": { "hp": 70, "atk": 75, "def": 80, "spa": 135, "spd": 80, "spe": 135 },
+    "moves": ["Protect", "Thunderbolt", "Volt Switch", "Snarl", "Overheat", "Thunder Wave", "Electroweb", "Flamethrower"]
   },
   {
     "id": 61,
@@ -606,9 +634,10 @@
     "sprite": "sharpedo.png",
     "types": ["Water", "Dark"],
     "typeIcons": ["water.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Rough Skin", "Speed Boost"],
+    "baseStats": { "hp": 70, "atk": 120, "def": 40, "spa": 95, "spd": 40, "spe": 95 },
+    "megaStats": { "hp": 70, "atk": 140, "def": 70, "spa": 110, "spd": 65, "spe": 105 },
+    "moves": ["Protect", "Crunch", "Liquidation", "Ice Fang", "Aqua Jet", "Psychic Fangs", "Destiny Bond", "Close Combat"]
   },
   {
     "id": 62,
@@ -616,9 +645,10 @@
     "sprite": "camerupt.png",
     "types": ["Fire", "Ground"],
     "typeIcons": ["fire.png", "ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Magma Armor", "Solid Rock", "Anger Point"],
+    "baseStats": { "hp": 70, "atk": 100, "def": 70, "spa": 105, "spd": 75, "spe": 40 },
+    "megaStats": { "hp": 70, "atk": 120, "def": 100, "spa": 145, "spd": 105, "spe": 20 },
+    "moves": ["Protect", "Heat Wave", "Earth Power", "Eruption", "Yawn", "Ancient Power", "Flamethrower", "Will-O-Wisp"]
   },
   {
     "id": 63,
@@ -636,9 +666,10 @@
     "sprite": "altaria.png",
     "types": ["Dragon", "Flying"],
     "typeIcons": ["dragon.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Natural Cure", "Cloud Nine"],
+    "baseStats": { "hp": 75, "atk": 70, "def": 90, "spa": 70, "spd": 105, "spe": 80 },
+    "megaStats": { "hp": 75, "atk": 110, "def": 110, "spa": 110, "spd": 105, "spe": 80 },
+    "moves": ["Protect", "Dragon Pulse", "Hurricane", "Tailwind", "Roost", "Will-O-Wisp", "Cotton Guard", "Hyper Voice"]
   },
   {
     "id": 65,
@@ -646,9 +677,9 @@
     "sprite": "milotic.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Marvel Scale", "Competitive", "Cute Charm"],
+    "baseStats": { "hp": 95, "atk": 60, "def": 79, "spa": 100, "spd": 125, "spe": 81 },
+    "moves": ["Protect", "Scald", "Icy Wind", "Ice Beam", "Recover", "Coil", "Hypnosis", "Mirror Coat"]
   },
   {
     "id": 66,
@@ -656,9 +687,9 @@
     "sprite": "castform.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Forecast"],
+    "baseStats": { "hp": 70, "atk": 70, "def": 70, "spa": 70, "spd": 70, "spe": 70 },
+    "moves": ["Protect", "Weather Ball", "Sunny Day", "Rain Dance", "Sandstorm", "Hail", "Hurricane", "Thunder"]
   },
   {
     "id": 67,
@@ -666,9 +697,10 @@
     "sprite": "banette.png",
     "types": ["Ghost"],
     "typeIcons": ["ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Insomnia", "Frisk", "Cursed Body"],
+    "baseStats": { "hp": 64, "atk": 115, "def": 65, "spa": 83, "spd": 63, "spe": 65 },
+    "megaStats": { "hp": 64, "atk": 165, "def": 75, "spa": 93, "spd": 83, "spe": 75 },
+    "moves": ["Protect", "Shadow Claw", "Poltergeist", "Will-O-Wisp", "Taunt", "Destiny Bond", "Knock Off", "Sucker Punch"]
   },
   {
     "id": 68,
@@ -676,9 +708,10 @@
     "sprite": "chimecho.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Levitate"],
+    "baseStats": { "hp": 75, "atk": 50, "def": 80, "spa": 95, "spd": 90, "spe": 65 },
+    "megaStats": { "hp": 75, "atk": 50, "def": 110, "spa": 135, "spd": 120, "spe": 65 },
+    "moves": ["Protect", "Psychic", "Dazzling Gleam", "Helping Hand", "Trick Room", "Recover", "Thunder Wave", "Heal Bell"]
   },
   {
     "id": 69,
@@ -686,9 +719,10 @@
     "sprite": "absol.png",
     "types": ["Dark"],
     "typeIcons": ["dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pressure", "Super Luck", "Justified"],
+    "baseStats": { "hp": 65, "atk": 130, "def": 60, "spa": 75, "spd": 60, "spe": 75 },
+    "megaStats": { "hp": 65, "atk": 150, "def": 60, "spa": 115, "spd": 60, "spe": 115 },
+    "moves": ["Protect", "Knock Off", "Sucker Punch", "Play Rough", "Psycho Cut", "Swords Dance", "Superpower", "Night Slash"]
   },
   {
     "id": 70,
@@ -696,9 +730,10 @@
     "sprite": "glalie.png",
     "types": ["Ice"],
     "typeIcons": ["ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Inner Focus", "Ice Body", "Moody"],
+    "baseStats": { "hp": 80, "atk": 80, "def": 80, "spa": 80, "spd": 80, "spe": 80 },
+    "megaStats": { "hp": 80, "atk": 120, "def": 80, "spa": 120, "spd": 80, "spe": 100 },
+    "moves": ["Protect", "Freeze-Dry", "Ice Beam", "Icy Wind", "Explosion", "Taunt", "Spikes", "Crunch"]
   },
   {
     "id": 71,
@@ -706,9 +741,9 @@
     "sprite": "torterra.png",
     "types": ["Grass", "Ground"],
     "typeIcons": ["grass.png", "ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Shell Armor"],
+    "baseStats": { "hp": 95, "atk": 109, "def": 105, "spa": 75, "spd": 85, "spe": 56 },
+    "moves": ["Protect", "Wood Hammer", "Earthquake", "Rock Slide", "Leech Seed", "Body Press", "Curse", "Seed Bomb"]
   },
   {
     "id": 72,
@@ -716,9 +751,9 @@
     "sprite": "infernape.png",
     "types": ["Fire", "Fighting"],
     "typeIcons": ["fire.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Blaze", "Iron Fist"],
+    "baseStats": { "hp": 76, "atk": 104, "def": 71, "spa": 104, "spd": 71, "spe": 108 },
+    "moves": ["Protect", "Fake Out", "Close Combat", "Flare Blitz", "Mach Punch", "Encore", "U-turn", "Overheat"]
   },
   {
     "id": 73,
@@ -726,9 +761,9 @@
     "sprite": "empoleon.png",
     "types": ["Water", "Steel"],
     "typeIcons": ["water.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Competitive"],
+    "baseStats": { "hp": 84, "atk": 86, "def": 88, "spa": 111, "spd": 101, "spe": 60 },
+    "moves": ["Protect", "Hydro Pump", "Flash Cannon", "Icy Wind", "Grass Knot", "Yawn", "Snarl", "Surf"]
   },
   {
     "id": 74,
@@ -736,9 +771,9 @@
     "sprite": "luxray.png",
     "types": ["Electric"],
     "typeIcons": ["electric.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Rivalry", "Intimidate", "Guts"],
+    "baseStats": { "hp": 80, "atk": 120, "def": 79, "spa": 95, "spd": 79, "spe": 70 },
+    "moves": ["Protect", "Wild Charge", "Snarl", "Crunch", "Superpower", "Ice Fang", "Volt Switch", "Thunder Wave"]
   },
   {
     "id": 75,
@@ -746,9 +781,9 @@
     "sprite": "roserade.png",
     "types": ["Grass", "Poison"],
     "typeIcons": ["grass.png", "poison.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Natural Cure", "Poison Point", "Technician"],
+    "baseStats": { "hp": 60, "atk": 70, "def": 65, "spa": 125, "spd": 105, "spe": 90 },
+    "moves": ["Protect", "Leaf Storm", "Sludge Bomb", "Sleep Powder", "Pollen Puff", "Giga Drain", "Dazzling Gleam", "Toxic Spikes"]
   },
   {
     "id": 76,
@@ -756,9 +791,9 @@
     "sprite": "rampardos.png",
     "types": ["Rock"],
     "typeIcons": ["rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Mold Breaker", "Sheer Force"],
+    "baseStats": { "hp": 97, "atk": 165, "def": 60, "spa": 65, "spd": 50, "spe": 58 },
+    "moves": ["Protect", "Rock Slide", "Head Smash", "Crunch", "Zen Headbutt", "Fire Punch", "Hammer Arm", "Earthquake"]
   },
   {
     "id": 77,
@@ -766,9 +801,9 @@
     "sprite": "bastiodon.png",
     "types": ["Rock", "Steel"],
     "typeIcons": ["rock.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sturdy", "Soundproof"],
+    "baseStats": { "hp": 60, "atk": 52, "def": 168, "spa": 47, "spd": 138, "spe": 30 },
+    "moves": ["Protect", "Body Press", "Iron Head", "Rock Slide", "Wide Guard", "Iron Defense", "Stealth Rock", "Roar"]
   },
   {
     "id": 78,
@@ -776,9 +811,10 @@
     "sprite": "lopunny.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Cute Charm", "Klutz", "Limber"],
+    "baseStats": { "hp": 65, "atk": 76, "def": 84, "spa": 54, "spd": 96, "spe": 105 },
+    "megaStats": { "hp": 65, "atk": 136, "def": 94, "spa": 54, "spd": 96, "spe": 135 },
+    "moves": ["Protect", "Fake Out", "Quick Attack", "High Jump Kick", "Encore", "Helping Hand", "Switcheroo", "Triple Axel"]
   },
   {
     "id": 79,
@@ -786,9 +822,9 @@
     "sprite": "spiritomb.png",
     "types": ["Ghost", "Dark"],
     "typeIcons": ["ghost.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pressure", "Infiltrator"],
+    "baseStats": { "hp": 50, "atk": 92, "def": 108, "spa": 92, "spd": 108, "spe": 35 },
+    "moves": ["Protect", "Snarl", "Shadow Ball", "Will-O-Wisp", "Pain Split", "Calm Mind", "Dark Pulse", "Taunt"]
   },
   {
     "id": 80,
@@ -798,6 +834,7 @@
     "typeIcons": ["dragon.png", "ground.png"],
     "abilities": ["Sand Veil", "Rough Skin"],
     "baseStats": { "hp": 108, "atk": 130, "def": 95, "spa": 80, "spd": 85, "spe": 102 },
+    "megaStats": { "hp": 108, "atk": 170, "def": 115, "spa": 120, "spd": 95, "spe": 92 },
     "moves": ["Protect", "Earthquake", "Stomping Tantrum", "Dragon Claw", "Rock Slide", "Swords Dance", "Poison Jab", "Scale Shot"]
   },
   {
@@ -806,9 +843,10 @@
     "sprite": "lucario.png",
     "types": ["Fighting", "Steel"],
     "typeIcons": ["fighting.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Steadfast", "Inner Focus", "Justified"],
+    "baseStats": { "hp": 70, "atk": 110, "def": 70, "spa": 115, "spd": 70, "spe": 90 },
+    "megaStats": { "hp": 70, "atk": 145, "def": 88, "spa": 140, "spd": 70, "spe": 112 },
+    "moves": ["Protect", "Close Combat", "Flash Cannon", "Aura Sphere", "Extreme Speed", "Bullet Punch", "Vacuum Wave", "Swords Dance"]
   },
   {
     "id": 82,
@@ -816,9 +854,9 @@
     "sprite": "hippowdon.png",
     "types": ["Ground"],
     "typeIcons": ["ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sand Stream", "Sand Force"],
+    "baseStats": { "hp": 108, "atk": 112, "def": 118, "spa": 68, "spd": 72, "spe": 47 },
+    "moves": ["Protect", "Earthquake", "Rock Slide", "Yawn", "Slack Off", "Stealth Rock", "Body Press", "Whirlwind"]
   },
   {
     "id": 83,
@@ -826,9 +864,9 @@
     "sprite": "toxicroak.png",
     "types": ["Poison", "Fighting"],
     "typeIcons": ["poison.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Anticipation", "Dry Skin", "Poison Touch"],
+    "baseStats": { "hp": 83, "atk": 106, "def": 65, "spa": 86, "spd": 65, "spe": 85 },
+    "moves": ["Protect", "Drain Punch", "Gunk Shot", "Sucker Punch", "Fake Out", "Taunt", "Ice Punch", "Low Kick"]
   },
   {
     "id": 84,
@@ -836,9 +874,10 @@
     "sprite": "abomasnow.png",
     "types": ["Grass", "Ice"],
     "typeIcons": ["grass.png", "ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Snow Warning", "Soundproof"],
+    "baseStats": { "hp": 90, "atk": 92, "def": 75, "spa": 92, "spd": 85, "spe": 60 },
+    "megaStats": { "hp": 90, "atk": 132, "def": 105, "spa": 132, "spd": 105, "spe": 30 },
+    "moves": ["Protect", "Blizzard", "Giga Drain", "Ice Shard", "Aurora Veil", "Earth Power", "Wood Hammer", "Leech Seed"]
   },
   {
     "id": 85,
@@ -846,9 +885,9 @@
     "sprite": "weavile.png",
     "types": ["Dark", "Ice"],
     "typeIcons": ["dark.png", "ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pressure", "Pickpocket"],
+    "baseStats": { "hp": 70, "atk": 120, "def": 65, "spa": 45, "spd": 85, "spe": 125 },
+    "moves": ["Protect", "Icicle Crash", "Knock Off", "Ice Shard", "Fake Out", "Low Kick", "Swords Dance", "Triple Axel"]
   },
   {
     "id": 86,
@@ -856,9 +895,9 @@
     "sprite": "rhyperior.png",
     "types": ["Ground", "Rock"],
     "typeIcons": ["ground.png", "rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Lightning Rod", "Solid Rock", "Reckless"],
+    "baseStats": { "hp": 115, "atk": 140, "def": 130, "spa": 55, "spd": 55, "spe": 40 },
+    "moves": ["Protect", "Rock Slide", "High Horsepower", "Fire Punch", "Ice Punch", "Megahorn", "Swords Dance", "Hammer Arm"]
   },
   {
     "id": 87,
@@ -866,9 +905,9 @@
     "sprite": "leafeon.png",
     "types": ["Grass"],
     "typeIcons": ["grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Leaf Guard", "Chlorophyll"],
+    "baseStats": { "hp": 65, "atk": 110, "def": 130, "spa": 60, "spd": 65, "spe": 95 },
+    "moves": ["Protect", "Leaf Blade", "Solar Blade", "X-Scissor", "Swords Dance", "Quick Attack", "Trailblaze", "Helping Hand"]
   },
   {
     "id": 88,
@@ -876,9 +915,9 @@
     "sprite": "glaceon.png",
     "types": ["Ice"],
     "typeIcons": ["ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Snow Cloak", "Ice Body"],
+    "baseStats": { "hp": 65, "atk": 60, "def": 110, "spa": 130, "spd": 95, "spe": 65 },
+    "moves": ["Protect", "Freeze-Dry", "Ice Beam", "Blizzard", "Shadow Ball", "Yawn", "Wish", "Icy Wind"]
   },
   {
     "id": 89,
@@ -886,9 +925,9 @@
     "sprite": "gliscor.png",
     "types": ["Ground", "Flying"],
     "typeIcons": ["ground.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Hyper Cutter", "Sand Veil", "Poison Heal"],
+    "baseStats": { "hp": 75, "atk": 95, "def": 125, "spa": 45, "spd": 75, "spe": 95 },
+    "moves": ["Protect", "Earthquake", "Tailwind", "Taunt", "U-turn", "Knock Off", "Acrobatics", "Swords Dance"]
   },
   {
     "id": 90,
@@ -896,9 +935,9 @@
     "sprite": "mamoswine.png",
     "types": ["Ice", "Ground"],
     "typeIcons": ["ice.png", "ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Oblivious", "Snow Cloak", "Thick Fat"],
+    "baseStats": { "hp": 110, "atk": 130, "def": 80, "spa": 70, "spd": 60, "spe": 80 },
+    "moves": ["Protect", "High Horsepower", "Icicle Crash", "Ice Shard", "Rock Slide", "Knock Off", "Endeavor", "Stomping Tantrum"]
   },
   {
     "id": 91,
@@ -906,9 +945,10 @@
     "sprite": "gallade.png",
     "types": ["Psychic", "Fighting"],
     "typeIcons": ["psychic.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Steadfast", "Sharpness", "Justified"],
+    "baseStats": { "hp": 68, "atk": 125, "def": 65, "spa": 65, "spd": 115, "spe": 80 },
+    "megaStats": { "hp": 68, "atk": 165, "def": 95, "spa": 65, "spd": 115, "spe": 110 },
+    "moves": ["Protect", "Sacred Sword", "Psycho Cut", "Leaf Blade", "Wide Guard", "Trick Room", "Helping Hand", "Shadow Sneak"]
   },
   {
     "id": 92,
@@ -916,9 +956,10 @@
     "sprite": "froslass.png",
     "types": ["Ice", "Ghost"],
     "typeIcons": ["ice.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Snow Cloak", "Cursed Body"],
+    "baseStats": { "hp": 70, "atk": 80, "def": 70, "spa": 80, "spd": 70, "spe": 110 },
+    "megaStats": { "hp": 70, "atk": 80, "def": 70, "spa": 140, "spd": 100, "spe": 120 },
+    "moves": ["Protect", "Blizzard", "Shadow Ball", "Icy Wind", "Will-O-Wisp", "Taunt", "Thunder Wave", "Destiny Bond"]
   },
   {
     "id": 93,
@@ -986,9 +1027,9 @@
     "sprite": "serperior.png",
     "types": ["Grass"],
     "typeIcons": ["grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Contrary"],
+    "baseStats": { "hp": 75, "atk": 75, "def": 95, "spa": 75, "spd": 95, "spe": 113 },
+    "moves": ["Protect", "Leaf Storm", "Glare", "Taunt", "Dragon Pulse", "Substitute", "Tera Blast", "Giga Drain"]
   },
   {
     "id": 100,
@@ -996,9 +1037,10 @@
     "sprite": "emboar.png",
     "types": ["Fire", "Fighting"],
     "typeIcons": ["fire.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Blaze", "Reckless"],
+    "baseStats": { "hp": 110, "atk": 123, "def": 65, "spa": 100, "spd": 65, "spe": 65 },
+    "megaStats": { "hp": 110, "atk": 148, "def": 75, "spa": 110, "spd": 110, "spe": 75 },
+    "moves": ["Protect", "Flare Blitz", "Close Combat", "Head Smash", "Wild Charge", "Sucker Punch", "Heat Crash", "Taunt"]
   },
   {
     "id": 101,
@@ -1006,9 +1048,9 @@
     "sprite": "samurott.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Shell Armor"],
+    "baseStats": { "hp": 95, "atk": 100, "def": 85, "spa": 108, "spd": 70, "spe": 70 },
+    "moves": ["Protect", "Hydro Pump", "Surf", "Aqua Jet", "Ice Beam", "Sacred Sword", "Helping Hand", "Encore"]
   },
   {
     "id": 102,
@@ -1016,9 +1058,9 @@
     "sprite": "hisuian-samurott.png",
     "types": ["Water", "Dark"],
     "typeIcons": ["water.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Sharpness"],
+    "baseStats": { "hp": 90, "atk": 108, "def": 80, "spa": 100, "spd": 65, "spe": 85 },
+    "moves": ["Protect", "Ceaseless Edge", "Razor Shell", "Knock Off", "Aqua Jet", "Sacred Sword", "Swords Dance", "Taunt"]
   },
   {
     "id": 103,
@@ -1026,9 +1068,9 @@
     "sprite": "watchog.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Illuminate", "Keen Eye", "Analytic"],
+    "baseStats": { "hp": 60, "atk": 85, "def": 69, "spa": 60, "spd": 69, "spe": 77 },
+    "moves": ["Protect", "Hyper Fang", "Crunch", "Super Fang", "Hypnosis", "Confuse Ray", "Low Kick", "Thunder Wave"]
   },
   {
     "id": 104,
@@ -1036,9 +1078,9 @@
     "sprite": "liepard.png",
     "types": ["Dark"],
     "typeIcons": ["dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Limber", "Unburden", "Prankster"],
+    "baseStats": { "hp": 64, "atk": 88, "def": 50, "spa": 88, "spd": 50, "spe": 106 },
+    "moves": ["Protect", "Fake Out", "Foul Play", "Taunt", "Thunder Wave", "Copycat", "Encore", "Knock Off"]
   },
   {
     "id": 105,
@@ -1046,9 +1088,9 @@
     "sprite": "simisage.png",
     "types": ["Grass"],
     "typeIcons": ["grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Gluttony", "Overgrow"],
+    "baseStats": { "hp": 75, "atk": 98, "def": 63, "spa": 98, "spd": 63, "spe": 101 },
+    "moves": ["Protect", "Leaf Storm", "Knock Off", "Acrobatics", "Superpower", "Gunk Shot", "Rock Slide", "Taunt"]
   },
   {
     "id": 106,
@@ -1056,9 +1098,9 @@
     "sprite": "simisear.png",
     "types": ["Fire"],
     "typeIcons": ["fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Gluttony", "Blaze"],
+    "baseStats": { "hp": 75, "atk": 98, "def": 63, "spa": 98, "spd": 63, "spe": 101 },
+    "moves": ["Protect", "Heat Wave", "Overheat", "Grass Knot", "Knock Off", "Nasty Plot", "Fake Out", "Taunt"]
   },
   {
     "id": 107,
@@ -1066,9 +1108,9 @@
     "sprite": "simipour.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Gluttony", "Torrent"],
+    "baseStats": { "hp": 75, "atk": 98, "def": 63, "spa": 98, "spd": 63, "spe": 101 },
+    "moves": ["Protect", "Hydro Pump", "Ice Beam", "Knock Off", "Grass Knot", "Nasty Plot", "Taunt", "Fake Out"]
   },
   {
     "id": 108,
@@ -1076,9 +1118,10 @@
     "sprite": "excadrill.png",
     "types": ["Ground", "Steel"],
     "typeIcons": ["ground.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sand Rush", "Sand Force", "Mold Breaker"],
+    "baseStats": { "hp": 110, "atk": 135, "def": 60, "spa": 50, "spd": 65, "spe": 88 },
+    "megaStats": { "hp": 110, "atk": 165, "def": 100, "spa": 65, "spd": 65, "spe": 103 },
+    "moves": ["Protect", "High Horsepower", "Iron Head", "Rock Slide", "Swords Dance", "Rapid Spin", "Stomping Tantrum", "Earthquake"]
   },
   {
     "id": 109,
@@ -1086,9 +1129,10 @@
     "sprite": "audino.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Healer", "Regenerator", "Klutz"],
+    "baseStats": { "hp": 103, "atk": 60, "def": 86, "spa": 60, "spd": 86, "spe": 50 },
+    "megaStats": { "hp": 103, "atk": 60, "def": 126, "spa": 80, "spd": 126, "spe": 50 },
+    "moves": ["Protect", "Helping Hand", "Heal Pulse", "Hyper Voice", "Thunder Wave", "Wish", "Encore", "Dazzling Gleam"]
   },
   {
     "id": 110,
@@ -1116,9 +1160,9 @@
     "sprite": "krookodile.png",
     "types": ["Ground", "Dark"],
     "typeIcons": ["ground.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Intimidate", "Moxie", "Anger Point"],
+    "baseStats": { "hp": 95, "atk": 117, "def": 80, "spa": 65, "spd": 70, "spe": 92 },
+    "moves": ["Protect", "High Horsepower", "Knock Off", "Rock Slide", "Taunt", "Crunch", "Close Combat", "Dragon Claw"]
   },
   {
     "id": 113,
@@ -1126,9 +1170,9 @@
     "sprite": "garbodor.png",
     "types": ["Poison"],
     "typeIcons": ["poison.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Stench", "Weak Armor", "Aftermath"],
+    "baseStats": { "hp": 80, "atk": 95, "def": 82, "spa": 60, "spd": 82, "spe": 75 },
+    "moves": ["Protect", "Gunk Shot", "Drain Punch", "Seed Bomb", "Spikes", "Toxic Spikes", "Clear Smog", "Explosion"]
   },
   {
     "id": 114,
@@ -1136,9 +1180,9 @@
     "sprite": "cofagrigus.png",
     "types": ["Ghost"],
     "typeIcons": ["ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Mummy"],
+    "baseStats": { "hp": 58, "atk": 50, "def": 145, "spa": 95, "spd": 105, "spe": 30 },
+    "moves": ["Protect", "Shadow Ball", "Will-O-Wisp", "Trick Room", "Body Press", "Pain Split", "Nasty Plot", "Haze"]
   },
   {
     "id": 115,
@@ -1146,9 +1190,9 @@
     "sprite": "zoroark.png",
     "types": ["Dark"],
     "typeIcons": ["dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Illusion"],
+    "baseStats": { "hp": 60, "atk": 105, "def": 60, "spa": 120, "spd": 60, "spe": 105 },
+    "moves": ["Protect", "Dark Pulse", "Flamethrower", "Sludge Bomb", "Nasty Plot", "Taunt", "U-turn", "Focus Blast"]
   },
   {
     "id": 116,
@@ -1156,9 +1200,9 @@
     "sprite": "hisuian-zoroark.png",
     "types": ["Normal", "Ghost"],
     "typeIcons": ["normal.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Illusion"],
+    "baseStats": { "hp": 55, "atk": 100, "def": 60, "spa": 125, "spd": 60, "spe": 110 },
+    "moves": ["Protect", "Hyper Voice", "Shadow Ball", "Bitter Malice", "Flamethrower", "Nasty Plot", "Taunt", "U-turn"]
   },
   {
     "id": 117,
@@ -1166,9 +1210,9 @@
     "sprite": "reuniclus.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overcoat", "Magic Guard", "Regenerator"],
+    "baseStats": { "hp": 110, "atk": 65, "def": 75, "spa": 125, "spd": 85, "spe": 30 },
+    "moves": ["Protect", "Psychic", "Trick Room", "Recover", "Focus Blast", "Shadow Ball", "Calm Mind", "Helping Hand"]
   },
   {
     "id": 118,
@@ -1176,9 +1220,9 @@
     "sprite": "vanilluxe.png",
     "types": ["Ice"],
     "typeIcons": ["ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Ice Body", "Snow Warning", "Weak Armor"],
+    "baseStats": { "hp": 71, "atk": 95, "def": 85, "spa": 110, "spd": 95, "spe": 79 },
+    "moves": ["Protect", "Blizzard", "Freeze-Dry", "Icy Wind", "Aurora Veil", "Flash Cannon", "Taunt", "Ice Shard"]
   },
   {
     "id": 119,
@@ -1186,9 +1230,9 @@
     "sprite": "emolga.png",
     "types": ["Electric", "Flying"],
     "typeIcons": ["electric.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Static", "Motor Drive"],
+    "baseStats": { "hp": 55, "atk": 75, "def": 60, "spa": 75, "spd": 60, "spe": 103 },
+    "moves": ["Protect", "Electroweb", "Air Slash", "Nuzzle", "Encore", "Tailwind", "Helping Hand", "Volt Switch"]
   },
   {
     "id": 120,
@@ -1196,9 +1240,10 @@
     "sprite": "chandelure.png",
     "types": ["Ghost", "Fire"],
     "typeIcons": ["ghost.png", "fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Flash Fire", "Flame Body", "Infiltrator"],
+    "baseStats": { "hp": 60, "atk": 55, "def": 90, "spa": 145, "spd": 90, "spe": 80 },
+    "megaStats": { "hp": 60, "atk": 75, "def": 110, "spa": 175, "spd": 110, "spe": 90 },
+    "moves": ["Protect", "Heat Wave", "Shadow Ball", "Energy Ball", "Trick Room", "Will-O-Wisp", "Imprison", "Flamethrower"]
   },
   {
     "id": 121,
@@ -1206,9 +1251,9 @@
     "sprite": "beartic.png",
     "types": ["Ice"],
     "typeIcons": ["ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Snow Cloak", "Slush Rush", "Swift Swim"],
+    "baseStats": { "hp": 95, "atk": 130, "def": 80, "spa": 70, "spd": 80, "spe": 50 },
+    "moves": ["Protect", "Icicle Crash", "Ice Spinner", "Close Combat", "Aqua Jet", "Swords Dance", "Play Rough", "Earthquake"]
   },
   {
     "id": 122,
@@ -1216,9 +1261,9 @@
     "sprite": "stunfisk.png",
     "types": ["Ground", "Electric"],
     "typeIcons": ["ground.png", "electric.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Static", "Limber", "Sand Veil"],
+    "baseStats": { "hp": 109, "atk": 66, "def": 84, "spa": 81, "spd": 99, "spe": 32 },
+    "moves": ["Protect", "Earth Power", "Discharge", "Scald", "Yawn", "Electroweb", "Thunder Wave", "Pain Split"]
   },
   {
     "id": 123,
@@ -1226,9 +1271,9 @@
     "sprite": "galarian-stunfisk.png",
     "types": ["Ground", "Steel"],
     "typeIcons": ["ground.png", "steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Mimicry"],
+    "baseStats": { "hp": 109, "atk": 81, "def": 99, "spa": 66, "spd": 84, "spe": 32 },
+    "moves": ["Protect", "High Horsepower", "Iron Head", "Yawn", "Stealth Rock", "Snap Trap", "Foul Play", "Pain Split"]
   },
   {
     "id": 124,
@@ -1236,9 +1281,10 @@
     "sprite": "golurk.png",
     "types": ["Ground", "Ghost"],
     "typeIcons": ["ground.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Iron Fist", "Klutz", "No Guard"],
+    "baseStats": { "hp": 89, "atk": 124, "def": 80, "spa": 55, "spd": 80, "spe": 55 },
+    "megaStats": { "hp": 89, "atk": 159, "def": 105, "spa": 70, "spd": 105, "spe": 55 },
+    "moves": ["Protect", "High Horsepower", "Shadow Punch", "Dynamic Punch", "Ice Punch", "Poltergeist", "Wide Guard", "Drain Punch"]
   },
   {
     "id": 125,
@@ -1256,9 +1302,9 @@
     "sprite": "volcarona.png",
     "types": ["Bug", "Fire"],
     "typeIcons": ["bug.png", "fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Flame Body", "Swarm"],
+    "baseStats": { "hp": 85, "atk": 60, "def": 65, "spa": 135, "spd": 105, "spe": 100 },
+    "moves": ["Protect", "Heat Wave", "Bug Buzz", "Quiver Dance", "Tailwind", "Giga Drain", "Fiery Dance", "Rage Powder"]
   },
   {
     "id": 127,
@@ -1266,9 +1312,10 @@
     "sprite": "chesnaught.png",
     "types": ["Grass", "Fighting"],
     "typeIcons": ["grass.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Bulletproof"],
+    "baseStats": { "hp": 88, "atk": 107, "def": 122, "spa": 74, "spd": 75, "spe": 64 },
+    "megaStats": { "hp": 88, "atk": 137, "def": 172, "spa": 74, "spd": 115, "spe": 44 },
+    "moves": ["Protect", "Drain Punch", "Wood Hammer", "Body Press", "Spiky Shield", "Leech Seed", "Seed Bomb", "Taunt"]
   },
   {
     "id": 128,
@@ -1276,9 +1323,10 @@
     "sprite": "delphox.png",
     "types": ["Fire", "Psychic"],
     "typeIcons": ["fire.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Blaze", "Magician"],
+    "baseStats": { "hp": 75, "atk": 69, "def": 72, "spa": 114, "spd": 100, "spe": 104 },
+    "megaStats": { "hp": 75, "atk": 69, "def": 72, "spa": 159, "spd": 125, "spe": 134 },
+    "moves": ["Protect", "Heat Wave", "Psychic", "Mystical Fire", "Will-O-Wisp", "Nasty Plot", "Dazzling Gleam", "Shadow Ball"]
   },
   {
     "id": 129,
@@ -1286,9 +1334,10 @@
     "sprite": "greninja.png",
     "types": ["Water", "Dark"],
     "typeIcons": ["water.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Protean", "Battle Bond"],
+    "baseStats": { "hp": 72, "atk": 95, "def": 67, "spa": 103, "spd": 71, "spe": 122 },
+    "megaStats": { "hp": 72, "atk": 125, "def": 77, "spa": 133, "spd": 81, "spe": 142 },
+    "moves": ["Protect", "Hydro Pump", "Dark Pulse", "Ice Beam", "U-turn", "Taunt", "Mat Block", "Low Kick"]
   },
   {
     "id": 130,
@@ -1296,9 +1345,9 @@
     "sprite": "diggersby.png",
     "types": ["Normal", "Ground"],
     "typeIcons": ["normal.png", "ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pickup", "Cheek Pouch", "Huge Power"],
+    "baseStats": { "hp": 85, "atk": 56, "def": 77, "spa": 50, "spd": 77, "spe": 78 },
+    "moves": ["Protect", "High Horsepower", "Return", "Quick Attack", "U-turn", "Fire Punch", "Knock Off", "Swords Dance"]
   },
   {
     "id": 131,
@@ -1306,9 +1355,9 @@
     "sprite": "talonflame.png",
     "types": ["Fire", "Flying"],
     "typeIcons": ["fire.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Flame Body", "Gale Wings"],
+    "baseStats": { "hp": 78, "atk": 81, "def": 71, "spa": 74, "spd": 69, "spe": 126 },
+    "moves": ["Protect", "Brave Bird", "Flare Blitz", "Tailwind", "Will-O-Wisp", "Taunt", "Quick Guard", "U-turn"]
   },
   {
     "id": 132,
@@ -1316,9 +1365,9 @@
     "sprite": "vivillon.png",
     "types": ["Bug", "Flying"],
     "typeIcons": ["bug.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Shield Dust", "Compound Eyes", "Friend Guard"],
+    "baseStats": { "hp": 80, "atk": 52, "def": 50, "spa": 90, "spd": 50, "spe": 89 },
+    "moves": ["Protect", "Hurricane", "Pollen Puff", "Rage Powder", "Sleep Powder", "Tailwind", "Struggle Bug", "Bug Buzz"]
   },
   {
     "id": 133,
@@ -1326,10 +1375,10 @@
     "sprite": "floette-eternal-flower.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
+    "abilities": ["Flower Veil", "Symbiosis"],
     "baseStats": { "hp": 74, "atk": 65, "def": 67, "spa": 125, "spd": 128, "spe": 92 },
     "megaStats": { "hp": 74, "atk": 85, "def": 87, "spa": 155, "spd": 148, "spe": 102 },
-    "moves": []
+    "moves": ["Protect", "Moonblast", "Energy Ball", "Psychic", "Helping Hand", "Wish", "Calm Mind", "Tera Blast"]
   },
   {
     "id": 134,
@@ -1337,9 +1386,9 @@
     "sprite": "florges.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Flower Veil", "Symbiosis"],
+    "baseStats": { "hp": 78, "atk": 65, "def": 68, "spa": 112, "spd": 154, "spe": 75 },
+    "moves": ["Protect", "Moonblast", "Pollen Puff", "Helping Hand", "Wish", "Calm Mind", "Energy Ball", "Psychic"]
   },
   {
     "id": 135,
@@ -1347,9 +1396,9 @@
     "sprite": "pangoro.png",
     "types": ["Fighting", "Dark"],
     "typeIcons": ["fighting.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Iron Fist", "Mold Breaker", "Scrappy"],
+    "baseStats": { "hp": 95, "atk": 124, "def": 78, "spa": 69, "spd": 71, "spe": 58 },
+    "moves": ["Protect", "Drain Punch", "Knock Off", "Bullet Punch", "Parting Shot", "Close Combat", "Taunt", "Ice Punch"]
   },
   {
     "id": 136,
@@ -1357,9 +1406,9 @@
     "sprite": "furfrou.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Fur Coat"],
+    "baseStats": { "hp": 75, "atk": 80, "def": 60, "spa": 65, "spd": 90, "spe": 102 },
+    "moves": ["Protect", "Return", "Sucker Punch", "U-turn", "Cotton Guard", "Thunder Wave", "Charm", "Helping Hand"]
   },
   {
     "id": 137,
@@ -1367,9 +1416,10 @@
     "sprite": "meowstic-male.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Infiltrator", "Prankster"],
+    "baseStats": { "hp": 74, "atk": 48, "def": 76, "spa": 83, "spd": 81, "spe": 104 },
+    "megaStats": { "hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124 },
+    "moves": ["Protect", "Psychic", "Thunder Wave", "Reflect", "Light Screen", "Fake Out", "Helping Hand", "Taunt"]
   },
   {
     "id": 138,
@@ -1377,9 +1427,10 @@
     "sprite": "meowstic-female.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Infiltrator", "Competitive"],
+    "baseStats": { "hp": 74, "atk": 48, "def": 76, "spa": 83, "spd": 81, "spe": 104 },
+    "megaStats": { "hp": 74, "atk": 48, "def": 76, "spa": 143, "spd": 101, "spe": 124 },
+    "moves": ["Protect", "Psychic", "Helping Hand", "Fake Out", "Thunder Wave", "Shadow Ball", "Energy Ball", "Light Screen"]
   },
   {
     "id": 139,
@@ -1387,9 +1438,9 @@
     "sprite": "aegislash.png",
     "types": ["Steel", "Ghost"],
     "typeIcons": ["steel.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Stance Change"],
+    "baseStats": { "hp": 60, "atk": 50, "def": 140, "spa": 50, "spd": 140, "spe": 60 },
+    "moves": ["Protect", "King's Shield", "Shadow Ball", "Flash Cannon", "Shadow Sneak", "Sacred Sword", "Wide Guard", "Substitute"]
   },
   {
     "id": 140,
@@ -1397,9 +1448,9 @@
     "sprite": "aromatisse.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Healer", "Aroma Veil"],
+    "baseStats": { "hp": 101, "atk": 72, "def": 72, "spa": 99, "spd": 89, "spe": 29 },
+    "moves": ["Protect", "Moonblast", "Trick Room", "Helping Hand", "Heal Pulse", "Wish", "Mystical Fire", "Dazzling Gleam"]
   },
   {
     "id": 141,
@@ -1407,9 +1458,9 @@
     "sprite": "slurpuff.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sweet Veil", "Unburden"],
+    "baseStats": { "hp": 82, "atk": 80, "def": 86, "spa": 85, "spd": 75, "spe": 72 },
+    "moves": ["Protect", "Play Rough", "Drain Punch", "Belly Drum", "Helping Hand", "Yawn", "Dazzling Gleam", "Sticky Web"]
   },
   {
     "id": 142,
@@ -1417,9 +1468,9 @@
     "sprite": "clawitzer.png",
     "types": ["Water"],
     "typeIcons": ["water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Mega Launcher"],
+    "baseStats": { "hp": 71, "atk": 73, "def": 88, "spa": 120, "spd": 89, "spe": 59 },
+    "moves": ["Protect", "Water Pulse", "Dark Pulse", "Aura Sphere", "Ice Beam", "Dragon Pulse", "Helping Hand", "Hydro Pump"]
   },
   {
     "id": 143,
@@ -1427,9 +1478,9 @@
     "sprite": "heliolisk.png",
     "types": ["Electric", "Normal"],
     "typeIcons": ["electric.png", "normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Dry Skin", "Sand Veil", "Solar Power"],
+    "baseStats": { "hp": 62, "atk": 55, "def": 52, "spa": 109, "spd": 94, "spe": 109 },
+    "moves": ["Protect", "Thunderbolt", "Hyper Voice", "Volt Switch", "Weather Ball", "Surf", "Electroweb", "Solar Beam"]
   },
   {
     "id": 144,
@@ -1437,9 +1488,9 @@
     "sprite": "tyrantrum.png",
     "types": ["Rock", "Dragon"],
     "typeIcons": ["rock.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Strong Jaw", "Rock Head"],
+    "baseStats": { "hp": 82, "atk": 121, "def": 119, "spa": 69, "spd": 59, "spe": 71 },
+    "moves": ["Protect", "Rock Slide", "Head Smash", "Dragon Claw", "Crunch", "Earthquake", "Dragon Dance", "Ice Fang"]
   },
   {
     "id": 145,
@@ -1447,9 +1498,9 @@
     "sprite": "aurorus.png",
     "types": ["Rock", "Ice"],
     "typeIcons": ["rock.png", "ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Refrigerate", "Snow Warning"],
+    "baseStats": { "hp": 123, "atk": 77, "def": 72, "spa": 99, "spd": 92, "spe": 58 },
+    "moves": ["Protect", "Blizzard", "Freeze-Dry", "Hyper Voice", "Ancient Power", "Aurora Veil", "Thunderbolt", "Earth Power"]
   },
   {
     "id": 146,
@@ -1457,9 +1508,9 @@
     "sprite": "sylveon.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Cute Charm", "Pixilate"],
+    "baseStats": { "hp": 95, "atk": 65, "def": 65, "spa": 110, "spd": 130, "spe": 60 },
+    "moves": ["Protect", "Hyper Voice", "Moonblast", "Yawn", "Helping Hand", "Quick Attack", "Calm Mind", "Psyshock"]
   },
   {
     "id": 147,
@@ -1467,9 +1518,10 @@
     "sprite": "hawlucha.png",
     "types": ["Fighting", "Flying"],
     "typeIcons": ["fighting.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Limber", "Unburden", "Mold Breaker"],
+    "baseStats": { "hp": 78, "atk": 92, "def": 75, "spa": 74, "spd": 63, "spe": 118 },
+    "megaStats": { "hp": 78, "atk": 137, "def": 100, "spa": 74, "spd": 93, "spe": 118 },
+    "moves": ["Protect", "Close Combat", "Acrobatics", "Taunt", "Feather Dance", "Encore", "Stone Edge", "Swords Dance"]
   },
   {
     "id": 148,
@@ -1477,9 +1529,9 @@
     "sprite": "dedenne.png",
     "types": ["Electric", "Fairy"],
     "typeIcons": ["electric.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Cheek Pouch", "Pickup", "Plus"],
+    "baseStats": { "hp": 67, "atk": 58, "def": 57, "spa": 81, "spd": 67, "spe": 101 },
+    "moves": ["Protect", "Nuzzle", "Electroweb", "Dazzling Gleam", "Helping Hand", "Super Fang", "Encore", "Volt Switch"]
   },
   {
     "id": 149,
@@ -1487,9 +1539,9 @@
     "sprite": "goodra.png",
     "types": ["Dragon"],
     "typeIcons": ["dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sap Sipper", "Hydration", "Gooey"],
+    "baseStats": { "hp": 90, "atk": 100, "def": 70, "spa": 110, "spd": 150, "spe": 80 },
+    "moves": ["Protect", "Draco Meteor", "Muddy Water", "Thunderbolt", "Fire Blast", "Acid Spray", "Life Dew", "Hydro Pump"]
   },
   {
     "id": 150,
@@ -1497,9 +1549,9 @@
     "sprite": "hisuian-goodra.png",
     "types": ["Steel", "Dragon"],
     "typeIcons": ["steel.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sap Sipper", "Overcoat", "Gooey"],
+    "baseStats": { "hp": 80, "atk": 100, "def": 100, "spa": 110, "spd": 150, "spe": 60 },
+    "moves": ["Protect", "Flash Cannon", "Draco Meteor", "Muddy Water", "Body Press", "Shelter", "Thunderbolt", "Life Dew"]
   },
   {
     "id": 151,
@@ -1507,9 +1559,9 @@
     "sprite": "klefki.png",
     "types": ["Steel", "Fairy"],
     "typeIcons": ["steel.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Prankster", "Magician"],
+    "baseStats": { "hp": 57, "atk": 80, "def": 91, "spa": 80, "spd": 87, "spe": 75 },
+    "moves": ["Protect", "Dazzling Gleam", "Thunder Wave", "Reflect", "Light Screen", "Foul Play", "Switcheroo", "Spikes"]
   },
   {
     "id": 152,
@@ -1517,9 +1569,9 @@
     "sprite": "trevenant.png",
     "types": ["Ghost", "Grass"],
     "typeIcons": ["ghost.png", "grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Natural Cure", "Frisk", "Harvest"],
+    "baseStats": { "hp": 85, "atk": 110, "def": 76, "spa": 65, "spd": 82, "spe": 56 },
+    "moves": ["Protect", "Horn Leech", "Poltergeist", "Will-O-Wisp", "Leech Seed", "Trick Room", "Shadow Claw", "Drain Punch"]
   },
   {
     "id": 153,
@@ -1527,9 +1579,9 @@
     "sprite": "gourgeist.png",
     "types": ["Ghost", "Grass"],
     "typeIcons": ["ghost.png", "grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Pickup", "Frisk", "Insomnia"],
+    "baseStats": { "hp": 65, "atk": 90, "def": 122, "spa": 58, "spd": 75, "spe": 84 },
+    "moves": ["Protect", "Power Whip", "Shadow Sneak", "Will-O-Wisp", "Leech Seed", "Trick Room", "Poltergeist", "Seed Bomb"]
   },
   {
     "id": 154,
@@ -1537,9 +1589,9 @@
     "sprite": "avalugg.png",
     "types": ["Ice"],
     "typeIcons": ["ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Own Tempo", "Ice Body", "Sturdy"],
+    "baseStats": { "hp": 95, "atk": 117, "def": 184, "spa": 44, "spd": 46, "spe": 28 },
+    "moves": ["Protect", "Body Press", "Avalanche", "Recover", "Wide Guard", "Rapid Spin", "Earthquake", "Ice Spinner"]
   },
   {
     "id": 155,
@@ -1547,9 +1599,9 @@
     "sprite": "hisuian-avalugg.png",
     "types": ["Ice", "Rock"],
     "typeIcons": ["ice.png", "rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Strong Jaw", "Ice Body", "Sturdy"],
+    "baseStats": { "hp": 95, "atk": 127, "def": 184, "spa": 34, "spd": 36, "spe": 38 },
+    "moves": ["Protect", "Mountain Gale", "Rock Slide", "Body Press", "Rapid Spin", "Crunch", "Recover", "Wide Guard"]
   },
   {
     "id": 156,
@@ -1557,9 +1609,9 @@
     "sprite": "noivern.png",
     "types": ["Flying", "Dragon"],
     "typeIcons": ["flying.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Frisk", "Infiltrator", "Telepathy"],
+    "baseStats": { "hp": 85, "atk": 70, "def": 80, "spa": 97, "spd": 80, "spe": 123 },
+    "moves": ["Protect", "Draco Meteor", "Hurricane", "Tailwind", "Taunt", "Flamethrower", "Snarl", "Air Slash"]
   },
   {
     "id": 157,
@@ -1567,9 +1619,9 @@
     "sprite": "decidueye.png",
     "types": ["Grass", "Ghost"],
     "typeIcons": ["grass.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Long Reach"],
+    "baseStats": { "hp": 78, "atk": 107, "def": 75, "spa": 100, "spd": 100, "spe": 70 },
+    "moves": ["Protect", "Leaf Blade", "Spirit Shackle", "Brave Bird", "Shadow Sneak", "Swords Dance", "U-turn", "Tailwind"]
   },
   {
     "id": 158,
@@ -1577,9 +1629,9 @@
     "sprite": "hisuian-decidueye.png",
     "types": ["Grass", "Fighting"],
     "typeIcons": ["grass.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Scrappy"],
+    "baseStats": { "hp": 88, "atk": 112, "def": 80, "spa": 95, "spd": 95, "spe": 60 },
+    "moves": ["Protect", "Triple Arrows", "Leaf Blade", "Close Combat", "Sucker Punch", "Bulk Up", "Brave Bird", "Trailblaze"]
   },
   {
     "id": 159,
@@ -1597,9 +1649,9 @@
     "sprite": "primarina.png",
     "types": ["Water", "Fairy"],
     "typeIcons": ["water.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Liquid Voice"],
+    "baseStats": { "hp": 80, "atk": 74, "def": 74, "spa": 126, "spd": 116, "spe": 60 },
+    "moves": ["Protect", "Hyper Voice", "Moonblast", "Hydro Pump", "Icy Wind", "Haze", "Energy Ball", "Encore"]
   },
   {
     "id": 161,
@@ -1607,9 +1659,9 @@
     "sprite": "toucannon.png",
     "types": ["Normal", "Flying"],
     "typeIcons": ["normal.png", "flying.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Skill Link", "Sheer Force"],
+    "baseStats": { "hp": 80, "atk": 120, "def": 75, "spa": 75, "spd": 75, "spe": 60 },
+    "moves": ["Protect", "Beak Blast", "Rock Blast", "Bullet Seed", "Knock Off", "Tailwind", "U-turn", "Brave Bird"]
   },
   {
     "id": 162,
@@ -1617,9 +1669,10 @@
     "sprite": "crabominable.png",
     "types": ["Fighting", "Ice"],
     "typeIcons": ["fighting.png", "ice.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Hyper Cutter", "Iron Fist", "Anger Point"],
+    "baseStats": { "hp": 97, "atk": 132, "def": 77, "spa": 62, "spd": 67, "spe": 43 },
+    "megaStats": { "hp": 97, "atk": 157, "def": 122, "spa": 62, "spd": 107, "spe": 33 },
+    "moves": ["Protect", "Ice Hammer", "Drain Punch", "Close Combat", "Ice Shard", "Swords Dance", "Knock Off", "Earthquake"]
   },
   {
     "id": 163,
@@ -1627,9 +1680,9 @@
     "sprite": "lycanroc-midday.png",
     "types": ["Rock"],
     "typeIcons": ["rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Sand Rush", "Steadfast"],
+    "baseStats": { "hp": 75, "atk": 115, "def": 65, "spa": 55, "spd": 65, "spe": 112 },
+    "moves": ["Protect", "Rock Slide", "Accelerock", "Close Combat", "Swords Dance", "Crunch", "Taunt", "Play Rough"]
   },
   {
     "id": 164,
@@ -1637,9 +1690,9 @@
     "sprite": "lycanroc-midnight.png",
     "types": ["Rock"],
     "typeIcons": ["rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Keen Eye", "Vital Spirit", "No Guard"],
+    "baseStats": { "hp": 85, "atk": 115, "def": 75, "spa": 55, "spd": 75, "spe": 82 },
+    "moves": ["Protect", "Stone Edge", "Crunch", "Close Combat", "Sucker Punch", "Taunt", "Play Rough", "Rock Slide"]
   },
   {
     "id": 165,
@@ -1647,9 +1700,9 @@
     "sprite": "lycanroc-dusk.png",
     "types": ["Rock"],
     "typeIcons": ["rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Tough Claws"],
+    "baseStats": { "hp": 75, "atk": 117, "def": 65, "spa": 55, "spd": 65, "spe": 110 },
+    "moves": ["Protect", "Rock Slide", "Accelerock", "Close Combat", "Crunch", "Swords Dance", "Taunt", "Play Rough"]
   },
   {
     "id": 166,
@@ -1657,9 +1710,9 @@
     "sprite": "toxapex.png",
     "types": ["Poison", "Water"],
     "typeIcons": ["poison.png", "water.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Merciless", "Limber", "Regenerator"],
+    "baseStats": { "hp": 50, "atk": 63, "def": 152, "spa": 53, "spd": 142, "spe": 35 },
+    "moves": ["Protect", "Scald", "Recover", "Haze", "Wide Guard", "Baneful Bunker", "Toxic", "Chilling Water"]
   },
   {
     "id": 167,
@@ -1667,9 +1720,9 @@
     "sprite": "mudsdale.png",
     "types": ["Ground"],
     "typeIcons": ["ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Own Tempo", "Stamina", "Inner Focus"],
+    "baseStats": { "hp": 100, "atk": 125, "def": 100, "spa": 55, "spd": 85, "spe": 35 },
+    "moves": ["Protect", "High Horsepower", "Body Press", "Rock Slide", "Heavy Slam", "Stamina", "Close Combat", "Iron Defense"]
   },
   {
     "id": 168,
@@ -1677,9 +1730,9 @@
     "sprite": "araquanid.png",
     "types": ["Water", "Bug"],
     "typeIcons": ["water.png", "bug.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Water Bubble", "Water Absorb"],
+    "baseStats": { "hp": 68, "atk": 70, "def": 92, "spa": 50, "spd": 132, "spe": 42 },
+    "moves": ["Protect", "Liquidation", "Lunge", "Wide Guard", "Leech Life", "Mirror Coat", "Sticky Web", "Crunch"]
   },
   {
     "id": 169,
@@ -1687,9 +1740,9 @@
     "sprite": "salazzle.png",
     "types": ["Poison", "Fire"],
     "typeIcons": ["poison.png", "fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Corrosion", "Oblivious"],
+    "baseStats": { "hp": 68, "atk": 64, "def": 60, "spa": 111, "spd": 60, "spe": 117 },
+    "moves": ["Protect", "Heat Wave", "Sludge Bomb", "Fake Out", "Encore", "Taunt", "Will-O-Wisp", "Dragon Pulse"]
   },
   {
     "id": 170,
@@ -1697,9 +1750,9 @@
     "sprite": "tsareena.png",
     "types": ["Grass"],
     "typeIcons": ["grass.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Leaf Guard", "Queenly Majesty", "Sweet Veil"],
+    "baseStats": { "hp": 72, "atk": 120, "def": 98, "spa": 50, "spd": 98, "spe": 72 },
+    "moves": ["Protect", "Power Whip", "High Jump Kick", "Triple Axel", "Trop Kick", "Rapid Spin", "Taunt", "Helping Hand"]
   },
   {
     "id": 171,
@@ -1707,9 +1760,9 @@
     "sprite": "oranguru.png",
     "types": ["Normal", "Psychic"],
     "typeIcons": ["normal.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Inner Focus", "Telepathy", "Symbiosis"],
+    "baseStats": { "hp": 90, "atk": 60, "def": 80, "spa": 90, "spd": 110, "spe": 60 },
+    "moves": ["Protect", "Instruct", "Trick Room", "Psychic", "Foul Play", "Helping Hand", "Encore", "Nasty Plot"]
   },
   {
     "id": 172,
@@ -1717,9 +1770,9 @@
     "sprite": "passimian.png",
     "types": ["Fighting"],
     "typeIcons": ["fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Receiver", "Defiant"],
+    "baseStats": { "hp": 100, "atk": 120, "def": 90, "spa": 40, "spd": 60, "spe": 80 },
+    "moves": ["Protect", "Close Combat", "Knock Off", "Rock Slide", "U-turn", "Coaching", "Bulk Up", "Gunk Shot"]
   },
   {
     "id": 173,
@@ -1727,9 +1780,9 @@
     "sprite": "mimikyu.png",
     "types": ["Ghost", "Fairy"],
     "typeIcons": ["ghost.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Disguise"],
+    "baseStats": { "hp": 55, "atk": 90, "def": 80, "spa": 50, "spd": 105, "spe": 96 },
+    "moves": ["Protect", "Play Rough", "Shadow Sneak", "Shadow Claw", "Swords Dance", "Taunt", "Trick Room", "Wood Hammer"]
   },
   {
     "id": 174,
@@ -1737,9 +1790,10 @@
     "sprite": "drampa.png",
     "types": ["Normal", "Dragon"],
     "typeIcons": ["normal.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Berserk", "Sap Sipper", "Cloud Nine"],
+    "baseStats": { "hp": 78, "atk": 60, "def": 85, "spa": 135, "spd": 91, "spe": 36 },
+    "megaStats": { "hp": 78, "atk": 85, "def": 110, "spa": 160, "spd": 116, "spe": 36 },
+    "moves": ["Protect", "Hyper Voice", "Draco Meteor", "Flamethrower", "Thunderbolt", "Calm Mind", "Roost", "Icy Wind"]
   },
   {
     "id": 175,
@@ -1747,9 +1801,9 @@
     "sprite": "kommo-o.png",
     "types": ["Dragon", "Fighting"],
     "typeIcons": ["dragon.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Bulletproof", "Soundproof", "Overcoat"],
+    "baseStats": { "hp": 75, "atk": 110, "def": 125, "spa": 100, "spd": 105, "spe": 85 },
+    "moves": ["Protect", "Clangorous Soul", "Clanging Scales", "Close Combat", "Iron Defense", "Body Press", "Flamethrower", "Dragon Pulse"]
   },
   {
     "id": 176,
@@ -1767,9 +1821,9 @@
     "sprite": "flapple.png",
     "types": ["Grass", "Dragon"],
     "typeIcons": ["grass.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Ripen", "Gluttony", "Hustle"],
+    "baseStats": { "hp": 70, "atk": 110, "def": 80, "spa": 95, "spd": 60, "spe": 70 },
+    "moves": ["Protect", "Grav Apple", "Dragon Rush", "Sucker Punch", "Acrobatics", "Dragon Dance", "Outrage", "U-turn"]
   },
   {
     "id": 178,
@@ -1777,9 +1831,9 @@
     "sprite": "appletun.png",
     "types": ["Grass", "Dragon"],
     "typeIcons": ["grass.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Ripen", "Gluttony", "Thick Fat"],
+    "baseStats": { "hp": 110, "atk": 85, "def": 80, "spa": 100, "spd": 80, "spe": 30 },
+    "moves": ["Protect", "Apple Acid", "Draco Meteor", "Recover", "Leech Seed", "Pollen Puff", "Body Press", "Energy Ball"]
   },
   {
     "id": 179,
@@ -1787,9 +1841,9 @@
     "sprite": "sandaconda.png",
     "types": ["Ground"],
     "typeIcons": ["ground.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sand Spit", "Shed Skin", "Sand Veil"],
+    "baseStats": { "hp": 72, "atk": 107, "def": 125, "spa": 65, "spd": 70, "spe": 71 },
+    "moves": ["Protect", "High Horsepower", "Rock Slide", "Glare", "Coil", "Earthquake", "Body Press", "Shed Tail"]
   },
   {
     "id": 180,
@@ -1797,9 +1851,9 @@
     "sprite": "polteageist.png",
     "types": ["Ghost"],
     "typeIcons": ["ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Weak Armor", "Cursed Body"],
+    "baseStats": { "hp": 60, "atk": 65, "def": 65, "spa": 134, "spd": 114, "spe": 70 },
+    "moves": ["Protect", "Shadow Ball", "Stored Power", "Shell Smash", "Giga Drain", "Strength Sap", "Psychic", "Nasty Plot"]
   },
   {
     "id": 181,
@@ -1807,9 +1861,9 @@
     "sprite": "hatterene.png",
     "types": ["Psychic", "Fairy"],
     "typeIcons": ["psychic.png", "fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Healer", "Anticipation", "Magic Bounce"],
+    "baseStats": { "hp": 57, "atk": 90, "def": 95, "spa": 136, "spd": 103, "spe": 29 },
+    "moves": ["Protect", "Dazzling Gleam", "Psychic", "Trick Room", "Mystical Fire", "Helping Hand", "Nuzzle", "Life Dew"]
   },
   {
     "id": 182,
@@ -1817,9 +1871,9 @@
     "sprite": "mr-rime.png",
     "types": ["Ice", "Psychic"],
     "typeIcons": ["ice.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Tangled Feet", "Screen Cleaner", "Ice Body"],
+    "baseStats": { "hp": 80, "atk": 85, "def": 75, "spa": 110, "spd": 100, "spe": 70 },
+    "moves": ["Protect", "Freeze-Dry", "Psychic", "Fake Out", "Helping Hand", "Icy Wind", "Trick Room", "Nasty Plot"]
   },
   {
     "id": 183,
@@ -1827,9 +1881,9 @@
     "sprite": "runerigus.png",
     "types": ["Ground", "Ghost"],
     "typeIcons": ["ground.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Wandering Spirit"],
+    "baseStats": { "hp": 58, "atk": 95, "def": 145, "spa": 50, "spd": 105, "spe": 30 },
+    "moves": ["Protect", "Shadow Claw", "Earthquake", "Will-O-Wisp", "Trick Room", "Body Press", "Pain Split", "Stealth Rock"]
   },
   {
     "id": 184,
@@ -1837,9 +1891,9 @@
     "sprite": "alcremie.png",
     "types": ["Fairy"],
     "typeIcons": ["fairy.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Sweet Veil", "Aroma Veil"],
+    "baseStats": { "hp": 65, "atk": 60, "def": 75, "spa": 110, "spd": 121, "spe": 64 },
+    "moves": ["Protect", "Dazzling Gleam", "Decorate", "Helping Hand", "Recover", "Mystical Fire", "Encore", "Calm Mind"]
   },
   {
     "id": 185,
@@ -1847,9 +1901,9 @@
     "sprite": "morpeko.png",
     "types": ["Electric", "Dark"],
     "typeIcons": ["electric.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Hunger Switch"],
+    "baseStats": { "hp": 58, "atk": 95, "def": 58, "spa": 70, "spd": 58, "spe": 97 },
+    "moves": ["Protect", "Aura Wheel", "Fake Out", "Parting Shot", "Seed Bomb", "Crunch", "Rapid Spin", "Super Fang"]
   },
   {
     "id": 186,
@@ -1867,9 +1921,9 @@
     "sprite": "wyrdeer.png",
     "types": ["Normal", "Psychic"],
     "typeIcons": ["normal.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Intimidate", "Frisk", "Sap Sipper"],
+    "baseStats": { "hp": 103, "atk": 105, "def": 72, "spa": 105, "spd": 75, "spe": 65 },
+    "moves": ["Protect", "Psyshield Bash", "Hyper Voice", "Trick Room", "Thunder Wave", "Psychic", "Stomping Tantrum", "Helping Hand"]
   },
   {
     "id": 188,
@@ -1877,9 +1931,9 @@
     "sprite": "kleavor.png",
     "types": ["Bug", "Rock"],
     "typeIcons": ["bug.png", "rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Swarm", "Sheer Force", "Sharpness"],
+    "baseStats": { "hp": 70, "atk": 135, "def": 95, "spa": 45, "spd": 70, "spe": 85 },
+    "moves": ["Protect", "Stone Axe", "X-Scissor", "Close Combat", "Swords Dance", "Quick Attack", "Aerial Ace", "Pounce"]
   },
   {
     "id": 189,
@@ -1887,9 +1941,9 @@
     "sprite": "basculegion-male.png",
     "types": ["Water", "Ghost"],
     "typeIcons": ["water.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Rattled", "Adaptability", "Mold Breaker"],
+    "baseStats": { "hp": 120, "atk": 112, "def": 65, "spa": 80, "spd": 75, "spe": 78 },
+    "moves": ["Protect", "Wave Crash", "Last Respects", "Aqua Jet", "Crunch", "Ice Fang", "Flip Turn", "Psychic Fangs"]
   },
   {
     "id": 190,
@@ -1897,9 +1951,9 @@
     "sprite": "basculegion-female.png",
     "types": ["Water", "Ghost"],
     "typeIcons": ["water.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Rattled", "Adaptability", "Mold Breaker"],
+    "baseStats": { "hp": 120, "atk": 92, "def": 65, "spa": 100, "spd": 75, "spe": 78 },
+    "moves": ["Protect", "Hydro Pump", "Shadow Ball", "Last Respects", "Ice Beam", "Icy Wind", "Flip Turn", "Scald"]
   },
   {
     "id": 191,
@@ -1907,9 +1961,9 @@
     "sprite": "sneasler.png",
     "types": ["Fighting", "Poison"],
     "typeIcons": ["fighting.png", "poison.png"],
-    "abilities": [],
+    "abilities": ["Pressure", "Unburden", "Poison Touch"],
     "baseStats": { "hp": 80, "atk": 130, "def": 60, "spa": 40, "spd": 80, "spe": 120 },
-    "moves": []
+    "moves": ["Protect", "Close Combat", "Dire Claw", "Fake Out", "Throat Chop", "Acrobatics", "Swords Dance", "Shadow Claw"]
   },
   {
     "id": 192,
@@ -1917,9 +1971,9 @@
     "sprite": "meowscarada.png",
     "types": ["Grass", "Dark"],
     "typeIcons": ["grass.png", "dark.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Overgrow", "Protean"],
+    "baseStats": { "hp": 76, "atk": 110, "def": 70, "spa": 81, "spd": 70, "spe": 123 },
+    "moves": ["Protect", "Flower Trick", "Knock Off", "U-turn", "Sucker Punch", "Triple Axel", "Taunt", "Play Rough"]
   },
   {
     "id": 193,
@@ -1937,9 +1991,9 @@
     "sprite": "quaquaval.png",
     "types": ["Water", "Fighting"],
     "typeIcons": ["water.png", "fighting.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Torrent", "Moxie"],
+    "baseStats": { "hp": 85, "atk": 120, "def": 80, "spa": 85, "spd": 75, "spe": 85 },
+    "moves": ["Protect", "Aqua Step", "Close Combat", "Aqua Jet", "Brave Bird", "Swords Dance", "Ice Spinner", "Taunt"]
   },
   {
     "id": 195,
@@ -1947,9 +2001,9 @@
     "sprite": "maushold.png",
     "types": ["Normal"],
     "typeIcons": ["normal.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Friend Guard", "Cheek Pouch", "Technician"],
+    "baseStats": { "hp": 74, "atk": 75, "def": 70, "spa": 65, "spd": 75, "spe": 111 },
+    "moves": ["Protect", "Population Bomb", "Follow Me", "Helping Hand", "Encore", "Beat Up", "Super Fang", "Taunt"]
   },
   {
     "id": 196,
@@ -1957,9 +2011,9 @@
     "sprite": "garganacl.png",
     "types": ["Rock"],
     "typeIcons": ["rock.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Purifying Salt", "Sturdy", "Clear Body"],
+    "baseStats": { "hp": 100, "atk": 100, "def": 130, "spa": 45, "spd": 90, "spe": 35 },
+    "moves": ["Protect", "Salt Cure", "Recover", "Wide Guard", "Body Press", "Iron Defense", "Stealth Rock", "Rock Slide"]
   },
   {
     "id": 197,
@@ -1967,9 +2021,9 @@
     "sprite": "armarouge.png",
     "types": ["Fire", "Psychic"],
     "typeIcons": ["fire.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Flash Fire", "Weak Armor"],
+    "baseStats": { "hp": 85, "atk": 60, "def": 100, "spa": 125, "spd": 80, "spe": 75 },
+    "moves": ["Protect", "Armor Cannon", "Expanding Force", "Heat Wave", "Trick Room", "Wide Guard", "Aura Sphere", "Energy Ball"]
   },
   {
     "id": 198,
@@ -1987,9 +2041,9 @@
     "sprite": "bellibolt.png",
     "types": ["Electric"],
     "typeIcons": ["electric.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Electromorphosis", "Static", "Damp"],
+    "baseStats": { "hp": 109, "atk": 64, "def": 91, "spa": 103, "spd": 83, "spe": 45 },
+    "moves": ["Protect", "Thunderbolt", "Muddy Water", "Electroweb", "Parabolic Charge", "Slack Off", "Acid Spray", "Volt Switch"]
   },
   {
     "id": 200,
@@ -1997,9 +2051,10 @@
     "sprite": "scovillain.png",
     "types": ["Grass", "Fire"],
     "typeIcons": ["grass.png", "fire.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Chlorophyll", "Insomnia", "Moody"],
+    "baseStats": { "hp": 65, "atk": 108, "def": 65, "spa": 108, "spd": 65, "spe": 75 },
+    "megaStats": { "hp": 65, "atk": 138, "def": 85, "spa": 138, "spd": 85, "spe": 75 },
+    "moves": ["Protect", "Heat Wave", "Leaf Storm", "Flamethrower", "Solar Beam", "Spicy Extract", "Will-O-Wisp", "Crunch"]
   },
   {
     "id": 201,
@@ -2007,9 +2062,9 @@
     "sprite": "espathra.png",
     "types": ["Psychic"],
     "typeIcons": ["psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Frisk", "Opportunist", "Speed Boost"],
+    "baseStats": { "hp": 95, "atk": 60, "def": 60, "spa": 101, "spd": 60, "spe": 105 },
+    "moves": ["Protect", "Lumina Crash", "Dazzling Gleam", "Calm Mind", "Helping Hand", "Hypnosis", "Substitute", "Shadow Ball"]
   },
   {
     "id": 202,
@@ -2037,9 +2092,9 @@
     "sprite": "orthworm.png",
     "types": ["Steel"],
     "typeIcons": ["steel.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Earth Eater", "Sand Veil"],
+    "baseStats": { "hp": 70, "atk": 85, "def": 145, "spa": 60, "spd": 55, "spe": 65 },
+    "moves": ["Protect", "Heavy Slam", "Body Press", "Shed Tail", "Iron Defense", "Rock Slide", "Stealth Rock", "Stomping Tantrum"]
   },
   {
     "id": 205,
@@ -2047,9 +2102,10 @@
     "sprite": "glimmora.png",
     "types": ["Rock", "Poison"],
     "typeIcons": ["rock.png", "poison.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Toxic Debris", "Corrosion"],
+    "baseStats": { "hp": 83, "atk": 55, "def": 90, "spa": 130, "spd": 81, "spe": 86 },
+    "megaStats": { "hp": 83, "atk": 90, "def": 105, "spa": 150, "spd": 96, "spe": 101 },
+    "moves": ["Protect", "Power Gem", "Sludge Bomb", "Earth Power", "Spiky Shield", "Mortal Spin", "Energy Ball", "Stealth Rock"]
   },
   {
     "id": 206,
@@ -2057,9 +2113,9 @@
     "sprite": "farigiraf.png",
     "types": ["Normal", "Psychic"],
     "typeIcons": ["normal.png", "psychic.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Cud Chew", "Armor Tail", "Sap Sipper"],
+    "baseStats": { "hp": 120, "atk": 90, "def": 70, "spa": 110, "spd": 70, "spe": 60 },
+    "moves": ["Protect", "Hyper Voice", "Psychic", "Trick Room", "Helping Hand", "Foul Play", "Thunderbolt", "Nasty Plot"]
   },
   {
     "id": 207,
@@ -2077,9 +2133,9 @@
     "sprite": "sinistcha.png",
     "types": ["Grass", "Ghost"],
     "typeIcons": ["grass.png", "ghost.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Hospitality", "Heatproof"],
+    "baseStats": { "hp": 71, "atk": 60, "def": 106, "spa": 121, "spd": 80, "spe": 70 },
+    "moves": ["Protect", "Matcha Gotcha", "Shadow Ball", "Rage Powder", "Strength Sap", "Trick Room", "Scald", "Nasty Plot"]
   },
   {
     "id": 209,
@@ -2097,8 +2153,8 @@
     "sprite": "hydrapple.png",
     "types": ["Grass", "Dragon"],
     "typeIcons": ["grass.png", "dragon.png"],
-    "abilities": [],
-    "baseStats": { "hp": 0, "atk": 0, "def": 0, "spa": 0, "spd": 0, "spe": 0 },
-    "moves": []
+    "abilities": ["Supersweet Syrup", "Regenerator", "Sticky Hold"],
+    "baseStats": { "hp": 106, "atk": 80, "def": 110, "spa": 120, "spd": 80, "spe": 44 },
+    "moves": ["Protect", "Fickle Beam", "Giga Drain", "Earth Power", "Pollen Puff", "Recover", "Dragon Pulse", "Syrup Bomb"]
   }
 ]
